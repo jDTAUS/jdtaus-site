@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <properties>
+    <title>jDTAUS</title>
+    <author email="cs@jdtaus.org">Christian Schulte</author>
+  </properties>
+  
+  <body>
+    <section>
+      <p>
+        <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js" />
+      </p>
+    </section>
+    <section name="Introduction">
+      <p>
+        jDTAUS provides an implementation of the german DTAUS file format as specified by
+        Zentraler Kreditausschuss for the Java platform. Currently it implements the
+        DTAUS specification as published on theire website at
+        <a href="http://www.zka.de">www.zka.de</a> versioned 2.1 and dated september
+        2006. Great care has been taken to fully comply with this specification which
+        was one of the goals of this project. A violation to the specification should be
+        considered a bug.
+      </p>
+      <p>
+        There is a GUI application available to demonstrate the main features. It is
+        distributed using Java-Webstart. You will first have to install the latest
+        Java Runtime Environment available at <a href="http://www.java.com">http://www.java.com</a>.
+        After downloading and installing Java, the following link will web-start the application.
+      </p>
+      <p>
+        <a href="http://apps.jdtaus.org/jdtaus-editor/launch.jnlp">Web-Start jDTAUS Editor</a>
+      </p>
+    </section>
+    <section name="Releases">
+      <p>
+        This project uses the central Maven 2 repository to distribute its artifacts.
+        Binary releases are available in group <code>org.jdtaus</code>.
+      </p>
+    </section>
+    <section name="Sourcecode">
+      <p>
+        Currently we do not maintain any source code releases. If you want to build
+        yourself you will need to checkout the sources from the project's repository.
+        The project's build process is implemented using Maven 2.
+        See <a href="http://maven.apache.org">http://maven.apache.org</a> for details.
+      </p>
+    </section>
+    <section name="Support">
+      <p>
+        It is pretty easy to get support directly from a developer if you need help or
+        if you find bugs that need to be reported. Simply write a mail to
+        <a href="mailto:support@jdtaus.org">support@jdtaus.org</a>.
+        There is a Bugzilla installation at
+        <a href="http://bugzilla.jdtaus.org/bugzilla/">http://bugzilla.jdtaus.org/bugzilla/</a>.
+        Please browse for possible bugs before reporting.
+      </p>
+      <p>
+        A mailing list is available for public discussion regarding the development
+        of the various artifacts. See <a href="mail-lists.html">the lists</a> for
+        further information. You may want to sent your code to the jdtaus-users
+        mailing list for public review.
+      </p>
+    </section>
+  </body>
+</document>
