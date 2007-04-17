@@ -38,12 +38,10 @@
 
     <menu name="Sourceforge">
       <item name="Project Summary" href="http://sourceforge.net/projects/jdtaus/"/>
-      <item name="Support Requests" href="http://sourceforge.net/tracker/?group_id=144535&amp;atid=759051"/>
-      <item name="Feature Requests" href="http://sourceforge.net/tracker/?group_id=144535&amp;atid=759053"/>
-      <item name="Bugs" href="http://sourceforge.net/tracker/?group_id=144535&amp;atid=759050"/>
-      <item name="Files" href="http://sourceforge.net/project/showfiles.php?group_id=144535"/>
-      <item name="Stats" href="http://sourceforge.net/project/stats/?group_id=144535&amp;ugn=jdtaus"/>
       <item name="Donations" href="http://sourceforge.net/project/project_donations.php?group_id=144535"/>
+      <item name="Files" href="http://sourceforge.net/project/showfiles.php?group_id=144535"/>
+      <item name="Screenshots" href="http://sourceforge.net/project/screenshots.php?group_id=144535"/>
+      <item name="Stats" href="http://sourceforge.net/project/stats/?group_id=144535&amp;ugn=jdtaus"/>
     </menu>
     
     <menu ref="reports" />
