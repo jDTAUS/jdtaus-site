@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document>
   <properties>
-    <title>jDTAUS - DTAUS Datenformat</title>
+    <title>Open-Source Java Implementierung des deutschen DTAUS Datenformates</title>
     <author email="cs@jdtaus.org">Christian Schulte</author>
   </properties>
   

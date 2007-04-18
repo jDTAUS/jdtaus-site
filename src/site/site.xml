@@ -2,8 +2,8 @@
 <project name="jDTAUS">
   <bannerLeft>
     <name>jDTAUS</name>
-    <src>http://sites.jdtaus.org/images/jdtaus.jpg</src>
-    <href>http://sites.jdtaus.org</href>
+    <src>http://www.jdtaus.org/images/jdtaus.jpg</src>
+    <href>http://www.jdtaus.org</href>
   </bannerLeft>
   <bannerRight>
     <name>SourceForge.net Logo</name>

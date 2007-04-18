@@ -2,8 +2,8 @@
 <project name="jDTAUS">
   <bannerLeft>
     <name>jDTAUS</name>
-    <src>http://sites.jdtaus.org/images/jdtaus.jpg</src>
-    <href>http://sites.jdtaus.org/de/index.html</href>
+    <src>http://www.jdtaus.org/images/jdtaus.jpg</src>
+    <href>http://www.jdtaus.org/de/index.html</href>
   </bannerLeft>
   <bannerRight>
     <name>SourceForge.net Logo</name>
@@ -27,13 +27,13 @@
     </head>
     
     <menu name="jDTAUS">
-      <item name="Start" href="http://sites.jdtaus.org/de/index.html"/>
+      <item name="Start" href="index.html"/>
     </menu>
 
     <menu name="Entwickler Informationen">
-      <item name="Core" href="http://sites.jdtaus.org/jdtaus-core/1.0.x/index.html"/>
-      <item name="Banking" href="http://sites.jdtaus.org/jdtaus-banking/1.0.x/index.html"/>
-      <item name="Editor" href="http://sites.jdtaus.org/jdtaus-editor/1.0.x/index.html"/>
+      <item name="Core" href="http://www.jdtaus.org/jdtaus-core/1.0.x/index.html"/>
+      <item name="Banking" href="http://www.jdtaus.org/jdtaus-banking/1.0.x/index.html"/>
+      <item name="Editor" href="http://www.jdtaus.org/jdtaus-editor/1.0.x/index.html"/>
     </menu>
 
     <menu name="Sourceforge">
