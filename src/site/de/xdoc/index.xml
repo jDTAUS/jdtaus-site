@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <properties>
+    <title>jDTAUS - DTAUS Datenformat</title>
+    <author email="cs@jdtaus.org">Christian Schulte</author>
+  </properties>
+  
+  <body>
+    <section>
+      <p>
+        <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js" />
+      </p>
+    </section>
+    <section name="Einleitung">
+      <p>
+        jDTAUS stellt eine Java-Implementierung des DTAUS Datenformats nach den
+        Vorgaben der <a href="http://sites.jdtaus.org/jdtaus-banking/1.0.x/jdtaus-banking-api/apidocs/doc-files/Anlage%203%20-%20Spezifikation%20der%20Datenformate%20-%20Version%202.1%20vom%201.09.2006.pdf">
+        Spezifikation der Datenformate</a> als Open-Source Lösung zur Verfügung.
+      </p>
+      <p>
+        Für einen schnellen Einstieg wurde eine Desktop-Anwendung erstellt,
+        die alle direkt von der API zur Verfügung gestellten Funktionen
+        demonstriert. Für den Start dieser Anwendung wird eine Java
+        Laufzeitumgebung benötigt, die unter
+        <a href="http://www.java.com/">www.java.com</a> zum kostenlosen
+        Download bereitsteht. Nach der Installation von Java kann die Anwendung
+        durch Anklicken des folgenden Links gestartet werden.
+      </p>
+      <p>
+        <a href="http://apps.jdtaus.org/jdtaus-editor/launch.jnlp">WebStart jDTAUS Editor</a>
+      </p>
+    </section>
+    <section name="Module">
+      <p>
+        Alle Module der Java-Implementierung sind über das zentrale Maven 2
+        Repository in Gruppe <a href="http://www.ibiblio.org/maven2/org/jdtaus">
+        org.jdtaus</a> erhältlich. Für die Dokumentation von Software-Fehlern
+        wurde eine <a href="http://bugzilla.jdtaus.org/cgi-bin/bugzilla/index.cgi">
+        Bugzilla Installation</a> eingerichtet. Sollten Sie Fehler in der
+        Implementierung finden, wären wir Ihnen dankbar, wenn Sie uns dies
+        entweder mittels eines entsprechenden Fehler-Berichts in der Bugzilla
+        Datenbank oder einer Mail an <a href="mailto:support@jdtaus.org">
+        support@jdtaus.org</a> mitteilen würden. Für Anregungen oder Wünsche
+        steht eine <a href="mail-lists.html">öffentliche Mailing-Liste</a> zur
+        Verfügung.
+      </p>
+    </section>
+  </body>
+</document>

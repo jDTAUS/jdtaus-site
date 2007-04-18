@@ -67,8 +67,9 @@
           <artifactId>maven-site-plugin</artifactId>
           <version>RELEASE</version>
           <configuration>
+            <inputEncoding>UTF-8</inputEncoding>
             <outputEncoding>UTF-8</outputEncoding>
-            <locales>en</locales>
+            <locales>en,de</locales>
           </configuration>
         </plugin>
         <plugin>
