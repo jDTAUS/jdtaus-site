@@ -13,52 +13,33 @@
     </section>
     <section name="Introduction">
       <p>
-        jDTAUS provides an implementation of the german DTAUS file format as specified by
-        Zentraler Kreditausschuss for the Java platform. Currently it implements the
-        DTAUS specification as published on theire website at
-        <a href="http://www.zka.de">www.zka.de</a> versioned 2.1 and dated september
-        2006. Great care has been taken to fully comply with this specification which
-        was one of the goals of this project. A violation to the specification should be
-        considered a bug.
+        jDTAUS provides an open-source implementation of the german DTAUS file
+        format as <a href="http://sites.jdtaus.org/jdtaus-banking/1.0.x/jdtaus-banking-api/apidocs/doc-files/Anlage%203%20-%20Spezifikation%20der%20Datenformate%20-%20Version%202.1%20vom%201.09.2006.pdf">
+        specified</a> by <a href="http://www.zka.de">Zentraler Kreditausschuß</a>
+        for the Java platform.
       </p>
       <p>
-        There is a GUI application available to demonstrate the main features. It is
-        distributed using Java-Webstart. You will first have to install the latest
-        Java Runtime Environment available at <a href="http://www.java.com">http://www.java.com</a>.
-        After downloading and installing Java, the following link will web-start the application.
+        To get you going a GUI application is available demonstrating all
+        features directly provided by the API. It is distributed using
+        Java-Webstart. You will first have to install the latest Java Runtime
+        Environment available at <a href="http://www.java.com">www.java.com</a>
+        for free. After downloading and installing Java, the following link will
+        web-start the application.
       </p>
       <p>
         <a href="http://apps.jdtaus.org/jdtaus-editor/launch.jnlp">Web-Start jDTAUS Editor</a>
       </p>
     </section>
-    <section name="Releases">
+    <section name="Modules">
       <p>
-        This project uses the central Maven 2 repository to distribute its artifacts.
-        Binary releases are available in group <code>org.jdtaus</code>.
-      </p>
-    </section>
-    <section name="Sourcecode">
-      <p>
-        Currently we do not maintain any source code releases. If you want to build
-        yourself you will need to checkout the sources from the project's repository.
-        The project's build process is implemented using Maven 2.
-        See <a href="http://maven.apache.org">http://maven.apache.org</a> for details.
-      </p>
-    </section>
-    <section name="Support">
-      <p>
-        It is pretty easy to get support directly from a developer if you need help or
-        if you find bugs that need to be reported. Simply write a mail to
-        <a href="mailto:support@jdtaus.org">support@jdtaus.org</a>.
-        There is a Bugzilla installation at
-        <a href="http://bugzilla.jdtaus.org/bugzilla/">http://bugzilla.jdtaus.org/bugzilla/</a>.
-        Please browse for possible bugs before reporting.
-      </p>
-      <p>
-        A mailing list is available for public discussion regarding the development
-        of the various artifacts. See <a href="mail-lists.html">the lists</a> for
-        further information. You may want to sent your code to the jdtaus-users
-        mailing list for public review.
+        All modules of the Java implementation are deployed to group
+        <a href="http://www.ibiblio.org/maven2/org/jdtaus">org.jdtaus</a>
+        at the central Maven 2 repository. We would like to ask you to either
+        send a mail to <a href="mailto:support@jdtaus.org">support@jdtaus.org</a>
+        for any implementation defects you might encounter or file a bug report
+        with the <a href="http://bugzilla.jdtaus.org/cgi-bin/bugzilla/index.cgi">
+        bugzilla installation</a>. For general feedback or feature requests
+        a public <a href="mail-lists.html">mailing list</a> is available.
       </p>
     </section>
   </body>
