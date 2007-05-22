@@ -4,13 +4,10 @@
     <title>Open-Source Java Implementierung des deutschen DTAUS Datenformates</title>
     <author email="cs@jdtaus.org">Christian Schulte</author>
   </properties>
-  
   <body>
-    <section>
-      <p>
-        <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js" />
-      </p>
-    </section>
+    <p>
+      <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js" />
+    </p>
     <section name="Einleitung">
       <p>
         jDTAUS stellt eine Java-Implementierung des DTAUS Datenformats nach den
@@ -27,7 +24,7 @@
         durch Anklicken des folgenden Links gestartet werden.
       </p>
       <p>
-        <a href="http://apps.jdtaus.org/jdtaus-editor/launch.jnlp">WebStart jDTAUS Editor</a>
+        <a href="http://apps.jdtaus.org/jdtaus-editor/launch.jnlp" onClick="javascript:urchinTracker ('/apps/jdtaus-editor');">WebStart jDTAUS Editor</a>
       </p>
     </section>
     <section name="Module">

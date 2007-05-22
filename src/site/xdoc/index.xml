@@ -4,13 +4,10 @@
     <title>Open-Source Java implementation of the german DTAUS file format</title>
     <author email="cs@jdtaus.org">Christian Schulte</author>
   </properties>
-  
   <body>
-    <section>
-      <p>
-        <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js" />
-      </p>
-    </section>
+    <p>
+      <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js" />
+    </p>
     <section name="Introduction">
       <p>
         jDTAUS provides an open-source implementation of the german DTAUS file
@@ -27,7 +24,7 @@
         web-start the application.
       </p>
       <p>
-        <a href="http://apps.jdtaus.org/jdtaus-editor/launch.jnlp">Web-Start jDTAUS Editor</a>
+        <a href="http://apps.jdtaus.org/jdtaus-editor/launch.jnlp" onClick="javascript:urchinTracker ('/apps/jdtaus-editor');">WebStart jDTAUS Editor</a>
       </p>
     </section>
     <section name="Modules">
