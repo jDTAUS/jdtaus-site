@@ -12,8 +12,8 @@
   </bannerRight>
   <body>
     <head>
-      <meta name="keywords" lang="de" content="dtaus, dtaus0, dta, datei, editor, open, source, java, spezifikation, beleglos, zahlungsverkehr, deutsch, deutscher, izv, inlandszahlungsverkehr, inland, national, nationaler, datenträger, austausch"/>
-      <meta name="keywords" lang="en" content="dtaus, dtaus0, dta, file, editor, open, source, java, specification, german, izv, national"/>
+      <meta name="keywords" lang="de" content="dtaus, dtaus0, dta, open, source, java, spezifikation, beleglos, zahlungsverkehr, izv, inlandszahlungsverkehr, inland, national, nationaler, datenträger, austausch"/>
+      <meta name="keywords" lang="en" content="dtaus, dtaus0, dta, open, source, java, specification, german, izv, national"/>
       <script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
       <script type="text/javascript">
         _uacct = "UA-416120-1";

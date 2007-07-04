@@ -24,7 +24,7 @@
         durch Anklicken des folgenden Links gestartet werden.
       </p>
       <p>
-        <a href="http://apps.jdtaus.org/jdtaus-editor/launch.jnlp" onClick="javascript:urchinTracker ('/apps/jdtaus-editor');">WebStart jDTAUS Editor</a>
+        <a href="http://apps.jdtaus.org/jdtaus-editor/launch.jnlp" onClick="javascript:urchinTracker('/apps/jdtaus-editor');">WebStart jDTAUS Editor</a>
       </p>
     </section>
     <section name="Module">
@@ -39,7 +39,8 @@
         Datenbank oder einer Mail an <a href="mailto:support@jdtaus.org">
         support@jdtaus.org</a> mitteilen würden. Für Anregungen oder Wünsche
         steht eine <a href="mail-lists.html">öffentliche Mailing-Liste</a> zur
-        Verfügung.
+        Verfügung. Ankündigungen neuer Releases werden an die
+        <code>jdtaus-users</code> Mailing-Liste gesendet.        
       </p>
     </section>
   </body>

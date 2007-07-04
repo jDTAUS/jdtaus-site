@@ -24,7 +24,7 @@
         web-start the application.
       </p>
       <p>
-        <a href="http://apps.jdtaus.org/jdtaus-editor/launch.jnlp" onClick="javascript:urchinTracker ('/apps/jdtaus-editor');">WebStart jDTAUS Editor</a>
+        <a href="http://apps.jdtaus.org/jdtaus-editor/launch.jnlp" onClick="javascript:urchinTracker('/apps/jdtaus-editor');">WebStart jDTAUS Editor</a>
       </p>
     </section>
     <section name="Modules">
@@ -37,6 +37,8 @@
         with the <a href="http://bugzilla.jdtaus.org/cgi-bin/bugzilla/index.cgi">
         bugzilla installation</a>. For general feedback or feature requests
         a public <a href="mail-lists.html">mailing list</a> is available.
+        Announcements of new releases are sent out to the
+        <code>jdtaus-users</code> mailing list.
       </p>
     </section>
   </body>
