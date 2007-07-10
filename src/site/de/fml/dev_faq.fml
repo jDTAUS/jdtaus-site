@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faqs title="Entwickler FAQ">
+  <part id="jDTAUS Quellcode">
+
+    <faq id="build-howto">
+      <question>Wie wird die Anwendung kompiliert ?</question>
+      <answer>
+        <p>
+          Sämtlicher Quellcode steht über das Sourceforge Subversion Repository
+          zur Verfügung. Für die Übersetzung des Quellcodes wird Maven 2
+          benötigt. Zur Installation von Maven siehe die entsprechenden
+          Anleitungen auf der <a href="http://maven.apache.org/">Maven Webseite</a>.
+          Führen Sie die folgenden Befehle in einem leeren Verzeichnis Ihrer
+          Wahl in der hier angegebenen Reihenfolge für einen kurzen Einstieg
+          aus.
+        </p>
+        <source>
+          svn checkout https://jdtaus.svn.sourceforge.net/svnroot/jdtaus/jdtaus-core/trunk jdtaus-core
+          svn checkout https://jdtaus.svn.sourceforge.net/svnroot/jdtaus/jdtaus-banking/trunk jdtaus-banking
+          svn checkout https://jdtaus.svn.sourceforge.net/svnroot/jdtaus/jdtaus-editor/trunk jdtaus-editor
+          
+          cd jdtaus-core/
+          mvn install
+          
+          cd ../jdtaus-banking/
+          mvn install
+          
+          cd ../jdtaus-editor/
+          mvn install          
+        </source>
+        <p>
+          Hiernach sollten sich alle Module der Anwendung in Ihrem lokalen
+          Maven-Repository befinden. Um die entsprechende Distribution zu
+          assemblieren, wechseln Sie in das Verzeichnis
+          jdtaus-editor/jdtaus-editor-webstart-application und führen Sie
+          entweder den Befehl
+        </p>
+        <source>
+          mvn appassembler:assemble
+        </source>
+        <p>
+          für die Distribution der Offline-Version oder
+        </p>
+        <source>
+          mvn webstart:jnlp
+        </source>
+        <p>
+          für die Webstart Distribution aus. Die entsprechenden Resultate
+          befinden sich hiernach im target/ Verzeichnis. Folgender Befehl
+          startet zum Beispiel die soeben erstellte Offline-Version.
+          Unter Windows
+        </p>
+        <source>
+          target/appassembler/bin/editor.bat
+        </source>
+        <p>
+          und unter Unix
+        </p>
+        <source>
+          target/appassembler/bin/editor.bat
+        </source>
+      </answer>
+    </faq>
+
+  </part>
+</faqs>

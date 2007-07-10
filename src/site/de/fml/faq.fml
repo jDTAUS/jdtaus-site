@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faqs title="Häufig gestellte Fragen">
+  <part id="jDTAUS Editor">
+    
+    <faq id="application-startup">
+      <question>Wieso startet die Anwendung nicht ?</question>
+      <answer>
+        <p>
+          Es kann vorkommen, daß die Anwendung trotz korrekter Installation von
+          Java nicht gestartet werden kann. Hierfür kann es mehrere Gründe
+          geben. Als erstes sollten Sie prüfen, ob Sie für die Verbindung zum
+          Internet einen Proxy benötigen. Aktuelle Java-Versionen verwenden
+          standardmäßig denselben Proxy, mit dem auch Ihr Internet-Browser
+          arbeitet. Gleichen Sie als erstes die Java Netzwerkkonfiguration mit
+          der Konfiguration Ihres Browsers ab. Unter Windows befinden sich die
+          entsprechenden Einstellungen in der Systemsteuerung unter dem Eintrag
+          Java.
+        </p>
+      </answer>
+    </faq>
+    
+    <faq id="offline-version">
+      <question>Gibt es die Anwendung auch als Offline-Version ohne WebStart ?</question>
+      <answer>
+        <p>
+          Seit dem 10.07.2007 steht eine Offline-Version zum Download
+          über das <a href="http://sourceforge.net/project/showfiles.php?group_id=144535&amp;package_id=238444">Sourceforge File Release System</a>
+          zur Verfügung. In dem dort erhältlichen Archiv befindet sich eine
+          Textdatei mit Namen README.de, die weitere Hinweise zur
+          Offline-Version enthält. Bitte beachten Sie, daß Sie durch die
+          Verwendung der Offline-Version keine automatisierten Aktualisierungen
+          beziehen können. Wir empfehlen daher die Verwendung von WebStart.
+          Um über neue Versionen der Offline-Version informiert zu werden,
+          benutzen Sie bitte die entsprechende Sourceforge Monitor-Funktion.
+        </p>
+      </answer>
+    </faq>
+    
+  </part>
+</faqs>

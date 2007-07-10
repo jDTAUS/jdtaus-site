@@ -34,6 +34,7 @@
 
     <menu name="jDTAUS">
       <item name="Start" href="index.html"/>
+      <item name="FAQ" href="faq.html"/>
     </menu>
     
     <menu name="Entwickler Informationen">
