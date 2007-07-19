@@ -54,8 +54,9 @@
           <i>Kundendatei - Lastschriften</i>. Kundendatei, da Sie als
           Kunde die Datei an Ihre Bank übermitteln, Lastschriften, weil in der
           Datei Lastschriften erfasst werden. Ebenfalls im A-Datensatz wird
-          die Bankverbindung des Auftraggebers hinterlegt. In diesem Fall das
-          Vereinskonto. Die einzelnen Lastschriften entsprechen den Zahlungen,
+          die Bankverbindung des Bankkunden hinterlegt, der die Datei später
+          einreichen wird. In diesem Fall höchstwahrscheinlich die Daten des
+          Vereinskontos. Die einzelnen Lastschriften entsprechen den Zahlungen,
           die in derselben Datei gespeichert werden. In Abhängigkeit des
           Vertrages, den Sie mit Ihrer Bank bzw. den einzelnen Mitgliedern zur
           Teilnahme am Lastschriftverfahren abgeschlossen haben, entscheidet
@@ -80,13 +81,11 @@
           für eine Zahlung eintippen, zum Anderen sind für dieses Verzeichnis
           weitreichende Neuerungen in Arbeit. So werden in Zukunft zum Beispiel
           Änderungen an diesem Verzeichnis von der Anwendung protokolliert
-          und eine Funktion angeboten werden, um alle Änderungen des
-          Verzeichnisses auf eine Datei zu übertragen. Ebenfalls in Arbeit
-          befindet sich eine Funktion, um Zahlungen in einer Datei zu suchen und
-          gegebenenfalls Ersetzungen in dem Ergebnis dieser Suche durchzuführen.
+          und eine Funktion angeboten werden, um alle Änderungen am
+          Verzeichniss auf eine Datei zu übertragen.
         </p>
       </answer>
     </faq>
-    
+
   </part>
 </faqs>
