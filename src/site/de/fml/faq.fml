@@ -36,5 +36,57 @@
       </answer>
     </faq>
     
+    <faq id="jahresbeitrag">
+      <question>Gibt es eine Hilfe oder kleine Erklärung was man wann und wo
+        eingibt, wenn man den Jahresbeitrag eines oder mehrerer
+        Vereinsmitglieder per Lastschrift einziehen möchte ?
+      </question>
+      <answer>
+        <p>
+          jDTAUS Editor ist eine Anwendung zur Erstellung und Bearbeitung von
+          Zahlungsverkehrsdateien im DTAUS Dateiformat. Es werden ausschließlich
+          bankfachlich begründete Begriffe verwendet. Sie werden daher an keiner
+          Stelle Begriffe wie &quot;Mitglied&qupt; oder &quot;Beitrag&quot;
+          finden. Wollte man zum Beispiel den Jahresbeitrag eines Vereins per
+          Lastschrift einziehen, bietet es sich an, eine entsprechende
+          DTAUS-Datei vom Typ Sammellastschrift zu erstellen. Der Typ einer
+          Datei wird im sogenannten A-Datensatz angegeben. In diesem Fall also
+          <i>Kundendatei - Lastschriften</i>. Kundendatei, da Sie als
+          Kunde die Datei an Ihre Bank übermitteln, Lastschriften, weil in der
+          Datei Lastschriften erfasst werden. Ebenfalls im A-Datensatz wird
+          die Bankverbindung des Auftraggebers hinterlegt. In diesem Fall das
+          Vereinskonto. Die einzelnen Lastschriften entsprechen den Zahlungen,
+          die in derselben Datei gespeichert werden. In Abhängigkeit des
+          Vertrages, den Sie mit Ihrer Bank bzw. den einzelnen Mitgliedern zur
+          Teilnahme am Lastschriftverfahren abgeschlossen haben, entscheidet
+          sich der in diesen Zahlungen zu verwendende Textschlüssel. Die hierbei
+          in Frage kommenden Textschlüssel lauten
+          <i>Lastschrift (Abbuchungsauftragsverfahren) - 04000</i> oder
+          <i>Lastschrift (Einzugsermächtigungsverfahren) - 05000</i>.
+          Die Auftraggeberdaten der Zahlungen entsprechen den Auftraggeberdaten
+          aus dem A-Datensatz, die Daten der Zahlungsbeteiligten entsprechen
+          den Bankverbindungen der einzelnen Vereinsmitglieder. Die so erstellte
+          DTAUS-Datei kann dann auf dem mit Ihrer Bank vereinbarten Weg
+          eingereicht werden - in den meisten Fällen steht Ihnen hierfür eine
+          entsprechende Funktion im Online-Banking Ihrer Bank zur Verfügung.
+          Wenn das nächste Mal die Beiträge fällig werden, kann eine Kopie
+          der Datei als Grundlage des nächsten Zahlungsauftrages verwendet
+          werden.
+        </p>
+        <p>
+          jDTAUS Editor bietet Ihnen die Möglichkeit ein Verzeichnis von
+          Bankverbindungen zu pflegen. Sie sollten hiervon Gebrauch machen.
+          Zum Einen müßen Sie so nicht jedesmal die komplette Bankverbindung
+          für eine Zahlung eintippen, zum Anderen sind für dieses Verzeichnis
+          weitreichende Neuerungen in Arbeit. So werden in Zukunft zum Beispiel
+          Änderungen an diesem Verzeichnis von der Anwendung protokolliert
+          und eine Funktion angeboten werden, um alle Änderungen des
+          Verzeichnisses auf eine Datei zu übertragen. Ebenfalls in Arbeit
+          befindet sich eine Funktion, um Zahlungen in einer Datei zu suchen und
+          gegebenenfalls Ersetzungen in dem Ergebnis dieser Suche durchzuführen.
+        </p>
+      </answer>
+    </faq>
+    
   </part>
 </faqs>
