@@ -50,29 +50,32 @@
           finden. Wollte man zum Beispiel den Jahresbeitrag eines Vereins per
           Lastschrift einziehen, bietet es sich an, eine entsprechende
           DTAUS-Datei vom Typ Sammellastschrift zu erstellen. Der Typ einer
-          Datei wird im sogenannten A-Datensatz angegeben. In diesem Fall also
+          Datei wird im sogenannten A-Datensatz angegeben. Der korrekte
+          Datei-Typ einer logischen Datei vom Typ Sammellastschrift lautet
           <i>Kundendatei - Lastschriften</i>. Kundendatei, da Sie als
           Kunde die Datei an Ihre Bank übermitteln, Lastschriften, weil in der
           Datei Lastschriften erfasst werden. Ebenfalls im A-Datensatz wird
           die Bankverbindung des Bankkunden hinterlegt, der die Datei später
-          einreichen wird. In diesem Fall höchstwahrscheinlich die Daten des
-          Vereinskontos. Die einzelnen Lastschriften entsprechen den Zahlungen,
-          die in derselben Datei gespeichert werden. In Abhängigkeit des
-          Vertrages, den Sie mit Ihrer Bank bzw. den einzelnen Mitgliedern zur
-          Teilnahme am Lastschriftverfahren abgeschlossen haben, entscheidet
+          einreichen wird. In den meisten Fällen verwenden Sie hier die Daten
+          des Vereinskontos. Die einzelnen Lastschriften entsprechen den
+          Zahlungen, die in derselben Datei gespeichert werden. In Abhängigkeit
+          des Vertrages, den Sie mit Ihrer Bank bzw. den einzelnen Mitgliedern
+          zur Teilnahme am Lastschriftverfahren abgeschlossen haben, entscheidet
           sich der in diesen Zahlungen zu verwendende Textschlüssel. Die hierbei
           in Frage kommenden Textschlüssel lauten
           <i>Lastschrift (Abbuchungsauftragsverfahren) - 04000</i> oder
           <i>Lastschrift (Einzugsermächtigungsverfahren) - 05000</i>.
           Die Auftraggeberdaten der Zahlungen entsprechen den Auftraggeberdaten
-          aus dem A-Datensatz, die Daten der Zahlungsbeteiligten entsprechen
-          den Bankverbindungen der einzelnen Vereinsmitglieder. Die so erstellte
+          aus dem A-Datensatz, die Daten der Zahlungsbeteiligten entsprechen den
+          Bankverbindungen der einzelnen Vereinsmitglieder. Die so erstellte
           DTAUS-Datei kann dann auf dem mit Ihrer Bank vereinbarten Weg
           eingereicht werden - in den meisten Fällen steht Ihnen hierfür eine
           entsprechende Funktion im Online-Banking Ihrer Bank zur Verfügung.
           Wenn das nächste Mal die Beiträge fällig werden, kann eine Kopie
           der Datei als Grundlage des nächsten Zahlungsauftrages verwendet
-          werden.
+          werden. Das Datei-Erstellungsdatum im A-Datensatz wird hierbei an das
+          aktuelle Datum angepasst und die Zahlungen der Datei gegebenenfalls
+          aktualisiert.
         </p>
         <p>
           jDTAUS Editor bietet Ihnen die Möglichkeit ein Verzeichnis von
@@ -86,6 +89,21 @@
         </p>
       </answer>
     </faq>
-
+    
+    <faq id="zahlungsbeteiligter">
+      <question>Was ist unter "Zahlungsbeteiligter" zu verstehen ?</question>
+      <answer>
+        <p>
+          Die Bedeutung des Zahlungsbeteiligten ergibt sich aus dem Typ einer
+          Zahlung. In einer <i>Kundendatei - Lastschriften</i> können
+          ausschließlich Lastschriften erfasst werden. In diesem Fall entspricht
+          der Zahlungsbeteiligte dem Zahlungspflichtigen. In einer
+          <i>Kundendatei - Gutschriften</i> können aussschließlich Überweisungen
+          erfasst werden. In diesem Fall entspricht der Zahlungsbeteiligte dem
+          Zahlungsempfänger.
+        </p>
+      </answer>
+    </faq>
+    
   </part>
 </faqs>
