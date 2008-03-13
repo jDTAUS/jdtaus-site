@@ -28,36 +28,30 @@
     </section>   
     <section name="Download">
       <p>
-        <table border="0">
-          <tr>
-            <td valign="top">
-              <a href="http://sourceforge.net/project/downloading.php?group_id=144535&amp;filename=jdtaus-editor-20080313-setup.exe">
-                <img src="images/win.jpg" alt="Windows Logo" border="0" />
-                Download
-              </a>
-            </td>
-            <td valign="top">
-              All-in-one Windows Installations-Paket.
-              <b>Hinweis:</b> Dieses Installations-Paket beinhaltet eine Java
-              Laufzeitumgebung. Eine separate Java-Installation ist nicht
-              erforderlich.
-            </td>
-          </tr>
-          <tr>
-            <td valign="top">
-              <a href="http://sourceforge.net/project/downloading.php?group_id=144535&amp;filename=jdtaus-editor-20080313.tar.bz2">
-                <img src="images/lin.jpg" alt="Linux Penguin" border="0" />
-                Download
-              </a>
-            </td>
-            <td valign="top">
-              Unix tar Archiv.
-              <b>Hinweis:</b> Dieses Archiv beinhaltet keine Java
-              Laufzeitumgebung. Java muß mit den für Ihr System üblichen Mitteln
-              installiert werden.
-            </td>
-          </tr>
-        </table>
+        All-in-one Windows Installations-Paket.
+        <b>Hinweis:</b> Dieses Installations-Paket beinhaltet eine Java
+        Laufzeitumgebung. Eine separate Java-Installation ist nicht
+        erforderlich.
+      </p>
+      <p>
+        <a href="http://sourceforge.net/project/downloading.php?group_id=144535&amp;filename=jdtaus-editor-20080313-setup.exe">
+          <h1>
+            Download
+          </h1>
+        </a>
+      </p>
+      <p>
+        Unix tar Archiv.
+        <b>Hinweis:</b> Dieses Archiv beinhaltet keine Java
+        Laufzeitumgebung. Java muß mit den für Ihr System üblichen Mitteln
+        installiert werden.
+      </p>
+      <p>
+        <a href="http://sourceforge.net/project/downloading.php?group_id=144535&amp;filename=jdtaus-editor-20080313.tar.bz2">
+          <h1>
+            Download
+          </h1>
+        </a>
       </p>
     </section>
     <section name="Module">
