@@ -28,22 +28,15 @@
     </section>   
     <section name="Download">
       <p>
-        All-in-one Windows Installations-Paket.
-        <b>Hinweis:</b> Dieses Installations-Paket beinhaltet eine Java
-        Laufzeitumgebung. Eine separate Java-Installation ist nicht
-        erforderlich.
+        All-in-one Windows Installations-Paket. Dieses Installations-Paket
+        beinhaltet eine Java Laufzeitumgebung. Eine separate Java-Installation
+        ist nicht erforderlich.
+        <a href="http://sourceforge.net/project/downloading.php?group_id=144535&amp;filename=jdtaus-editor-20080313-setup.exe">jdtaus-editor-20080313-setup.exe</a>
       </p>
       <p>
-        <a href="http://sourceforge.net/project/downloading.php?group_id=144535&amp;filename=jdtaus-editor-20080313-setup.exe">Download</a>
-      </p>
-      <p>
-        Unix tar Archiv.
-        <b>Hinweis:</b> Dieses Archiv beinhaltet keine Java
-        Laufzeitumgebung. Java muß mit den für Ihr System üblichen Mitteln
-        installiert werden.
-      </p>
-      <p>
-        <a href="http://sourceforge.net/project/downloading.php?group_id=144535&amp;filename=jdtaus-editor-20080313.tar.bz2">Download</a>
+        Unix tar Archiv. Dieses Archiv beinhaltet keine Java Laufzeitumgebung.
+        Java muß mit den für Ihr System üblichen Mitteln installiert werden.
+        <a href="http://sourceforge.net/project/downloading.php?group_id=144535&amp;filename=jdtaus-editor-20080313.tar.bz2">jdtaus-editor-20080313.tar.bz2</a>
       </p>
     </section>
     <section name="Module">
