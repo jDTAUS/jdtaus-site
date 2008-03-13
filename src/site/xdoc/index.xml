@@ -26,19 +26,28 @@
       </p>
     </section>
     <section name="Download">
-      <p>
-        All-in-one Windows installation executable. This installation executable
-        includes a Java runtime environment. You do not need to download Java
-        separately when using this download.
-        <a href="http://sourceforge.net/project/downloading.php?group_id=144535&amp;filename=jdtaus-editor-20080313-setup.exe">jdtaus-editor-20080313-setup.exe</a>
-      </p>
-      <p>
-        
-        Unix tar archive. This archive does not include a Java runtime
-        environment. You will have to install the Java runtime environment
-        appropriately to your system.
-        <a href="http://sourceforge.net/project/downloading.php?group_id=144535&amp;filename=jdtaus-editor-20080313.tar.bz2">jdtaus-editor-20080313.tar.bz2</a>
-      </p>
+      <table border="0">
+        <tr>
+          <td valign="top">
+            <a href="http://sourceforge.net/project/downloading.php?group_id=144535&amp;filename=jdtaus-editor-20080313-setup.exe"><b>jdtaus-editor-20080313-setup.exe</b></a>
+          </td>
+          <td valign="top">
+            All-in-one Windows installation executable. This installation
+            executable includes a Java runtime environment. You do not need to
+            download Java separately when using this download.
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <a href="http://sourceforge.net/project/downloading.php?group_id=144535&amp;filename=jdtaus-editor-20080313.tar.bz2"><b>jdtaus-editor-20080313.tar.bz2</b></a>
+          </td>
+          <td valign="top">
+            Unix tar archive. This archive does not include a Java runtime
+            environment. You will have to install the Java runtime environment
+            appropriately to your system.
+          </td>
+        </tr>
+      </table>
     </section>
     <section name="Modules">
       <p>

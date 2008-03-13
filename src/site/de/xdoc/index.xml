@@ -27,17 +27,28 @@
       </p>
     </section>   
     <section name="Download">
-      <p>
-        All-in-one Windows Installations-Paket. Dieses Installations-Paket
-        beinhaltet eine Java Laufzeitumgebung. Eine separate Java-Installation
-        ist nicht erforderlich.
-        <a href="http://sourceforge.net/project/downloading.php?group_id=144535&amp;filename=jdtaus-editor-20080313-setup.exe">jdtaus-editor-20080313-setup.exe</a>
-      </p>
-      <p>
-        Unix tar Archiv. Dieses Archiv beinhaltet keine Java Laufzeitumgebung.
-        Java muß mit den für Ihr System üblichen Mitteln installiert werden.
-        <a href="http://sourceforge.net/project/downloading.php?group_id=144535&amp;filename=jdtaus-editor-20080313.tar.bz2">jdtaus-editor-20080313.tar.bz2</a>
-      </p>
+      <table border="0">
+        <tr>
+          <td valign="top">
+            <a href="http://sourceforge.net/project/downloading.php?group_id=144535&amp;filename=jdtaus-editor-20080313-setup.exe"><b>jdtaus-editor-20080313-setup.exe</b></a>
+          </td>
+          <td valign="top">
+            All-in-one Windows Installations-Paket. Dieses Installations-Paket
+            beinhaltet eine Java Laufzeitumgebung. Eine separate
+            Java-Installation ist nicht erforderlich.
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <a href="http://sourceforge.net/project/downloading.php?group_id=144535&amp;filename=jdtaus-editor-20080313.tar.bz2"><b>jdtaus-editor-20080313.tar.bz2</b></a>
+          </td>
+          <td valign="top">
+            Unix tar Archiv. Dieses Archiv beinhaltet keine Java
+            Laufzeitumgebung. Java muß mit den für Ihr System üblichen Mitteln
+            installiert werden.
+          </td>
+        </tr>
+      </table>
     </section>
     <section name="Module">
       <p>
