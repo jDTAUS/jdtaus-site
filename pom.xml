@@ -69,7 +69,7 @@
           <configuration>
             <inputEncoding>UTF-8</inputEncoding>
             <outputEncoding>UTF-8</outputEncoding>
-            <locales>en,de</locales>
+            <locales>de,en</locales>
           </configuration>
         </plugin>
         <plugin>

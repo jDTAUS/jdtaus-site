@@ -11,9 +11,7 @@
     <section name="Introduction">
       <p>
         jDTAUS provides an open-source implementation of the german DTAUS file
-        format as <a href="http://sites.jdtaus.org/jdtaus-banking/1.0.x/jdtaus-banking-api/apidocs/doc-files/Anlage%203%20-%20Spezifikation%20der%20Datenformate%20-%20Version%202.1%20vom%201.09.2006.pdf">
-        specified</a> by <a href="http://www.zka.de">Zentraler Kreditausschuß</a>
-        for the Java platform.
+        format for the Java platform.
       </p>
       <p>
         To get you going a GUI application is available demonstrating all
@@ -25,6 +23,40 @@
       </p>
       <p>
         <a href="http://apps.jdtaus.org/jdtaus-editor/launch.jnlp" onClick="javascript:urchinTracker('/apps/jdtaus-editor');">WebStart jDTAUS Editor</a>
+      </p>
+    </section>
+    <section name="Download">
+      <p>
+        <table border="0">
+          <tr>
+            <td valign="top">
+              <a href="http://sourceforge.net/project/downloading.php?group_id=144535&amp;filename=jdtaus-editor-20080313-setup.exe">
+                <img src="images/win.jpg" alt="Windows Logo" border="0" />
+                Download
+              </a>
+            </td>
+            <td valign="top">
+              All-in-one Windows installation executable.
+              <b>Note:</b> This installation executable also includes a Java
+              runtime environment. You do not need to download Java separately
+              when using this download.
+            </td>
+          </tr>
+          <tr>
+            <td valign="top">
+              <a href="http://sourceforge.net/project/downloading.php?group_id=144535&amp;filename=jdtaus-editor-20080313.tar.bz2">
+                <img src="images/lin.jpg" alt="Linux Penguin" border="0" />
+                Download
+              </a>
+            </td>
+            <td valign="top">
+              Unix tar archive.
+              <b>Note:</b> This installation executable does not include a Java
+              runtime environment. You will have to install the Java runtime
+              environment appropriately to your system.
+            </td>
+          </tr>
+        </table>
       </p>
     </section>
     <section name="Modules">

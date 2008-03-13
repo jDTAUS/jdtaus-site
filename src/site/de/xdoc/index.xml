@@ -10,9 +10,8 @@
     </p>
     <section name="Einleitung">
       <p>
-        jDTAUS stellt eine Java-Implementierung des DTAUS Datenformats nach den
-        Vorgaben der <a href="http://sites.jdtaus.org/jdtaus-banking/1.0.x/jdtaus-banking-api/apidocs/doc-files/Anlage%203%20-%20Spezifikation%20der%20Datenformate%20-%20Version%202.1%20vom%201.09.2006.pdf">
-        Spezifikation der Datenformate</a> als Open-Source Lösung zur Verfügung.
+        jDTAUS stellt eine Java-Implementierung des DTAUS Datenformats als
+        Open-Source Lösung zur Verfügung.
       </p>
       <p>
         Für einen schnellen Einstieg wurde eine Desktop-Anwendung erstellt,
@@ -25,6 +24,40 @@
       </p>
       <p>
         <a href="http://apps.jdtaus.org/jdtaus-editor/launch.jnlp" onClick="javascript:urchinTracker('/apps/jdtaus-editor');">WebStart jDTAUS Editor</a>
+      </p>
+    </section>   
+    <section name="Download">
+      <p>
+        <table border="0">
+          <tr>
+            <td valign="top">
+              <a href="http://sourceforge.net/project/downloading.php?group_id=144535&amp;filename=jdtaus-editor-20080313-setup.exe">
+                <img src="images/win.jpg" alt="Windows Logo" border="0" />
+                Download
+              </a>
+            </td>
+            <td valign="top">
+              All-in-one Windows Installations-Paket.
+              <b>Hinweis:</b> Dieses Installations-Paket beinhaltet eine Java
+              Laufzeitumgebung. Eine separate Java-Installation ist nicht
+              erforderlich.
+            </td>
+          </tr>
+          <tr>
+            <td valign="top">
+              <a href="http://sourceforge.net/project/downloading.php?group_id=144535&amp;filename=jdtaus-editor-20080313.tar.bz2">
+                <img src="images/lin.jpg" alt="Linux Penguin" border="0" />
+                Download
+              </a>
+            </td>
+            <td valign="top">
+              Unix tar Archiv.
+              <b>Hinweis:</b> Dieses Archiv beinhaltet keine Java
+              Laufzeitumgebung. Java muß mit den für Ihr System üblichen Mitteln
+              installiert werden.
+            </td>
+          </tr>
+        </table>
       </p>
     </section>
     <section name="Module">

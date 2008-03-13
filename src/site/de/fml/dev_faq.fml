@@ -18,15 +18,15 @@
           svn checkout https://jdtaus.svn.sourceforge.net/svnroot/jdtaus/jdtaus-core/trunk jdtaus-core
           svn checkout https://jdtaus.svn.sourceforge.net/svnroot/jdtaus/jdtaus-banking/trunk jdtaus-banking
           svn checkout https://jdtaus.svn.sourceforge.net/svnroot/jdtaus/jdtaus-editor/trunk jdtaus-editor
-          
+
           cd jdtaus-core/
           mvn install
-          
+
           cd ../jdtaus-banking/
           mvn install
-          
+
           cd ../jdtaus-editor/
-          mvn install          
+          mvn install
         </source>
         <p>
           Hiernach sollten sich alle Module der Anwendung in Ihrem lokalen

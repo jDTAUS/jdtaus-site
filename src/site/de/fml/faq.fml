@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <faqs title="Häufig gestellte Fragen">
   <part id="jDTAUS Editor">
-    
+
     <faq id="application-startup">
       <question>Wieso startet die Anwendung nicht ?</question>
       <answer>
@@ -18,7 +18,7 @@
         </p>
       </answer>
     </faq>
-    
+
     <faq id="offline-version">
       <question>Gibt es die Anwendung auch als Offline-Version ohne WebStart ?</question>
       <answer>
@@ -35,7 +35,7 @@
         </p>
       </answer>
     </faq>
-    
+
     <faq id="jahresbeitrag">
       <question>Gibt es eine Hilfe oder kleine Erklärung was man wann und wo
         eingibt, wenn man den Jahresbeitrag eines oder mehrerer
@@ -89,7 +89,7 @@
         </p>
       </answer>
     </faq>
-    
+
     <faq id="zahlungsbeteiligter">
       <question>Was ist unter "Zahlungsbeteiligter" zu verstehen ?</question>
       <answer>
@@ -104,6 +104,6 @@
         </p>
       </answer>
     </faq>
-    
+
   </part>
 </faqs>
