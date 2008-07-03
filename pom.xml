@@ -2,13 +2,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  
+
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.jdtaus</groupId>
   <artifactId>jdtaus-site</artifactId>
   <packaging>pom</packaging>
   <name>jDTAUS</name>
-  <version>1.0-alpha-1-SNAPSHOT</version>
+  <version>SNAPSHOT</version>
   <description>jDTAUS provides an open-source implementation of german payment formats.</description>
   <url>http://sites.jdtaus.org/</url>
   <issueManagement>
@@ -46,7 +46,7 @@
   </developers>
   <licenses>
     <license>
-      <name>The GNU Lesser General Public License, Version 2.1</name>
+      <name>The GNU Lesser General Public License</name>
       <url>http://www.gnu.org/copyleft/lesser.txt</url>
       <distribution>manual</distribution>
     </license>
@@ -89,7 +89,7 @@
       </plugins>
     </pluginManagement>
     <plugins>
-      
+
       <plugin>
         <artifactId>maven-dependency-plugin</artifactId>
         <configuration>
@@ -258,6 +258,10 @@
 
     </plugins>
   </build>
+  <modules>
+      <module>jdtaus-gpl-resource-bundle</module>
+      <module>jdtaus-lgpl-resource-bundle</module>
+  </modules>
   <reporting>
     <plugins>
       <plugin>
