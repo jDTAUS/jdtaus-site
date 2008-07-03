@@ -54,7 +54,7 @@
   <scm>
     <connection>scm:svn:https://jdtaus.svn.sourceforge.net/svnroot/jdtaus/jdtaus-site/trunk</connection>
     <developerConnection>scm:svn:https://jdtaus.svn.sourceforge.net/svnroot/jdtaus/jdtaus-site/trunk</developerConnection>
-    <url>http://svn.sourceforge.net/viewcvs.cgi/jdtaus/jdtaus-site/trunk</url>
+    <url>http://jdtaus.svn.sourceforge.net/viewcvs.cgi/jdtaus/jdtaus-site/trunk</url>
   </scm>
   <organization>
     <name>jDTAUS</name>
@@ -76,7 +76,7 @@
           <artifactId>maven-release-plugin</artifactId>
           <version>RELEASE</version>
           <configuration>
-            <tagBase>https://svn.sourceforge.net/svnroot/jdtaus/jdtaus-site/tags</tagBase>
+            <tagBase>https://jdtaus.svn.sourceforge.net/svnroot/jdtaus/jdtaus-site/tags</tagBase>
           </configuration>
         </plugin>
         <plugin>
