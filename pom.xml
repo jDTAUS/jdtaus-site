@@ -1,14 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.jdtaus</groupId>
   <artifactId>jdtaus-site</artifactId>
   <packaging>pom</packaging>
   <name>jDTAUS</name>
-  <version>SNAPSHOT</version>
+  <version>1.0</version>
   <description>jDTAUS provides an open-source implementation of german payment formats.</description>
   <url>http://sites.jdtaus.org/</url>
   <issueManagement>
@@ -52,9 +49,9 @@
     </license>
   </licenses>
   <scm>
-    <connection>scm:svn:https://jdtaus.svn.sourceforge.net/svnroot/jdtaus/jdtaus-site/trunk</connection>
-    <developerConnection>scm:svn:https://jdtaus.svn.sourceforge.net/svnroot/jdtaus/jdtaus-site/trunk</developerConnection>
-    <url>http://svn.sourceforge.net/viewcvs.cgi/jdtaus/jdtaus-site/trunk</url>
+    <connection>scm:svn:https://svn.sourceforge.net/svnroot/jdtaus/jdtaus-site/tags/jdtaus-site-1.0</connection>
+    <developerConnection>scm:svn:https://svn.sourceforge.net/svnroot/jdtaus/jdtaus-site/tags/jdtaus-site-1.0</developerConnection>
+    <url>scm:svn:https://svn.sourceforge.net/svnroot/jdtaus/jdtaus-site/tags/jdtaus-site-1.0</url>
   </scm>
   <organization>
     <name>jDTAUS</name>
