@@ -12,6 +12,22 @@
     <system>Bugzilla</system>
     <url>http://bugzilla.jdtaus.org/cgi-bin/bugzilla/index.cgi</url>
   </issueManagement>
+  <ciManagement>
+    <system>Continuum</system>
+    <url>http://continuum.jdtaus.org/continuum/</url>
+    <notifiers>
+      <notifier>
+        <type>mail</type>
+        <sendOnError>true</sendOnError>
+        <sendOnFailure>true</sendOnFailure>
+        <sendOnSuccess>false</sendOnSuccess>
+        <sendOnWarning>false</sendOnWarning>
+        <configuration>
+          <address>support@jdtaus.org</address>
+        </configuration>
+      </notifier>
+    </notifiers>
+  </ciManagement>
   <inceptionYear>2005</inceptionYear>
   <mailingLists>
     <mailingList>
