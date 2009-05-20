@@ -29,7 +29,7 @@
       <table border="0">
         <tr>
           <td valign="top">
-            <a href="http://sourceforge.net/project/downloading.php?group_id=144535&amp;filename=jdtaus-editor-20080313-setup.exe"><b>jdtaus-editor-20080313-setup.exe</b></a>
+            <a href="http://sourceforge.net/project/downloading.php?group_id=144535&amp;filename=jdtaus-editor-20090519-setup.exe"><b>jdtaus-editor-20090519-setup.exe</b></a>
           </td>
           <td valign="top">
             All-in-one Windows installation executable. This installation
@@ -39,7 +39,7 @@
         </tr>
         <tr>
           <td valign="top">
-            <a href="http://sourceforge.net/project/downloading.php?group_id=144535&amp;filename=jdtaus-editor-20080313.tar.bz2"><b>jdtaus-editor-20080313.tar.bz2</b></a>
+            <a href="http://sourceforge.net/project/downloading.php?group_id=144535&amp;filename=jdtaus-editor-20090519.tar.bz2"><b>jdtaus-editor-20090519.tar.bz2</b></a>
           </td>
           <td valign="top">
             Unix tar archive. This archive does not include a Java runtime
@@ -56,12 +56,12 @@
     <section name="Modules">
       <p>
         All modules of the Java implementation are deployed to group
-        <a href="http://www.ibiblio.org/maven2/org/jdtaus">org.jdtaus</a>
+        <a href="http://repo1.maven.org/maven2/org/jdtaus">org.jdtaus</a>
         at the central Maven 2 repository. We would like to ask you to either
         send a mail to <a href="mailto:support@jdtaus.org">support@jdtaus.org</a>
         for any implementation defects you might encounter or file a bug report
-        with the <a href="http://bugzilla.jdtaus.org/cgi-bin/bugzilla/index.cgi">
-        bugzilla installation</a>. For general feedback or feature requests
+        with the <a href="https://apps.sourceforge.net/mantisbt/jdtaus/">
+        MantisBT installation</a>. For general feedback or feature requests
         a public <a href="mail-lists.html">mailing list</a> is available.
         Announcements of new releases are sent out to the
         <code>jdtaus-users</code> mailing list.

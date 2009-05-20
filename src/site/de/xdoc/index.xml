@@ -30,7 +30,7 @@
       <table border="0">
         <tr>
           <td valign="top">
-            <a href="http://sourceforge.net/project/downloading.php?group_id=144535&amp;filename=jdtaus-editor-20080313-setup.exe"><b>jdtaus-editor-20080313-setup.exe</b></a>
+            <a href="http://sourceforge.net/project/downloading.php?group_id=144535&amp;filename=jdtaus-editor-20090519-setup.exe"><b>jdtaus-editor-20090519-setup.exe</b></a>
           </td>
           <td valign="top">
             All-in-one Windows Installations-Paket. Dieses Installations-Paket
@@ -40,7 +40,7 @@
         </tr>
         <tr>
           <td valign="top">
-            <a href="http://sourceforge.net/project/downloading.php?group_id=144535&amp;filename=jdtaus-editor-20080313.tar.bz2"><b>jdtaus-editor-20080313.tar.bz2</b></a>
+            <a href="http://sourceforge.net/project/downloading.php?group_id=144535&amp;filename=jdtaus-editor-20090519.tar.bz2"><b>jdtaus-editor-20090519.tar.bz2</b></a>
           </td>
           <td valign="top">
             Unix tar Archiv. Dieses Archiv beinhaltet keine Java
@@ -58,16 +58,16 @@
     <section name="Module">
       <p>
         Alle Module der Java-Implementierung sind über das zentrale Maven 2
-        Repository in Gruppe <a href="http://www.ibiblio.org/maven2/org/jdtaus">
+        Repository in Gruppe <a href="http://repo1.maven.org/maven2/org/jdtaus">
         org.jdtaus</a> erhältlich. Für die Dokumentation von Software-Fehlern
-        wurde eine <a href="http://bugzilla.jdtaus.org/cgi-bin/bugzilla/index.cgi">
-        Bugzilla Installation</a> eingerichtet. Sollten Sie Fehler in der
+        wurde eine <a href="https://apps.sourceforge.net/mantisbt/jdtaus/">
+        MantisBT Installation</a> eingerichtet. Sollten Sie Fehler in der
         Implementierung finden, wären wir Ihnen dankbar, wenn Sie uns dies
-        entweder mittels eines entsprechenden Fehler-Berichts in der Bugzilla
+        entweder mittels eines entsprechenden Fehler-Berichts in der MantisBT
         Datenbank oder einer Mail an <a href="mailto:support@jdtaus.org">
         support@jdtaus.org</a> mitteilen würden. Für Anregungen oder Wünsche
         steht eine <a href="mail-lists.html">öffentliche Mailing-Liste</a> zur
-        Verfügung. Ankündigungen neuer Releases werden an die
+        Verfügung. Ankündigungen neuer Veröffentlichungen werden an die
         <code>jdtaus-users</code> Mailing-Liste gesendet.
       </p>
     </section>
