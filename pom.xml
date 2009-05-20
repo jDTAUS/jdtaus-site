@@ -203,6 +203,20 @@
       <url>scp://web.rent-a-mailserver.de/var/httpd/D0001/sites.jdtaus.org</url>
     </site>
   </distributionManagement>
+  <profiles>
+    <profile>
+      <id>all</id>
+      <activation>
+        <activeByDefault>false</activeByDefault>
+      </activation>
+      <modules>
+        <module>jdtaus-gpl-resource-bundle</module>
+        <module>jdtaus-lgpl-resource-bundle</module>
+        <module>jdtaus-core</module>
+        <module>jdtaus-banking</module>
+      </modules>
+    </profile>
+  </profiles>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
