@@ -12,8 +12,8 @@
   <description>jDTAUS provides an open-source implementation of german payment formats.</description>
   <url>http://sites.jdtaus.org/</url>
   <issueManagement>
-    <system>Bugzilla</system>
-    <url>http://bugzilla.jdtaus.org/cgi-bin/bugzilla/index.cgi</url>
+    <system>MantisBT</system>
+    <url>https://apps.sourceforge.net/mantisbt/jdtaus/</url>
   </issueManagement>
   <ciManagement>
     <system>Continuum</system>
