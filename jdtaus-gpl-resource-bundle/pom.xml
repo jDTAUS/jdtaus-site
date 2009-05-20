@@ -3,19 +3,13 @@
   <parent>
     <artifactId>jdtaus-site</artifactId>
     <groupId>org.jdtaus</groupId>
-    <version>2-SNAPSHOT</version>
+    <version>1.2-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.jdtaus</groupId>
   <artifactId>jdtaus-gpl-resource-bundle</artifactId>
   <name>jDTAUS GPL Resource Bundle</name>
-  <version>1.2-SNAPSHOT</version>
   <description>jDTAUS resource bundle common to all jDTAUS artifacts licensed using the GPL.</description>
-  <scm>
-    <connection>scm:svn:https://jdtaus.svn.sourceforge.net/svnroot/jdtaus/jdtaus-site/jdtaus-gpl-resource-bundle/trunk</connection>
-    <developerConnection>scm:svn:https://jdtaus.svn.sourceforge.net/svnroot/jdtaus/jdtaus-site/jdtaus-gpl-resource-bundle/trunk</developerConnection>
-    <url>http://jdtaus.svn.sourceforge.net/svnroot/jdtaus/jdtaus-site/jdtaus-gpl-resource-bundle/trunk</url>
-  </scm>
   <build>
     <resources>
       <resource>
@@ -24,12 +18,6 @@
       </resource>
     </resources>
     <plugins>
-      <plugin>
-        <artifactId>maven-release-plugin</artifactId>
-        <configuration>
-          <tagBase>https://jdtaus.svn.sourceforge.net/svnroot/jdtaus/jdtaus-site/jdtaus-gpl-resource-bundle/tags</tagBase>
-        </configuration>
-      </plugin>
       <plugin>
         <artifactId>maven-jar-plugin</artifactId>
         <executions>
