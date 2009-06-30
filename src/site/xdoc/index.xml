@@ -22,7 +22,7 @@
         web-start the application.
       </p>
       <p>
-        <a href="http://apps.jdtaus.org/jdtaus-editor/launch.jnlp" onClick="javascript:urchinTracker('/apps/jdtaus-editor');">WebStart jDTAUS Editor</a>
+        <a href="http://apps.jdtaus.org/jdtaus-editor-1.0.x/launch.jnlp" onClick="javascript:urchinTracker('/apps/jdtaus-editor');">WebStart jDTAUS Editor</a>
       </p>
     </section>
     <section name="Download">
