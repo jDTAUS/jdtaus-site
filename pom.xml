@@ -209,28 +209,6 @@
         <enabled>false</enabled>
       </snapshots>
     </repository>
-    <repository>
-      <id>jdtaus-sf-releases</id>
-      <url>http://jdtaus.sourceforge.net/maven2/releases</url>
-      <layout>default</layout>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-    </repository>
-    <repository>
-      <id>jdtaus-sf-snapshots</id>
-      <url>http://jdtaus.sourceforge.net/maven2/snapshots</url>
-      <layout>default</layout>
-      <releases>
-        <enabled>false</enabled>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-    </repository>
   </repositories>
   <pluginRepositories>
     <pluginRepository>
@@ -255,28 +233,6 @@
         <enabled>false</enabled>
       </snapshots>
       <layout>legacy</layout>
-    </pluginRepository>
-    <pluginRepository>
-      <id>jdtaus-sf-releases</id>
-      <url>http://jdtaus.sourceforge.net/maven2/releases</url>
-      <layout>default</layout>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-    </pluginRepository>
-    <pluginRepository>
-      <id>jdtaus-sf-snapshots</id>
-      <url>http://jdtaus.sourceforge.net/maven2/snapshots</url>
-      <layout>default</layout>
-      <releases>
-        <enabled>false</enabled>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
     </pluginRepository>
   </pluginRepositories>
   <profiles>
