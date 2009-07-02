@@ -22,11 +22,11 @@
     </head>
 
     <links>
-      <item name="Deutsche Version" href="http://jdtaus.sourceforge.net/de/index.html"/>
+      <item name="Deutsche Version" href="http://jdtaus.sourceforge.net/1.0.x/de/index.html"/>
     </links>
 
     <menu name="jDTAUS">
-      <item name="Start" href="http://jdtaus.sourceforge.net/"/>
+      <item name="Start" href="http://jdtaus.sourceforge.net/1.0.x"/>
       <item name="Downloads" href="http://sourceforge.net/project/showfiles.php?group_id=144535"/>
     </menu>
 
