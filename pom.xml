@@ -246,6 +246,7 @@
         <module>jdtaus-lgpl-resource-bundle</module>
         <module>jdtaus-core</module>
         <module>jdtaus-banking</module>
+        <module>jdtaus-editor</module>
       </modules>
     </profile>
   </profiles>
