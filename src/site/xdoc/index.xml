@@ -2,29 +2,12 @@
 <document>
   <properties>
     <title>Open-Source Java implementation of the german DTAUS file format</title>
-    <author email="cs@jdtaus.org">Christian Schulte</author>
+    <author email="schulte2005@users.sourceforge.net">Christian Schulte</author>
   </properties>
   <body>
     <p>
       <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
     </p>
-    <section name="Introduction">
-      <p>
-        jDTAUS provides an open-source implementation of the german DTAUS file
-        format for the Java platform.
-      </p>
-      <p>
-        To get you going a GUI application is available demonstrating all
-        features directly provided by the API. It is distributed using
-        Java-Webstart. You will first have to install the latest Java Runtime
-        Environment available at <a href="http://www.java.com">www.java.com</a>
-        for free. After downloading and installing Java, the following link will
-        web-start the application.
-      </p>
-      <p>
-        <a href="http://apps.jdtaus.org/jdtaus-editor-1.0.x/launch.jnlp" onClick="javascript:urchinTracker('/apps/jdtaus-editor');">WebStart jDTAUS Editor</a>
-      </p>
-    </section>
     <section name="Download">
       <table border="0">
         <tr>
@@ -51,20 +34,6 @@
       <p>
         For older releases, please browse the
         <a href="http://sourceforge.net/project/showfiles.php?group_id=144535">Sourceforge File Release System</a>
-      </p>
-    </section>
-    <section name="Modules">
-      <p>
-        All modules of the Java implementation are deployed to group
-        <a href="http://repo1.maven.org/maven2/org/jdtaus">org.jdtaus</a>
-        at the central Maven 2 repository. We would like to ask you to either
-        send a mail to <a href="mailto:support@jdtaus.org">support@jdtaus.org</a>
-        for any implementation defects you might encounter or file a bug report
-        with the <a href="https://apps.sourceforge.net/mantisbt/jdtaus/">
-        MantisBT installation</a>. For general feedback or feature requests
-        a public <a href="mail-lists.html">mailing list</a> is available.
-        Announcements of new releases are sent out to the
-        <code>jdtaus-users</code> mailing list.
       </p>
     </section>
   </body>

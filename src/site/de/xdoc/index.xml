@@ -2,30 +2,12 @@
 <document>
   <properties>
     <title>Open-Source Java Implementierung des deutschen DTAUS Datenformates</title>
-    <author email="cs@jdtaus.org">Christian Schulte</author>
+    <author email="schulte2005@users.sourceforge.net">Christian Schulte</author>
   </properties>
   <body>
     <p>
       <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
     </p>
-    <section name="Einleitung">
-      <p>
-        jDTAUS stellt eine Java-Implementierung des DTAUS Datenformats als
-        Open-Source Lösung zur Verfügung.
-      </p>
-      <p>
-        Für einen schnellen Einstieg wurde eine Desktop-Anwendung erstellt,
-        die alle direkt von der API zur Verfügung gestellten Funktionen
-        demonstriert. Für den Start dieser Anwendung wird eine Java
-        Laufzeitumgebung benötigt, die unter
-        <a href="http://www.java.com/">www.java.com</a> zum kostenlosen
-        Download bereitsteht. Nach der Installation von Java kann die Anwendung
-        durch Anklicken des folgenden Links gestartet werden.
-      </p>
-      <p>
-        <a href="http://apps.jdtaus.org/jdtaus-editor-1.0.x/launch.jnlp" onClick="javascript:urchinTracker('/apps/jdtaus-editor');">WebStart jDTAUS Editor</a>
-      </p>
-    </section>   
     <section name="Download">
       <table border="0">
         <tr>
@@ -53,22 +35,6 @@
         Ältere Versionen können über das
         <a href="http://sourceforge.net/project/showfiles.php?group_id=144535">Sourceforge File Release System</a>
         bezogen werden.
-      </p>
-    </section>
-    <section name="Module">
-      <p>
-        Alle Module der Java-Implementierung sind über das zentrale Maven 2
-        Repository in Gruppe <a href="http://repo1.maven.org/maven2/org/jdtaus">
-        org.jdtaus</a> erhältlich. Für die Dokumentation von Software-Fehlern
-        wurde eine <a href="https://apps.sourceforge.net/mantisbt/jdtaus/">
-        MantisBT Installation</a> eingerichtet. Sollten Sie Fehler in der
-        Implementierung finden, wären wir Ihnen dankbar, wenn Sie uns dies
-        entweder mittels eines entsprechenden Fehler-Berichts in der MantisBT
-        Datenbank oder einer Mail an <a href="mailto:support@jdtaus.org">
-        support@jdtaus.org</a> mitteilen würden. Für Anregungen oder Wünsche
-        steht eine <a href="mail-lists.html">öffentliche Mailing-Liste</a> zur
-        Verfügung. Ankündigungen neuer Veröffentlichungen werden an die
-        <code>jdtaus-users</code> Mailing-Liste gesendet.
       </p>
     </section>
   </body>
