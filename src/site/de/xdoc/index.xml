@@ -5,14 +5,31 @@
     <author email="schulte2005@users.sourceforge.net">Christian Schulte</author>
   </properties>
   <body>
-    <p>
-      <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-    </p>
+    <section name="Einleitung">
+      <p>
+        jDTAUS stellt eine Java-Implementierung des DTAUS Datenformats als
+        Open-Source Lösung zur Verfügung.
+      </p>
+      <p>
+        Für einen schnellen Einstieg wurde eine Desktop-Anwendung erstellt,
+        die alle direkt von der API zur Verfügung gestellten Funktionen
+        demonstriert. Für den Start dieser Anwendung wird eine Java
+        Laufzeitumgebung benötigt, die unter
+        <a href="http://www.java.com/">www.java.com</a> zum kostenlosen
+        Download bereitsteht. Nach der Installation von Java kann die Anwendung
+        durch Anklicken des folgenden Links gestartet werden.
+      </p>
+      <p>
+        <a href="http://jdtaus.sourceforge.net/1.0.x/jdtaus-editor/jdtaus-editor-jnlp/jnlp/launch.jnlp">WebStart jDTAUS Editor</a>
+      </p>
+    </section>
     <section name="Download">
       <table border="0">
         <tr>
           <td valign="top">
-            <a href="http://sourceforge.net/project/downloading.php?group_id=144535&amp;filename=jdtaus-editor-20090519-setup.exe"><b>jdtaus-editor-20090519-setup.exe</b></a>
+            <a href="http://sourceforge.net/project/downloading.php?group_id=144535&amp;filename=jdtaus-editor-1.0-RC2-setup.exe">
+              <b>jdtaus-editor-1.0-RC2-setup.exe</b>
+            </a>
           </td>
           <td valign="top">
             All-in-one Windows Installations-Paket. Dieses Installations-Paket
@@ -22,7 +39,9 @@
         </tr>
         <tr>
           <td valign="top">
-            <a href="http://sourceforge.net/project/downloading.php?group_id=144535&amp;filename=jdtaus-editor-20090519.tar.bz2"><b>jdtaus-editor-20090519.tar.bz2</b></a>
+            <a href="http://sourceforge.net/project/downloading.php?group_id=144535&amp;filename=jdtaus-editor-1.0-RC2.tar.bz2">
+              <b>jdtaus-editor-1.0-RC2.tar.bz2</b>
+            </a>
           </td>
           <td valign="top">
             Unix tar Archiv. Dieses Archiv beinhaltet keine Java

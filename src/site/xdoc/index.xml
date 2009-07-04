@@ -5,14 +5,31 @@
     <author email="schulte2005@users.sourceforge.net">Christian Schulte</author>
   </properties>
   <body>
-    <p>
-      <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-    </p>
+    <section name="Introduction">
+      <p>
+        jDTAUS provides an open-source implementation of the german DTAUS file
+        format for the Java platform.
+      </p>
+      <p>
+        To get you going a GUI application is available demonstrating all
+        features directly provided by the API. It is distributed using
+        Java-Webstart. You will first have to install the latest Java Runtime
+        Environment available at
+        <a href="http://www.java.com">www.java.com</a>.
+        After downloading and installing Java, the following link will web-start
+        the application.
+      </p>
+      <p>
+        <a href="http://jdtaus.sourceforge.net/1.0.x/jdtaus-editor/jdtaus-editor-jnlp/jnlp/launch.jnlp">WebStart jDTAUS Editor</a>
+      </p>
+    </section>
     <section name="Download">
       <table border="0">
         <tr>
           <td valign="top">
-            <a href="http://sourceforge.net/project/downloading.php?group_id=144535&amp;filename=jdtaus-editor-20090519-setup.exe"><b>jdtaus-editor-20090519-setup.exe</b></a>
+            <a href="http://sourceforge.net/project/downloading.php?group_id=144535&amp;filename=jdtaus-editor-1.0-RC2-setup.exe">
+              <b>jdtaus-editor-1.0-RC2-setup.exe</b>
+            </a>
           </td>
           <td valign="top">
             All-in-one Windows installation executable. This installation
@@ -22,7 +39,9 @@
         </tr>
         <tr>
           <td valign="top">
-            <a href="http://sourceforge.net/project/downloading.php?group_id=144535&amp;filename=jdtaus-editor-20090519.tar.bz2"><b>jdtaus-editor-20090519.tar.bz2</b></a>
+            <a href="http://sourceforge.net/project/downloading.php?group_id=144535&amp;filename=jdtaus-editor-1.0-RC2.tar.bz2">
+              <b>jdtaus-editor-1.0-RC2.tar.bz2</b>
+            </a>
           </td>
           <td valign="top">
             Unix tar archive. This archive does not include a Java runtime
