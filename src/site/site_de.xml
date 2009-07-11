@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="jDTAUS">
+<project xmlns="http://maven.apache.org/DECORATION/1.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/DECORATION/1.0.0 http://maven.apache.org/xsd/decoration-1.0.0.xsd"
+         name="${project.name}">
   <bannerLeft>
     <name>jDTAUS</name>
     <src>http://jdtaus.sourceforge.net/1.0.x/images/jdtaus.jpg</src>
@@ -19,6 +22,25 @@
     <head>
       <meta name="keywords" lang="de" content="dtaus, dtaus0, dta, open, source, java, spezifikation, beleglos, zahlungsverkehr, izv, inlandszahlungsverkehr, inland, national, nationaler, datenträger, austausch"/>
       <meta name="keywords" lang="en" content="dtaus, dtaus0, dta, open, source, java, specification, german, izv, national"/>
+      <!-- Piwik -->
+      <script type="text/javascript"><![CDATA[
+      var pkBaseURL = (("https:" == document.location.protocol) ? "https://sourceforge.net/apps/piwik/jdtaus/" : "http://sourceforge.net/apps/piwik/jdtaus/");
+      document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));]]>
+      </script>
+      <script type="text/javascript"><![CDATA[
+      piwik_action_name = '';
+      piwik_idsite = 1;
+      piwik_url = pkBaseURL + "piwik.php";
+      piwik_log(piwik_action_name, piwik_idsite, piwik_url);]]>
+      </script>
+      <object>
+        <noscript>
+          <p>
+            <img src="http://sourceforge.net/apps/piwik/jdtaus/piwik.php?idsite=1" alt="piwik"/>
+          </p>
+        </noscript>
+      </object>
+      <!-- End Piwik Tag -->
     </head>
 
     <links>
