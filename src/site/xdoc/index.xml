@@ -10,43 +10,27 @@
         jDTAUS provides an open-source implementation of the german DTAUS file
         format for the Java platform.
       </p>
-      <p>
-        To get you going a GUI application is available demonstrating all
-        features directly provided by the API. It is distributed using
-        Java-Webstart. You will first have to install the latest Java Runtime
-        Environment available at
-        <a href="http://www.java.com">www.java.com</a>.
-        After downloading and installing Java, the following link will web-start
-        the application.
-      </p>
-      <p>
-        <a href="http://jdtaus.sourceforge.net/1.0.x/jdtaus-editor/jdtaus-editor-jnlp/jnlp/launch.jnlp">WebStart jDTAUS Editor</a>
-      </p>
     </section>
     <section name="Download">
       <table border="0">
         <tr>
           <td valign="top">
-            <a href="http://sourceforge.net/project/downloading.php?group_id=144535&amp;filename=jdtaus-editor-1.0-RC12-setup.exe">
-              <b>jdtaus-editor-1.0-RC12-setup.exe</b>
+            <a href="http://sourceforge.net/project/downloading.php?group_id=144535&amp;filename=jdtaus-editor-1.0-RC13.exe">
+              <b>jdtaus-editor-1.0-RC13.exe</b>
             </a>
           </td>
           <td valign="top">
-            All-in-one Windows installation executable. This installation
-            executable includes a Java runtime environment. You do not need to
-            download Java separately when using this download.
+            Windows installation executable.
           </td>
         </tr>
         <tr>
           <td valign="top">
-            <a href="http://sourceforge.net/project/downloading.php?group_id=144535&amp;filename=jdtaus-editor-1.0-RC12.tar.bz2">
-              <b>jdtaus-editor-1.0-RC12.tar.bz2</b>
+            <a href="http://sourceforge.net/project/downloading.php?group_id=144535&amp;filename=jdtaus-editor-1.0-RC13.tar.bz2">
+              <b>jdtaus-editor-1.0-RC13.tar.bz2</b>
             </a>
           </td>
           <td valign="top">
-            Unix tar archive. This archive does not include a Java runtime
-            environment. You will have to install the Java runtime environment
-            appropriately to your system.
+            Unix tar archive.
           </td>
         </tr>
       </table>
