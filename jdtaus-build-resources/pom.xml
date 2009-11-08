@@ -30,9 +30,9 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.jdtaus</groupId>
-  <artifactId>jdtaus-gpl-resource-bundle</artifactId>
-  <name>jDTAUS GPL Resource Bundle</name>
-  <description>jDTAUS resource bundle common to all jDTAUS artifacts licensed using the GPL.</description>
+  <artifactId>jdtaus-build-resources</artifactId>
+  <name>jDTAUS Build Resources</name>
+  <description>Resources needed to build jDTAUS.</description>
   <build>
     <resources>
       <resource>
@@ -40,19 +40,5 @@
         <directory>src/main/resources</directory>
       </resource>
     </resources>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-remote-resources-plugin</artifactId>
-        <executions>
-          <execution>
-            <id>create-bundle</id>
-            <goals>
-              <goal>bundle</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-    </plugins>
   </build>
 </project>
