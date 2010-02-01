@@ -7,16 +7,15 @@
   <body>
     <section name="Einleitung">
       <p>
-        jDTAUS stellt eine Java-Implementierung des DTAUS Datenformats als
-        Open-Source Lösung zur Verfügung.
+        jDTAUS stellt eine Java-Implementierung des DTAUS Datenformats als Open-Source Lösung zur Verfügung.
       </p>
     </section>
     <section name="Download">
       <table border="0">
         <tr>
           <td valign="top">
-            <a href="http://switch.dl.sourceforge.net/project/jdtaus/jdtaus-editor/jdtaus-editor-1.0-RC17-app.exe">
-              <b>jdtaus-editor-1.0-RC17-app.exe</b>
+            <a href="http://switch.dl.sourceforge.net/project/jdtaus/jdtaus-editor/jdtaus-editor-1.0-RC18-app.exe">
+              <b>jdtaus-editor-1.0-RC18-app.exe</b>
             </a>
           </td>
           <td valign="top">
@@ -25,8 +24,8 @@
         </tr>
         <tr>
           <td valign="top">
-            <a href="http://switch.dl.sourceforge.net/project/jdtaus/jdtaus-editor/jdtaus-editor-1.0-RC17-app.tar.bz2">
-              <b>jdtaus-editor-1.0-RC17-app.tar.bz2</b>
+            <a href="http://switch.dl.sourceforge.net/project/jdtaus/jdtaus-editor/jdtaus-editor-1.0-RC18-app.tar.bz2">
+              <b>jdtaus-editor-1.0-RC18-app.tar.bz2</b>
             </a>
           </td>
           <td valign="top">
