@@ -54,6 +54,13 @@
       <post>jdtaus-users@lists.sourceforge.net</post>
       <archive>http://sourceforge.net/mailarchive/forum.php?forum=jdtaus-users</archive>
     </mailingList>
+    <mailingList>
+      <name>jdtaus-notifications</name>
+      <subscribe>http://lists.sourceforge.net/lists/listinfo/jdtaus-notifications</subscribe>
+      <unsubscribe>http://lists.sourceforge.net/lists/listinfo/jdtaus-notifications</unsubscribe>
+      <post>jdtaus-notifications@lists.sourceforge.net</post>
+      <archive>http://sourceforge.net/mailarchive/forum.php?forum=jdtaus-notifications</archive>
+    </mailingList>
   </mailingLists>
   <developers>
     <developer>
