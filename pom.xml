@@ -28,7 +28,7 @@
   <artifactId>jdtaus-site</artifactId>
   <packaging>pom</packaging>
   <name>jDTAUS</name>
-  <version>1.5-SNAPSHOT</version>
+  <version>1.5</version>
   <description>jDTAUS provides an open-source implementation of german payment formats.</description>
   <url>http://jdtaus.sourceforge.net/1.0.x</url>
   <prerequisites>
@@ -76,9 +76,9 @@
     </license>
   </licenses>
   <scm>
-    <connection>scm:svn:https://jdtaus.svn.sourceforge.net/svnroot/jdtaus/jdtaus-site/trunk</connection>
-    <developerConnection>scm:svn:https://jdtaus.svn.sourceforge.net/svnroot/jdtaus/jdtaus-site/trunk</developerConnection>
-    <url>http://jdtaus.svn.sourceforge.net/viewvc/jdtaus/jdtaus-site/trunk</url>
+    <connection>scm:svn:https://jdtaus.svn.sourceforge.net/svnroot/jdtaus/jdtaus-site/tags/jdtaus-site-1.5</connection>
+    <developerConnection>scm:svn:https://jdtaus.svn.sourceforge.net/svnroot/jdtaus/jdtaus-site/tags/jdtaus-site-1.5</developerConnection>
+    <url>http://jdtaus.svn.sourceforge.net/viewvc/jdtaus/jdtaus-site/tags/jdtaus-site-1.5</url>
   </scm>
   <organization>
     <name>jDTAUS</name>
