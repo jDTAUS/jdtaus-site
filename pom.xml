@@ -86,7 +86,7 @@
   <scm>
     <connection>scm:svn:https://jdtaus.svn.sourceforge.net/svnroot/jdtaus/jdtaus-site/tags/jdtaus-site-1.6</connection>
     <developerConnection>scm:svn:https://jdtaus.svn.sourceforge.net/svnroot/jdtaus/jdtaus-site/tags/jdtaus-site-1.6</developerConnection>
-    <url>http://jdtaus.sourceforge.net/project/sources?jdtaus-site/tags/jdtaus-site-1.6?jdtaus-site/trunk</url>
+    <url>http://jdtaus.sourceforge.net/project/sources?jdtaus-site/tags/jdtaus-site-1.6</url>
   </scm>
 
   <build>
