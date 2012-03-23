@@ -27,7 +27,7 @@
   <artifactId>jdtaus-site</artifactId>
   <packaging>pom</packaging>
   <name>jDTAUS</name>
-  <version>1.6-SNAPSHOT</version>
+  <version>1.6</version>
   <description>jDTAUS provides an open-source implementation of german payment file formats.</description>
   <url>http://jdtaus.sourceforge.net/1.0.x</url>
   <inceptionYear>2005</inceptionYear>
@@ -84,9 +84,9 @@
   </mailingLists>
 
   <scm>
-    <connection>scm:svn:https://jdtaus.svn.sourceforge.net/svnroot/jdtaus/jdtaus-site/trunk</connection>
-    <developerConnection>scm:svn:https://jdtaus.svn.sourceforge.net/svnroot/jdtaus/jdtaus-site/trunk</developerConnection>
-    <url>http://jdtaus.sourceforge.net/project/sources?jdtaus-site/trunk</url>
+    <connection>scm:svn:https://jdtaus.svn.sourceforge.net/svnroot/jdtaus/jdtaus-site/tags/jdtaus-site-1.6</connection>
+    <developerConnection>scm:svn:https://jdtaus.svn.sourceforge.net/svnroot/jdtaus/jdtaus-site/tags/jdtaus-site-1.6</developerConnection>
+    <url>http://jdtaus.sourceforge.net/project/sources?jdtaus-site/tags/jdtaus-site-1.6?jdtaus-site/trunk</url>
   </scm>
 
   <build>
@@ -227,7 +227,7 @@
                 </reportSets>
                 <configuration>
                   <quiet>true</quiet>
-                  <bottom><![CDATA[<table border="0" width="100%"><tr><td align="left">Copyright &#169; {inceptionYear}-{currentYear} {organizationName}. All Rights Reserved.</td><td align="right"><a href="http://sourceforge.net/projects/jdtaus"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=144535&amp;type=10" width="80" height="15" border="0" alt="Get jDTAUS at SourceForge.net. Fast, secure and Free Open Source software downloads"/></a></td></tr></table><small>Please note that this documentation is maintained by non-native english speaking authors. As such, you may encounter phrases or wordings which seem imprecise or may even have a totally different meaning to native english speaking readers than what the individual author was trying to express. If you are a native english speaking reader and find any such phrases or wordings we kindly ask you to send an email to the corresponding author and help us improve this documentation in order to avoid misunderstandings. You will find the authors' email addresses at the top of each class. Please accept our apologies for any inconvenience caused.</small>]]></bottom>
+                  <bottom><![CDATA[<table border="0" width="100%"><tr><td align="left">Copyright &#169; {inceptionYear}-{currentYear} {organizationName}. All Rights Reserved.</td><td align="right"><a href="http://sourceforge.net/projects/jdtaus"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=144535&amp;type=10" width="80" height="15" border="0" alt="Get jDTAUS at SourceForge.net. Fast, secure and Free Open Source software downloads" /></a></td></tr></table><small>Please note that this documentation is maintained by non-native english speaking authors. As such, you may encounter phrases or wordings which seem imprecise or may even have a totally different meaning to native english speaking readers than what the individual author was trying to express. If you are a native english speaking reader and find any such phrases or wordings we kindly ask you to send an email to the corresponding author and help us improve this documentation in order to avoid misunderstandings. You will find the authors' email addresses at the top of each class. Please accept our apologies for any inconvenience caused.</small>]]></bottom>
                   <breakiterator>true</breakiterator>
                   <keywords>true</keywords>
                   <linksource>true</linksource>
@@ -557,7 +557,7 @@
           <version>${maven-javadoc-plugin.artifact.version}</version>
           <configuration>
             <quiet>true</quiet>
-            <bottom><![CDATA[<table border="0" width="100%"><tr><td align="left">Copyright &#169; {inceptionYear}-{currentYear} {organizationName}. All Rights Reserved.</td><td align="right"><a href="http://sourceforge.net/projects/jdtaus"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=144535&amp;type=10" width="80" height="15" border="0" alt="Get jDTAUS at SourceForge.net. Fast, secure and Free Open Source software downloads"/></a></td></tr></table><small>Please note that this documentation is maintained by non-native english speaking authors. As such, you may encounter phrases or wordings which seem imprecise or may even have a totally different meaning to native english speaking readers than what the individual author was trying to express. If you are a native english speaking reader and find any such phrases or wordings we kindly ask you to send an email to the corresponding author and help us improve this documentation in order to avoid misunderstandings. You will find the authors' email addresses at the top of each class. Please accept our apologies for any inconvenience caused.</small>]]></bottom>
+            <bottom><![CDATA[<table border="0" width="100%"><tr><td align="left">Copyright &#169; {inceptionYear}-{currentYear} {organizationName}. All Rights Reserved.</td><td align="right"><a href="http://sourceforge.net/projects/jdtaus"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=144535&amp;type=10" width="80" height="15" border="0" alt="Get jDTAUS at SourceForge.net. Fast, secure and Free Open Source software downloads" /></a></td></tr></table><small>Please note that this documentation is maintained by non-native english speaking authors. As such, you may encounter phrases or wordings which seem imprecise or may even have a totally different meaning to native english speaking readers than what the individual author was trying to express. If you are a native english speaking reader and find any such phrases or wordings we kindly ask you to send an email to the corresponding author and help us improve this documentation in order to avoid misunderstandings. You will find the authors' email addresses at the top of each class. Please accept our apologies for any inconvenience caused.</small>]]></bottom>
             <breakiterator>true</breakiterator>
             <keywords>true</keywords>
             <linksource>true</linksource>
@@ -1468,7 +1468,7 @@
     <umlgraph.version>5.1</umlgraph.version>
     <cc-xjc-plugin.version>2.0.1</cc-xjc-plugin.version>
     <wagon.version>2.2</wagon.version>
-    <jdtaus-build.version>1.6-SNAPSHOT</jdtaus-build.version>
+    <jdtaus-build.version>1.6</jdtaus-build.version>
     <!--
     Plugin versions.
     -->
