@@ -1,11 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+  jDTAUS
+  Copyright (c) 2005 Christian Schulte
+
+  This library is free software; you can redistribute it and/or
+  modify it under the terms of the GNU Lesser General Public
+  License as published by the Free Software Foundation; either
+  version 2.1 of the License, or any later version.
+
+  This library is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+  Lesser General Public License for more details.
+
+  You should have received a copy of the GNU Lesser General Public
+  License along with this library; if not, write to the Free Software
+  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+  $JDTAUS$
+
+-->
 <project xmlns="http://maven.apache.org/DECORATION/1.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/DECORATION/1.0.0 http://maven.apache.org/xsd/decoration-1.0.0.xsd"
          name="${project.name}">
-  <poweredBy>
-    <logo href="http://sourceforge.net/donate/index.php?group_id=144535" img="http://images.sourceforge.net/images/project-support.jpg" name="Support This Project"/>
-  </poweredBy>
   <bannerLeft>
     <name>jDTAUS</name>
     <src>http://jdtaus.sourceforge.net/1.0.x/images/jdtaus.jpg</src>
@@ -19,56 +38,39 @@
   <skin>
     <groupId>org.apache.maven.skins</groupId>
     <artifactId>maven-default-skin</artifactId>
-    <version>1.0</version>
+    <version>1.1</version>
   </skin>
   <body>
     <head>
-      <meta name="keywords" lang="de" content="dtaus, dtaus0, dta, open, source, java, spezifikation, beleglos, zahlungsverkehr, izv, inlandszahlungsverkehr, inland, national, nationaler, datenträger, austausch"/>
-      <meta name="keywords" lang="en" content="dtaus, dtaus0, dta, open, source, java, specification, german, izv, national"/>
-      <!-- Piwik -->
-      <script type="text/javascript"><![CDATA[
-      var pkBaseURL = (("https:" == document.location.protocol) ? "https://sourceforge.net/apps/piwik/jdtaus/" : "http://sourceforge.net/apps/piwik/jdtaus/");
-      document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));]]>
+      <script type="text/javascript"><![CDATA[<!--
+google_ad_client = "ca-pub-2363332114228707";
+google_ad_slot = "3341637212";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->]]>
       </script>
-      <script type="text/javascript"><![CDATA[
-      piwik_action_name = '';
-      piwik_idsite = 1;
-      piwik_url = pkBaseURL + "piwik.php";
-      piwik_log(piwik_action_name, piwik_idsite, piwik_url);]]>
-      </script>
-      <object>
-        <noscript>
-          <p>
-            <img src="http://sourceforge.net/apps/piwik/jdtaus/piwik.php?idsite=1" alt="piwik"/>
-          </p>
-        </noscript>
-      </object>
-      <!-- End Piwik Tag -->
     </head>
-
     <links>
-      <item name="English version" href="http://jdtaus.sourceforge.net/index.html"/>
+      <item name="English version" href="http://jdtaus.sourceforge.net/1.0.x/index.html"/>
     </links>
-
-    <menu name="jDTAUS">
-      <item name="Start" href="index.html"/>
-      <item name="FAQ" href="faq.html"/>
-      <item name="Downloads" href="https://sourceforge.net/projects/jdtaus/files/"/>
+    <menu name="jDTAUS" inherit="top">
+      <item name="Start" href="http://jdtaus.sourceforge.net/1.0.x/de/index.html"/>
+      <item name="FAQ" href="http://jdtaus.sourceforge.net/1.0.x/de/faq.html"/>
+      <item name="Downloads" href="http://jdtaus.sourceforge.net/project/files"/>
     </menu>
-
     <menu name="Entwickler Informationen">
       <item name="Core" href="jdtaus-core/index.html"/>
       <item name="Banking" href="jdtaus-banking/index.html"/>
     </menu>
-
-    <menu name="Sourceforge">
-      <item name="Übersicht" href="http://sourceforge.net/projects/jdtaus/"/>
-      <item name="Screenshots" href="http://sourceforge.net/project/screenshots.php?group_id=144535"/>
-      <item name="Statistiken" href="http://sourceforge.net/project/stats/?group_id=144535&amp;ugn=jdtaus"/>
-      <item name="Spenden" href="http://sourceforge.net/project/project_donations.php?group_id=144535"/>
+    <menu name="Sourceforge" inherit="bottom">
+      <item name="Start" href="http://jdtaus.sourceforge.net/project/home"/>
+      <item name="Übersicht" href="http://jdtaus.sourceforge.net/project/summary"/>
+      <item name="Fehlerberichte" href="http://jdtaus.sourceforge.net/project/issues"/>
+      <item name="Dateien" href="http://jdtaus.sourceforge.net/project/files"/>
+      <item name="Screenshots" href="http://jdtaus.sourceforge.net/project/screenshots"/>
+      <item name="Statistiken" href="http://jdtaus.sourceforge.net/project/statistics"/>
+      <item name="Hilfe" href="http://jdtaus.sourceforge.net/project/support"/>
     </menu>
-
-    <menu ref="reports" />
-
+    <menu ref="reports" inherit="bottom"/>
   </body>
 </project>

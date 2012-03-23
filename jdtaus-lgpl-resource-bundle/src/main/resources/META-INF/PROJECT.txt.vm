@@ -4,7 +4,7 @@
 #else
   ${project.name} - PROJECT.txt
 #end
-  Version ${project.version} Build ${buildNumber}
+  Version ${project.version} (${buildDate})
 #if($project.url)
   ${project.url}
 #end
@@ -70,7 +70,7 @@
   Issue management
 
     System ............. : $project.issueManagement.system
-    Location ........... : $project.issueManagement.url
+    URL ................ : $project.issueManagement.url
 #end
 #if(!$project.mailingLists.isEmpty)
 
@@ -105,7 +105,7 @@
     Developer access ... : ${project.scm.developerConnection}
 #end
 #if($project.scm.url)
-    SCM URL ............ : ${project.scm.url}
+    URL ................ : ${project.scm.url}
 #end
 #end
 #if($projectsSortedByOrganization && !$projectsSortedByOrganization.isEmpty())
@@ -133,15 +133,27 @@
 #end
 #if($dependency.licenses && !$dependency.licenses.empty)
 #foreach($license in $dependency.licenses)
+#if($license.name)
     License ............ : $license.name
-#if($license.url)
+#else
+    License ............ : Not available.
+#end
+#if($license.url && ( $license.url.toLowerCase().startsWith("http") || $license.url.toLowerCase().startsWith("ftp") ) )
     License URL ........ : $license.url
 #else
     License URL ........ : Not available.
 #end
+#if($license.comments)
+    License comments ... : $license.comments
+#end
 #end
 #else
     License ............ : Not available.
+#end
+#if($dependency.description)
+    Description ........ : $dependency.description
+#else
+    Description ........ : Not available.
 #end
 #end
 #end

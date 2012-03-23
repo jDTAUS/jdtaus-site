@@ -1,10 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+  jDTAUS
+  Copyright (c) 2005 Christian Schulte
+
+  This library is free software; you can redistribute it and/or
+  modify it under the terms of the GNU Lesser General Public
+  License as published by the Free Software Foundation; either
+  version 2.1 of the License, or any later version.
+
+  This library is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+  Lesser General Public License for more details.
+
+  You should have received a copy of the GNU Lesser General Public
+  License along with this library; if not, write to the Free Software
+  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+  $JDTAUS$
+
+-->
 <document>
   <properties>
     <title>Open-Source Java Implementierung des deutschen DTAUS Datenformates</title>
     <author email="schulte2005@users.sourceforge.net">Christian Schulte</author>
   </properties>
   <body>
+    <p>
+      <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"/>
+    </p>
     <section name="Einleitung">
       <p>
         jDTAUS stellt eine Java-Implementierung des DTAUS Datenformats als Open-Source Lösung zur Verfügung.
@@ -14,8 +39,8 @@
       <table border="0">
         <tr>
           <td valign="top">
-            <a href="http://switch.dl.sourceforge.net/project/jdtaus/jdtaus-editor/jdtaus-editor-1.0-app.exe">
-              <b>jdtaus-editor-1.0-app.exe</b>
+            <a href="http://jdtaus.sourceforge.net/project/editor?exe">
+              <b>jDTAUS Editor (Windows .exe)</b>
             </a>
           </td>
           <td valign="top">
@@ -24,8 +49,8 @@
         </tr>
         <tr>
           <td valign="top">
-            <a href="http://switch.dl.sourceforge.net/project/jdtaus/jdtaus-editor/jdtaus-editor-1.0-app.tar.bz2">
-              <b>jdtaus-editor-1.0-app.tar.bz2</b>
+            <a href="http://jdtaus.sourceforge.net/project/editor?tar.bz2">
+              <b>jDTAUS Editor (Unix .tar.bz2)</b>
             </a>
           </td>
           <td valign="top">
@@ -34,7 +59,8 @@
         </tr>
       </table>
       <p>
-        Bitte besuchen Sie das <a href="https://sourceforge.net/projects/jdtaus/files/">Sourceforge File Release System</a>
+        Bitte besuchen Sie das
+        <a href="http://jdtaus.sourceforge.net/project/files">Sourceforge File Release System</a>
         für eine Übersicht aller erhältlichen Dateien.
       </p>
     </section>

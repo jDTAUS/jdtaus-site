@@ -2,10 +2,7 @@
 <!--
 
   jDTAUS
-  Copyright (c) 2005 Christian Schulte
-
-  Christian Schulte, Haldener Strasse 72, 58095 Hagen, Germany
-  <schulte2005@users.sourceforge.net> (+49 2331 3543887)
+  Copyright (C) 2005 Christian Schulte
 
   This library is free software; you can redistribute it and/or
   modify it under the terms of the GNU Lesser General Public
@@ -40,18 +37,26 @@
         <directory>src/main/resources</directory>
       </resource>
     </resources>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-remote-resources-plugin</artifactId>
+          <executions>
+            <execution>
+              <id>create-bundle</id>
+              <goals>
+                <goal>bundle</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
+      </plugins>
+    </pluginManagement>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-remote-resources-plugin</artifactId>
-        <executions>
-          <execution>
-            <id>create-bundle</id>
-            <goals>
-              <goal>bundle</goal>
-            </goals>
-          </execution>
-        </executions>
       </plugin>
     </plugins>
   </build>
