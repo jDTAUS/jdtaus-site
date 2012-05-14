@@ -35,6 +35,9 @@
     <src>http://sourceforge.net/sflogo.php?group_id=144535&amp;type=2</src>
     <href>http://sourceforge.net</href>
   </bannerRight>
+  <poweredBy>
+    <logo img="http://www.schulte.it/resources/schulte.it.png"/>
+  </poweredBy>
   <skin>
     <groupId>org.apache.maven.skins</groupId>
     <artifactId>maven-default-skin</artifactId>

@@ -454,6 +454,14 @@
                 </reportSets>
               </reportPlugin>
             </reportPlugins>
+            <archive>
+              <index>true</index>
+              <addMavenDescriptor>false</addMavenDescriptor>
+              <compress>true</compress>
+              <manifestEntries>
+                <Build-Date>${build.date}</Build-Date>
+              </manifestEntries>
+            </archive>
           </configuration>
         </plugin>
         <plugin>
@@ -475,7 +483,7 @@
             <username>${jdtaus.scm.username}</username>
             <password>${jdtaus.scm.password}</password>
             <remoteTagging>false</remoteTagging>
-            <suppressCommitBeforeTag>true</suppressCommitBeforeTag>
+            <suppressCommitBeforeTag>false</suppressCommitBeforeTag>
             <goals>deploy</goals>
             <useReleaseProfile>false</useReleaseProfile>
             <releaseProfiles>jdtaus-release</releaseProfiles>
@@ -1060,6 +1068,10 @@
         <artifactId>maven-enforcer-plugin</artifactId>
       </plugin>
       <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-changes-plugin</artifactId>
+      </plugin>
+      <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>animal-sniffer-maven-plugin</artifactId>
       </plugin>
@@ -1274,7 +1286,7 @@
                 </rules>
               </configuration>
             </plugin>
-            <!-- plugin>
+            <plugin>
               <groupId>org.apache.maven.plugins</groupId>
               <artifactId>maven-changes-plugin</artifactId>
               <executions>
@@ -1285,11 +1297,11 @@
                     <goal>changes-check</goal>
                   </goals>
                   <configuration>
-                    <skipSnapshots>true</skipSnapshots> See http://jira.codehaus.org/browse/MCHANGES-272
+                    <skipSnapshots>true</skipSnapshots>
                   </configuration>
                 </execution>
               </executions>
-            </plugin -->
+            </plugin>
             <plugin>
               <groupId>org.apache.maven.plugins</groupId>
               <artifactId>maven-deploy-plugin</artifactId>
@@ -1472,38 +1484,38 @@
     <!--
     Plugin versions.
     -->
-    <maven-compiler-plugin.artifact.version>2.3.2</maven-compiler-plugin.artifact.version>
-    <maven-site-plugin.artifact.version>3.0</maven-site-plugin.artifact.version>
+    <maven-compiler-plugin.artifact.version>2.4</maven-compiler-plugin.artifact.version>
+    <maven-site-plugin.artifact.version>3.1</maven-site-plugin.artifact.version>
     <maven-resources-plugin.artifact.version>2.5</maven-resources-plugin.artifact.version>
-    <maven-release-plugin.artifact.version>2.2.2</maven-release-plugin.artifact.version>
+    <maven-release-plugin.artifact.version>2.3</maven-release-plugin.artifact.version>
     <maven-jar-plugin.artifact.version>2.4</maven-jar-plugin.artifact.version>
     <maven-gpg-plugin.artifact.version>1.4</maven-gpg-plugin.artifact.version>
     <maven-jarsigner-plugin.artifact.version>1.2</maven-jarsigner-plugin.artifact.version>
-    <maven-remote-resources-plugin.artifact.version>1.2.1</maven-remote-resources-plugin.artifact.version>
+    <maven-remote-resources-plugin.artifact.version>1.3</maven-remote-resources-plugin.artifact.version>
     <maven-javadoc-plugin.artifact.version>2.8.1</maven-javadoc-plugin.artifact.version>
     <maven-clean-plugin.artifact.version>2.4.1</maven-clean-plugin.artifact.version>
     <maven-deploy-plugin.artifact.version>2.7</maven-deploy-plugin.artifact.version>
     <maven-dependency-plugin.artifact.version>2.4</maven-dependency-plugin.artifact.version>
     <maven-assembly-plugin.artifact.version>2.3</maven-assembly-plugin.artifact.version>
-    <maven-jomc-plugin.artifact.version>1.2.3</maven-jomc-plugin.artifact.version>
-    <maven-shade-plugin.artifact.version>1.5</maven-shade-plugin.artifact.version>
+    <maven-jomc-plugin.artifact.version>1.2.4</maven-jomc-plugin.artifact.version>
+    <maven-shade-plugin.artifact.version>1.6</maven-shade-plugin.artifact.version>
     <maven-install-plugin.artifact.version>2.3.1</maven-install-plugin.artifact.version>
     <maven-source-plugin.artifact.version>2.1.2</maven-source-plugin.artifact.version>
-    <maven-scm-plugin.artifact.version>1.6</maven-scm-plugin.artifact.version>
-    <maven-changes-plugin.artifact.version>2.6</maven-changes-plugin.artifact.version>
+    <maven-scm-plugin.artifact.version>1.7</maven-scm-plugin.artifact.version>
+    <maven-changes-plugin.artifact.version>2.7</maven-changes-plugin.artifact.version>
     <maven-enforcer-plugin.artifact.version>1.0.1</maven-enforcer-plugin.artifact.version>
     <maven-project-info-reports-plugin.artifact.version>2.4</maven-project-info-reports-plugin.artifact.version>
     <maven-jxr-plugin.artifact.version>2.3</maven-jxr-plugin.artifact.version>
     <maven-pmd-plugin.artifact.version>2.7.1</maven-pmd-plugin.artifact.version>
-    <maven-checkstyle-plugin.artifact.version>2.9</maven-checkstyle-plugin.artifact.version>
+    <maven-checkstyle-plugin.artifact.version>2.9.1</maven-checkstyle-plugin.artifact.version>
     <maven-ejb-plugin.artifact.version>2.3</maven-ejb-plugin.artifact.version>
     <maven-ear-plugin.artifact.version>2.7</maven-ear-plugin.artifact.version>
-    <wagon-maven-plugin.artifact.version>1.0-beta-3</wagon-maven-plugin.artifact.version>
+    <wagon-maven-plugin.artifact.version>1.0-beta-4</wagon-maven-plugin.artifact.version>
     <javacc-maven-plugin.artifact.version>2.6</javacc-maven-plugin.artifact.version>
-    <appassembler-maven-plugin.artifact.version>1.1.1</appassembler-maven-plugin.artifact.version>
+    <appassembler-maven-plugin.artifact.version>1.2.2</appassembler-maven-plugin.artifact.version>
     <build-helper-maven-plugin.artifact.version>1.7</build-helper-maven-plugin.artifact.version>
     <xml-maven-plugin.artifact.version>1.0</xml-maven-plugin.artifact.version>
-    <clirr-maven-plugin.artifact.version>2.3</clirr-maven-plugin.artifact.version>
+    <clirr-maven-plugin.artifact.version>2.4</clirr-maven-plugin.artifact.version>
     <animal-sniffer-maven-plugin.artifact.version>1.7</animal-sniffer-maven-plugin.artifact.version>
     <findbugs-maven-plugin.artifact.version>2.4.0</findbugs-maven-plugin.artifact.version>
     <emma-maven-plugin.artifact.version>1.0-alpha-3</emma-maven-plugin.artifact.version>
