@@ -36,7 +36,7 @@
     <href>http://sourceforge.net</href>
   </bannerRight>
   <poweredBy>
-    <logo img="http://www.schulte.it/resources/schulte.it.png"/>
+    <logo img="http://www.schulte.it/resources/schulte.it.png" href="#" name=""/>
   </poweredBy>
   <skin>
     <groupId>org.apache.maven.skins</groupId>
