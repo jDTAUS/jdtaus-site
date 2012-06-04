@@ -47,6 +47,7 @@
     <!-- *********************************************************************************************************** -->
     <release version="1.8" date="2012-06-04">
       <action dev="schulte2005" type="add"><![CDATA[Added the <code>maven-antrun-plugin</code> to plugin management.]]></action>
+      <action dev="schulte2005" type="add"><![CDATA[Added the <code>maven-war-plugin</code> to plugin management.]]></action>
       <action dev="schulte2005" type="update"><![CDATA[Updated the version of the <code>maven-compiler-plugin</code> from <code>2.4</code> to <code>2.5.1</code>.]]></action>
       <action dev="schulte2005" type="update"><![CDATA[Updated the version of the <code>maven-release-plugin</code> from <code>2.3</code> to <code>2.3.1</code>.]]></action>
       <action dev="schulte2005" type="update"><![CDATA[Updated the version of the <code>maven-clean-plugin</code> from <code>2.4.1</code> to <code>2.5</code>.]]></action>

@@ -96,21 +96,14 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
           <version>${maven-compiler-plugin.artifact.version}</version>
-          <configuration>
-            <optimize>true</optimize>
-            <showDeprecation>true</showDeprecation>
-            <showWarnings>true</showWarnings>
-            <source>1.6</source>
-            <target>1.6</target>
-          </configuration>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-site-plugin</artifactId>
           <version>${maven-site-plugin.artifact.version}</version>
           <configuration>
-            <locales>en,de</locales>
-            <relativizeDecorationLinks>false</relativizeDecorationLinks>
+            <locales>${maven.site.locales}</locales>
+            <relativizeDecorationLinks>${maven.site.relativizeDecorationLinks}</relativizeDecorationLinks>
             <reportPlugins>
               <reportPlugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -233,7 +226,7 @@
                   <keywords>true</keywords>
                   <linksource>true</linksource>
                   <serialwarn>true</serialwarn>
-                  <source>1.6</source>
+                  <source>${maven.compiler.source}</source>
                   <doctitle>${project.name} ${project.version}</doctitle>
                   <testDoctitle>${project.name} Tests ${project.version}</testDoctitle>
                   <windowtitle>${project.name} ${project.version}</windowtitle>
@@ -572,7 +565,7 @@
             <keywords>true</keywords>
             <linksource>true</linksource>
             <serialwarn>true</serialwarn>
-            <source>1.6</source>
+            <source>${maven.compiler.source}</source>
             <doctitle>${project.name} ${project.version}</doctitle>
             <testDoctitle>${project.name} Tests ${project.version}</testDoctitle>
             <windowtitle>${project.name} ${project.version}</windowtitle>
@@ -760,7 +753,7 @@
           <artifactId>maven-pmd-plugin</artifactId>
           <version>${maven-pmd-plugin.artifact.version}</version>
           <configuration>
-            <targetJdk>1.6</targetJdk>
+            <targetJdk>${maven.compiler.target}</targetJdk>
           </configuration>
         </plugin>
         <plugin>
@@ -777,7 +770,7 @@
           <artifactId>maven-ejb-plugin</artifactId>
           <version>${maven-ejb-plugin.artifact.version}</version>
           <configuration>
-            <ejbVersion>3.0</ejbVersion>
+            <ejbVersion>${maven.ejb.ejbVersion}</ejbVersion>
             <archive>
               <index>true</index>
               <addMavenDescriptor>false</addMavenDescriptor>
@@ -794,7 +787,7 @@
           <artifactId>maven-ear-plugin</artifactId>
           <version>${maven-ear-plugin.artifact.version}</version>
           <configuration>
-            <version>5</version>
+            <version>${maven.ear.version}</version>
             <defaultLibBundleDir>lib</defaultLibBundleDir>
             <archive>
               <index>true</index>
@@ -806,6 +799,11 @@
               </manifestEntries>
             </archive>
           </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-war-plugin</artifactId>
+          <version>${maven-war-plugin.artifact.version}</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -903,8 +901,8 @@
           <configuration>
             <signature>
               <groupId>org.codehaus.mojo.signature</groupId>
-              <artifactId>java16</artifactId>
-              <version>1.0</version>
+              <artifactId>${mojo.animal-sniffer.signature.artifactId}</artifactId>
+              <version>${mojo.animal-sniffer.signature.artifactVersion}</version>
             </signature>
           </configuration>
         </plugin>
@@ -1487,6 +1485,17 @@
     <!--
     Plugin parameters.
     -->
+    <maven.compiler.optimize>true</maven.compiler.optimize>
+    <maven.compiler.showDeprecation>true</maven.compiler.showDeprecation>
+    <maven.compiler.showWarnings>true</maven.compiler.showWarnings>
+    <maven.compiler.source>1.6</maven.compiler.source>
+    <maven.compiler.target>1.6</maven.compiler.target>
+    <maven.site.locales>en,de</maven.site.locales>
+    <maven.site.relativizeDecorationLinks>false</maven.site.relativizeDecorationLinks>
+    <maven.ejb.ejbVersion>3.0</maven.ejb.ejbVersion>
+    <maven.ear.version>5</maven.ear.version>
+    <mojo.animal-sniffer.signature.artifactId>java16</mojo.animal-sniffer.signature.artifactId>
+    <mojo.animal-sniffer.signature.artifactVersion>1.0</mojo.animal-sniffer.signature.artifactVersion>
     <xjcOutputDirectory>${project.build.directory}/generated-sources/jaxb</xjcOutputDirectory>
     <xjcTestOutputDirectory>${project.build.directory}/generated-test-sources/jaxb</xjcTestOutputDirectory>
     <!--
@@ -1539,6 +1548,7 @@
     <maven-ejb-plugin.artifact.version>2.3</maven-ejb-plugin.artifact.version>
     <maven-ear-plugin.artifact.version>2.7</maven-ear-plugin.artifact.version>
     <maven-antrun-plugin.artifact.version>1.7</maven-antrun-plugin.artifact.version>
+    <maven-war-plugin.artifact.version>2.2</maven-war-plugin.artifact.version>
     <wagon-maven-plugin.artifact.version>1.0-beta-4</wagon-maven-plugin.artifact.version>
     <javacc-maven-plugin.artifact.version>2.6</javacc-maven-plugin.artifact.version>
     <appassembler-maven-plugin.artifact.version>1.2.2</appassembler-maven-plugin.artifact.version>
