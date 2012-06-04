@@ -25,12 +25,13 @@
 ##   (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 ##   THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ##
-##   $JOMC: specification-license.vm 4223 2012-02-11 22:42:09Z schulte2005 $
+##   $JOMC: specification-license.vm 4317 2012-02-28 11:14:30Z schulte2005 $
 ##   $JDTAUS$
 ##
 ## @param model The model declaring the modules of the implementation to render.
 ## @param modules The modules declaring the implementation to render.
 ## @param imodel The inheritance model of the modules declaring the specification to render.
+## @param smodel The source file model to render.
 ## @param specification The specification to render.
 ## @param tool The tool merging the template.
 ## @param toolName The name of the tool merging the template.

@@ -64,13 +64,6 @@
             </execution>
           </executions>
         </plugin>
-        <plugin>
-          <groupId>org.jomc</groupId>
-          <artifactId>maven-jomc-plugin</artifactId>
-          <configuration>
-            <templateProfile>jdtaus-java-lgpl</templateProfile>
-          </configuration>
-        </plugin>
       </plugins>
     </pluginManagement>
     <plugins>
@@ -80,4 +73,8 @@
       </plugin>
     </plugins>
   </build>
+  <properties>
+    <jomc.templateProfile>jdtaus-java-lgpl</jomc.templateProfile>
+    <jomc.testModuleName>${project.name} :: Tests</jomc.testModuleName>
+  </properties>
 </project>

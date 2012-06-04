@@ -37,6 +37,16 @@
       <resource>
         <filtering>false</filtering>
         <directory>src/main/resources</directory>
+        <excludes>
+          <exclude>**/*.properties</exclude>
+        </excludes>
+      </resource>
+      <resource>
+        <filtering>true</filtering>
+        <directory>src/main/resources</directory>
+        <includes>
+          <include>**/*.properties</include>
+        </includes>
       </resource>
     </resources>
   </build>
