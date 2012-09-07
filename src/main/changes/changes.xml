@@ -56,5 +56,23 @@
       <action dev="schulte2005" type="update"><![CDATA[Updated the version of the <code>maven-enforcer-plugin</code> from <code>1.0.1</code> to <code>1.1</code>.]]></action>
       <action dev="schulte2005" type="update"><![CDATA[Updated the version of the <code>umlgraph</code> doclet from <code>5.1</code> to <code>5.6</code>.]]></action>
     </release>
+    <!-- *********************************************************************************************************** -->
+    <release version="1.9" date="2012-09-07">
+      <action dev="schulte2005" type="add"><![CDATA[Added modules <code>jdtaus-isc-resource-bundle</code> and <code>jdtaus-isc-parent</code>.]]></action>
+      <action dev="schulte2005" type="update"><![CDATA[Updated the version of the <code>maven-ear-plugin</code> from <code>2.7</code> to <code>2.8</code>.]]></action>
+      <action dev="schulte2005" type="update"><![CDATA[Updated the version of the <code>maven-surefire-plugin</code> from <code>2.12</code> to <code>2.12.3</code>.]]></action>
+      <action dev="schulte2005" type="update"><![CDATA[Updated the version of the <code>maven-surefire-report-plugin</code> from <code>2.12</code> to <code>2.12.3</code>.]]></action>
+      <action dev="schulte2005" type="update"><![CDATA[Updated the version of the <code>maven-resources-plugin</code> from <code>2.5</code> to <code>2.6</code>.]]></action>
+      <action dev="schulte2005" type="update"><![CDATA[Updated the version of the <code>maven-release-plugin</code> from <code>2.3.1</code> to <code>2.3.2</code>.]]></action>
+      <action dev="schulte2005" type="update"><![CDATA[Updated the version of the <code>maven-dependency-plugin</code> from <code>2.4</code> to <code>2.5.1</code>.]]></action>
+      <action dev="schulte2005" type="update"><![CDATA[Updated the version of the <code>maven-shade-plugin</code> from <code>1.6</code> to <code>2.0</code>.]]></action>
+      <action dev="schulte2005" type="update"><![CDATA[Updated the version of the <code>maven-enforcer-plugin</code> from <code>1.1</code> to <code>1.1.1</code>.]]></action>
+      <action dev="schulte2005" type="update"><![CDATA[Updated the version of the <code>maven-project-info-reports-plugin</code> from <code>2.4</code> to <code>2.5.1</code>.]]></action>
+      <action dev="schulte2005" type="update"><![CDATA[Updated the version of the <code>maven-jaxb21-plugin</code> from <code>0.8.1</code> to <code>0.8.2</code>.]]></action>
+      <action dev="schulte2005" type="update"><![CDATA[Updated the version of the <code>maven-install-plugin</code> from <code>2.3.1</code> to <code>2.4</code>.]]></action>
+      <action dev="schulte2005" type="update"><![CDATA[Updated the version of the <code>animal-sniffer-maven-plugin</code> from <code>1.7</code> to <code>1.8</code>.]]></action>
+      <action dev="schulte2005" type="update"><![CDATA[Updated the version of the <code>findbugs-maven-plugin</code> from <code>2.4.0</code> to <code>2.5.2</code>.]]></action>
+      <action dev="schulte2005" type="update"><![CDATA[Updated the site skin from the maven default skin to the fluido skin.]]></action>
+    </release>
   </body>
 </document>
