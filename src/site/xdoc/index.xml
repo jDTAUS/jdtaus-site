@@ -44,7 +44,7 @@
             </a>
           </td>
           <td valign="top">
-            Windows installation executable.
+            <a href="http://en.wikipedia.org/wiki/EXE">Windows installation executable.</a>
           </td>
         </tr>
         <tr>
@@ -54,7 +54,17 @@
             </a>
           </td>
           <td valign="top">
-            Unix tar archive.
+            <a href="http://en.wikipedia.org/wiki/Tar_(file_format)">Unix tar archive.</a>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <a href="http://oss.schulte.it/webstart/jdtaus-editor/launch.jnlp">
+              <b>jDTAUS Editor (JNLP)</b>
+            </a>
+          </td>
+          <td valign="top">
+            <a href="http://en.wikipedia.org/wiki/Java_Web_Start">Java Webstart.</a>
           </td>
         </tr>
       </table>

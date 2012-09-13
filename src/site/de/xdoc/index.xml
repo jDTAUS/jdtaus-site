@@ -44,7 +44,7 @@
             </a>
           </td>
           <td valign="top">
-            Windows Installations-Paket.
+            <a href="http://de.wikipedia.org/wiki/EXE">Windows Installations-Paket.</a>
           </td>
         </tr>
         <tr>
@@ -54,7 +54,17 @@
             </a>
           </td>
           <td valign="top">
-            Unix tar Archiv.
+            <a href="http://de.wikipedia.org/wiki/Tar">Unix tar Archiv.</a>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <a href="http://oss.schulte.it/webstart/jdtaus-editor/launch.jnlp">
+              <b>jDTAUS Editor (JNLP)</b>
+            </a>
+          </td>
+          <td valign="top">
+            <a href="http://de.wikipedia.org/wiki/Java_Web_Start">Java Webstart</a>
           </td>
         </tr>
       </table>
