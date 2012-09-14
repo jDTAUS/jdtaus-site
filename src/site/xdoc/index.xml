@@ -21,7 +21,9 @@
   $JDTAUS$
 
 -->
-<document>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
   <properties>
     <title>Open-Source Java implementation of the german DTAUS file format</title>
     <author email="schulte2005@users.sourceforge.net">Christian Schulte</author>
@@ -38,32 +40,32 @@
     <section name="Download">
       <table border="0">
         <tr>
-          <td valign="top">
+          <td>
             <a href="http://jdtaus.sourceforge.net/project/editor?exe">
               <b>jDTAUS Editor (Windows .exe)</b>
             </a>
           </td>
-          <td valign="top">
+          <td>
             <a href="http://en.wikipedia.org/wiki/EXE">Windows installation executable.</a>
           </td>
         </tr>
         <tr>
-          <td valign="top">
+          <td>
             <a href="http://jdtaus.sourceforge.net/project/editor?tar.bz2">
               <b>jDTAUS Editor (Unix .tar.bz2)</b>
             </a>
           </td>
-          <td valign="top">
+          <td>
             <a href="http://en.wikipedia.org/wiki/Tar_(file_format)">Unix tar archive.</a>
           </td>
         </tr>
         <tr>
-          <td valign="top">
-            <a href="http://oss.schulte.it/webstart/jdtaus-editor/launch.jnlp">
+          <td>
+            <a href='javascript:deployJava.launchWebStartApplication("http://oss.schulte.it/webstart/jdtaus-editor/launch.jnlp");'>
               <b>jDTAUS Editor (JNLP)</b>
             </a>
           </td>
-          <td valign="top">
+          <td>
             <a href="http://en.wikipedia.org/wiki/Java_Web_Start">Java Webstart.</a>
           </td>
         </tr>

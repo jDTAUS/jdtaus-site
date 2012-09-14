@@ -72,7 +72,11 @@
       <action dev="schulte2005" type="update"><![CDATA[Updated the version of the <code>maven-install-plugin</code> from <code>2.3.1</code> to <code>2.4</code>.]]></action>
       <action dev="schulte2005" type="update"><![CDATA[Updated the version of the <code>animal-sniffer-maven-plugin</code> from <code>1.7</code> to <code>1.8</code>.]]></action>
       <action dev="schulte2005" type="update"><![CDATA[Updated the version of the <code>findbugs-maven-plugin</code> from <code>2.4.0</code> to <code>2.5.2</code>.]]></action>
-      <action dev="schulte2005" type="update"><![CDATA[Updated the site skin from the maven default skin to the fluido skin.]]></action>
+    </release>
+    <!-- *********************************************************************************************************** -->
+    <release version="1.10">
+      <action dev="schulte2005" type="add"><![CDATA[Added the <code>deployJava.js</code> script to the <code>site.xml</code> documents.]]></action>
+      <action dev="schulte2005" type="add"><![CDATA[Added a Java Webstart link to the <code>index.xml</code> documents.]]></action>
     </release>
   </body>
 </document>
