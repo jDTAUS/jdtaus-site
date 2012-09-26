@@ -26,7 +26,7 @@
           xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
   <properties>
     <title>Open-Source Java Implementierung des deutschen DTAUS Datenformates</title>
-    <author email="schulte2005@users.sourceforge.net">Christian Schulte</author>
+    <author email="cs@schulte.it">Christian Schulte</author>
   </properties>
   <body>
     <p>
@@ -41,7 +41,7 @@
       <table border="0">
         <tr>
           <td>
-            <a href="http://jdtaus.sourceforge.net/project/editor?exe">
+            <a href="http://www.jdtaus.org/project/editor?exe">
               <b>jDTAUS Editor (Windows .exe)</b>
             </a>
           </td>
@@ -51,7 +51,7 @@
         </tr>
         <tr>
           <td>
-            <a href="http://jdtaus.sourceforge.net/project/editor?tar.bz2">
+            <a href="http://www.jdtaus.org/project/editor?tar.bz2">
               <b>jDTAUS Editor (Unix .tar.bz2)</b>
             </a>
           </td>
@@ -61,7 +61,7 @@
         </tr>
         <tr>
           <td>
-            <a href='javascript:deployJava.launchWebStartApplication("http://oss.schulte.it/webstart/jdtaus-editor/launch.jnlp");'>
+            <a href="http://oss.schulte.it/webstart/jdtaus-editor/launch.jnlp">
               <b>jDTAUS Editor (JNLP)</b>
             </a>
           </td>
@@ -71,9 +71,8 @@
         </tr>
       </table>
       <p>
-        Bitte besuchen Sie das
-        <a href="http://jdtaus.sourceforge.net/project/files">Sourceforge File Release System</a>
-        für eine Übersicht aller erhältlichen Dateien.
+        Für eine Übersicht aller erhältlichen Dateien klicken Sie bitte 
+        <a href="http://frs.jdtaus.org/">hier</a>.
       </p>
     </section>
   </body>

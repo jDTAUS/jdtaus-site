@@ -30,7 +30,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.jdtaus</groupId>
   <artifactId>jdtaus-gpl-resource-bundle</artifactId>
-  <name>jDTAUS GPL Resource Bundle</name>
+  <name>jDTAUS ⁑ GPL Resource Bundle</name>
   <description>jDTAUS resource bundle common to all jDTAUS artifacts licensed using the GPL.</description>
   <build>
     <resources>

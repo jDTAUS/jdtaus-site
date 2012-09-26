@@ -30,7 +30,7 @@
   <modelVersion>4.0.0</modelVersion>
   <artifactId>jdtaus-gpl-parent</artifactId>
   <packaging>pom</packaging>
-  <name>jDTAUS GPL Parent</name>
+  <name>jDTAUS ⁑ GPL Parent</name>
   <description>jDTAUS common parent project object model for GPL licensed artifacts.</description>
 
   <licenses>

@@ -28,7 +28,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.jdtaus</groupId>
   <artifactId>jdtaus-lgpl-resource-bundle</artifactId>
-  <name>jDTAUS LGPL Resource Bundle</name>
+  <name>jDTAUS ⁑ LGPL Resource Bundle</name>
   <description>jDTAUS resource bundle common to all jDTAUS artifacts licensed using the LGPL.</description>
   <build>
     <resources>

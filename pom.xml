@@ -29,12 +29,12 @@
   <name>jDTAUS</name>
   <version>1.10-SNAPSHOT</version>
   <description>jDTAUS provides an open-source implementation of german payment file formats.</description>
-  <url>http://jdtaus.sourceforge.net/1.0.x</url>
+  <url>${jdtaus.artifacts.url}</url>
   <inceptionYear>2005</inceptionYear>
 
   <organization>
     <name>jDTAUS</name>
-    <url>http://jdtaus.sourceforge.net</url>
+    <url>http://www.jdtaus.org</url>
   </organization>
 
   <licenses>
@@ -47,46 +47,22 @@
 
   <developers>
     <developer>
-      <id>schulte2005</id>
+      <id>schulte</id>
       <name>Christian Schulte</name>
       <timezone>Europe/Berlin</timezone>
-      <email>schulte2005@users.sourceforge.net</email>
+      <email>cs@schulte.it</email>
     </developer>
   </developers>
 
   <issueManagement>
     <system>Trac</system>
-    <url>https://sourceforge.net/apps/trac/jdtaus/</url>
+    <url>http://www.jdtaus.org/trac</url>
   </issueManagement>
 
-  <mailingLists>
-    <mailingList>
-      <name>jdtaus-cvs</name>
-      <subscribe>http://jdtaus.sourceforge.net/project/listinfo?jdtaus-cvs</subscribe>
-      <unsubscribe>http://jdtaus.sourceforge.net/project/listinfo?jdtaus-cvs</unsubscribe>
-      <post>jdtaus-cvs@lists.sourceforge.net</post>
-      <archive>http://jdtaus.sourceforge.net/project/listarchive?jdtaus-cvs</archive>
-    </mailingList>
-    <mailingList>
-      <name>jdtaus-users</name>
-      <subscribe>http://jdtaus.sourceforge.net/project/listinfo?jdtaus-users</subscribe>
-      <unsubscribe>http://jdtaus.sourceforge.net/project/listinfo?jdtaus-users</unsubscribe>
-      <post>jdtaus-users@lists.sourceforge.net</post>
-      <archive>http://jdtaus.sourceforge.net/project/listarchive?jdtaus-users</archive>
-    </mailingList>
-    <mailingList>
-      <name>jdtaus-notifications</name>
-      <subscribe>http://jdtaus.sourceforge.net/project/listinfo?jdtaus-notifications</subscribe>
-      <unsubscribe>http://jdtaus.sourceforge.net/project/listinfo?jdtaus-notifications</unsubscribe>
-      <post>jdtaus-notifications@lists.sourceforge.net</post>
-      <archive>http://jdtaus.sourceforge.net/project/listarchive?jdtaus-notifications</archive>
-    </mailingList>
-  </mailingLists>
-
   <scm>
-    <connection>scm:svn:https://jdtaus.svn.sourceforge.net/svnroot/jdtaus/jdtaus-site/trunk</connection>
-    <developerConnection>scm:svn:https://jdtaus.svn.sourceforge.net/svnroot/jdtaus/jdtaus-site/trunk</developerConnection>
-    <url>http://jdtaus.sourceforge.net/project/sources?jdtaus-site/trunk</url>
+    <connection>scm:svn:http://svn.jdtaus.org/svnroot/jdtaus/jdtaus-site/trunk</connection>
+    <developerConnection>scm:svn:http://svn.jdtaus.org/svnroot/jdtaus/jdtaus-site/trunk</developerConnection>
+    <url>http://svn.jdtaus.org/jdtaus-site/trunk</url>
   </scm>
 
   <build>
@@ -220,7 +196,7 @@
                 </reportSets>
                 <configuration>
                   <quiet>true</quiet>
-                  <top>&lt;table border="0" width="100%"&gt;&lt;tr&gt;&lt;td align="left"&gt;&lt;small&gt;Please note that this documentation is maintained by non-native english speaking authors. As such, you may encounter phrases or wordings which seem imprecise or may even have a totally different meaning to native english speaking readers than what the individual author was trying to express. If you are a native english speaking reader and find any such phrases or wordings we kindly ask you to send an email to the corresponding author and help us improve this documentation in order to avoid misunderstandings. You will find the authors' email addresses at the top of each class. Please accept our apologies for any inconvenience caused.&lt;/small&gt;&lt;/td&gt;&lt;td align="right"&gt;&lt;img src="http://jdtaus.sourceforge.net/1.0.x/images/jdtaus.jpg"/&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</top>
+                  <top>&lt;table border="0" width="100%"&gt;&lt;tr&gt;&lt;td align="left"&gt;&lt;small&gt;Please note that this documentation is maintained by non-native english speaking authors. As such, you may encounter phrases or wordings which seem imprecise or may even have a totally different meaning to native english speaking readers than what the individual author was trying to express. If you are a native english speaking reader and find any such phrases or wordings we kindly ask you to send an email to the corresponding author and help us improve this documentation in order to avoid misunderstandings. You will find the authors' email addresses at the top of each class. Please accept our apologies for any inconvenience caused.&lt;/small&gt;&lt;/td&gt;&lt;td align="right"&gt;&lt;img src="http://www.jdtaus.org/1.0.x/images/jdtaus.jpg"/&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</top>
                   <header><![CDATA[<script type="text/javascript">var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-416120-1']); _gaq.push(['_setDomainName', 'jdtaus.org']); _gaq.push(['_setAllowLinker', true]); _gaq.push(['_trackPageview']); (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();</script>]]></header>
                   <breakiterator>true</breakiterator>
                   <keywords>true</keywords>
@@ -356,20 +332,17 @@
                 <artifactId>maven-changes-plugin</artifactId>
                 <reportSets>
                   <reportSet>
-                    <id>default-changes-report</id>
+                    <id>default-trac-report</id>
                     <reports>
-                      <report>changes-report</report>
+                      <report>trac-report</report>
                     </reports>
+                    <configuration>
+                      <query>${jdtaus.trac.query}</query>
+                      <tracUser>${jdtaus.trac.username}</tracUser>
+                      <tracPassword>${jdtaus.trac.password}</tracPassword>
+                    </configuration>
                   </reportSet>
                 </reportSets>
-                <configuration>
-                  <issueLinkTemplatePerSystem>
-                    <MantisBT>http://sourceforge.net/apps/mantisbt/jdtaus/view.php?id=%ISSUE%</MantisBT>
-                    <Trac>http://sourceforge.net/apps/trac/jdtaus/ticket/%ISSUE%</Trac>
-                  </issueLinkTemplatePerSystem>
-                  <xmlPath>src/main/changes/changes.xml</xmlPath>
-                  <escapeHTML>false</escapeHTML>
-                </configuration>
               </reportPlugin>
               <reportPlugin>
                 <groupId>org.codehaus.mojo</groupId>
@@ -563,7 +536,7 @@
           <version>${maven-javadoc-plugin.artifact.version}</version>
           <configuration>
             <quiet>true</quiet>
-            <top>&lt;table border="0" width="100%"&gt;&lt;tr&gt;&lt;td align="left"&gt;&lt;small&gt;Please note that this documentation is maintained by non-native english speaking authors. As such, you may encounter phrases or wordings which seem imprecise or may even have a totally different meaning to native english speaking readers than what the individual author was trying to express. If you are a native english speaking reader and find any such phrases or wordings we kindly ask you to send an email to the corresponding author and help us improve this documentation in order to avoid misunderstandings. You will find the authors' email addresses at the top of each class. Please accept our apologies for any inconvenience caused.&lt;/small&gt;&lt;/td&gt;&lt;td align="right"&gt;&lt;img src="http://jdtaus.sourceforge.net/1.0.x/images/jdtaus.jpg"/&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</top>
+            <top>&lt;table border="0" width="100%"&gt;&lt;tr&gt;&lt;td align="left"&gt;&lt;small&gt;Please note that this documentation is maintained by non-native english speaking authors. As such, you may encounter phrases or wordings which seem imprecise or may even have a totally different meaning to native english speaking readers than what the individual author was trying to express. If you are a native english speaking reader and find any such phrases or wordings we kindly ask you to send an email to the corresponding author and help us improve this documentation in order to avoid misunderstandings. You will find the authors' email addresses at the top of each class. Please accept our apologies for any inconvenience caused.&lt;/small&gt;&lt;/td&gt;&lt;td align="right"&gt;&lt;img src="http://www.jdtaus.org/1.0.x/images/jdtaus.jpg"/&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</top>
             <header><![CDATA[<script type="text/javascript">var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-416120-1']); _gaq.push(['_setDomainName', 'jdtaus.org']); _gaq.push(['_setAllowLinker', true]); _gaq.push(['_trackPageview']); (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();</script>]]></header>
             <breakiterator>true</breakiterator>
             <keywords>true</keywords>
@@ -695,20 +668,6 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-changes-plugin</artifactId>
           <version>${maven-changes-plugin.artifact.version}</version>
-          <executions>
-            <execution>
-              <id>default-changes-validate</id>
-              <phase>prepare-package</phase>
-              <goals>
-                <goal>changes-validate</goal>
-              </goals>
-            </execution>
-          </executions>
-          <configuration>
-            <failOnError>true</failOnError>
-            <xmlPath>src/main/changes/changes.xml</xmlPath>
-            <escapeHTML>false</escapeHTML>
-          </configuration>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -879,11 +838,6 @@
           </executions>
           <configuration>
             <artifacts>
-              <artifact>
-                <file>src/main/changes/changes.xml</file>
-                <type>xml</type>
-                <classifier>changes</classifier>
-              </artifact>
               <artifact>
                 <file>${basedir}/LICENSE.txt</file>
                 <type>txt</type>
@@ -1132,10 +1086,6 @@
         <artifactId>maven-enforcer-plugin</artifactId>
       </plugin>
       <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-changes-plugin</artifactId>
-      </plugin>
-      <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>animal-sniffer-maven-plugin</artifactId>
       </plugin>
@@ -1195,8 +1145,9 @@
       <url>http://oss.sonatype.org/content/repositories/snapshots</url>
     </snapshotRepository>
     <site>
-      <id>jdtaus.sourceforge.net</id>
-      <url>scp://shell.sourceforge.net/home/project-web/jdtaus/htdocs/1.0.x</url>
+      <id>${jdtaus.artifacts.distribution.id}</id>
+      <name>${jdtaus.artifacts.distribution.name}</name>
+      <url>${jdtaus.artifacts.distribution.url}</url>
     </site>
   </distributionManagement>
 
@@ -1221,6 +1172,21 @@
                   <artifactId>wagon-ssh</artifactId>
                   <version>${wagon.version}</version>
                 </dependency>
+                <dependency>
+                  <groupId>org.apache.maven.wagon</groupId>
+                  <artifactId>wagon-webdav-jackrabbit</artifactId>
+                  <version>${wagon.version}</version>
+                </dependency>
+                <dependency>
+                  <groupId>org.slf4j</groupId>
+                  <artifactId>jcl-over-slf4j</artifactId>
+                  <version>${slf4j.version}</version>
+                </dependency>
+                <dependency>
+                  <groupId>org.slf4j</groupId>
+                  <artifactId>slf4j-simple</artifactId>
+                  <version>${slf4j.version}</version>
+                </dependency>
               </dependencies>
               <executions>
                 <execution>
@@ -1240,6 +1206,21 @@
                   <groupId>org.apache.maven.wagon</groupId>
                   <artifactId>wagon-ssh</artifactId>
                   <version>${wagon.version}</version>
+                </dependency>
+                <dependency>
+                  <groupId>org.apache.maven.wagon</groupId>
+                  <artifactId>wagon-webdav-jackrabbit</artifactId>
+                  <version>${wagon.version}</version>
+                </dependency>
+                <dependency>
+                  <groupId>org.slf4j</groupId>
+                  <artifactId>jcl-over-slf4j</artifactId>
+                  <version>${slf4j.version}</version>
+                </dependency>
+                <dependency>
+                  <groupId>org.slf4j</groupId>
+                  <artifactId>slf4j-simple</artifactId>
+                  <version>${slf4j.version}</version>
                 </dependency>
               </dependencies>
             </plugin>
@@ -1369,22 +1350,6 @@
                   </requireNoRepositories>
                 </rules>
               </configuration>
-            </plugin>
-            <plugin>
-              <groupId>org.apache.maven.plugins</groupId>
-              <artifactId>maven-changes-plugin</artifactId>
-              <executions>
-                <execution>
-                  <id>default-changes-check</id>
-                  <phase>validate</phase>
-                  <goals>
-                    <goal>changes-check</goal>
-                  </goals>
-                  <configuration>
-                    <skipSnapshots>true</skipSnapshots>
-                  </configuration>
-                </execution>
-              </executions>
             </plugin>
             <plugin>
               <groupId>org.apache.maven.plugins</groupId>
@@ -1590,6 +1555,17 @@
     <jomc.with-revision-keyword>JDTAUS</jomc.with-revision-keyword>
     <jomc.with-suppress-warnings>unused</jomc.with-suppress-warnings>
     <jomc.with-vendor-copyright>false</jomc.with-vendor-copyright>
+    <jdtaus.trac.query>order=id&amp;version=${project.version}&amp;component=jDTAUS|${project.name}</jdtaus.trac.query>
+    <jdtaus.base.version>1.0.x</jdtaus.base.version>
+    <jdtaus.frs.distribution.id>jdtaus.org</jdtaus.frs.distribution.id>
+    <jdtaus.frs.distribution.url>dav:http://frs.jdtaus.org/</jdtaus.frs.distribution.url>
+    <jdtaus.xsd.distribution.id>jdtaus.org</jdtaus.xsd.distribution.id>
+    <jdtaus.xsd.distribution.url>dav:http://xml.jdtaus.org/</jdtaus.xsd.distribution.url>
+    <jdtaus.artifacts.url>http://www.jdtaus.org/${jomc.base.version}</jdtaus.artifacts.url>
+    <jdtaus.artifacts.distribution.id>jdtaus.org</jdtaus.artifacts.distribution.id>
+    <jdtaus.artifacts.distribution.name>jDTAUS Site</jdtaus.artifacts.distribution.name>
+    <jdtaus.artifacts.distribution.base.url>dav:http://www.jdtaus.org/</jdtaus.artifacts.distribution.base.url>
+    <jdtaus.artifacts.distribution.url>${jomc.artifacts.distribution.base.url}/${jdtaus.base.version}</jdtaus.artifacts.distribution.url>
     <!--
     Artifact versions.
     -->
@@ -1599,6 +1575,7 @@
     <umlgraph.version>5.6</umlgraph.version>
     <cc-xjc-plugin.version>2.0.1</cc-xjc-plugin.version>
     <wagon.version>2.2</wagon.version>
+    <slf4j.version>1.6.4</slf4j.version>
     <animal-sniffer.version>1.8</animal-sniffer.version>
     <jdtaus-build.version>1.10-SNAPSHOT</jdtaus-build.version>
     <!--
@@ -1622,7 +1599,7 @@
     <maven-install-plugin.artifact.version>2.4</maven-install-plugin.artifact.version>
     <maven-source-plugin.artifact.version>2.1.2</maven-source-plugin.artifact.version> <!-- See http://jira.codehaus.org/browse/MSOURCES-62 -->
     <maven-scm-plugin.artifact.version>1.7</maven-scm-plugin.artifact.version>
-    <maven-changes-plugin.artifact.version>2.7.1</maven-changes-plugin.artifact.version>
+    <maven-changes-plugin.artifact.version>2.7.1</maven-changes-plugin.artifact.version> <!-- See http://jira.codehaus.org/browse/MCHANGES-289 -->
     <maven-enforcer-plugin.artifact.version>1.1.1</maven-enforcer-plugin.artifact.version>
     <maven-project-info-reports-plugin.artifact.version>2.5.1</maven-project-info-reports-plugin.artifact.version>
     <maven-jxr-plugin.artifact.version>2.3</maven-jxr-plugin.artifact.version>

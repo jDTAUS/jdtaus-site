@@ -27,13 +27,13 @@
   <modelVersion>4.0.0</modelVersion>
   <artifactId>jdtaus-isc-parent</artifactId>
   <packaging>pom</packaging>
-  <name>jDTAUS ISC Parent</name>
+  <name>jDTAUS ⁑ ISC Parent</name>
   <description>jDTAUS common parent project object model for ISC style licensed artifacts.</description>
 
   <licenses>
     <license>
       <name>ISC License</name>
-      <url>http://jdtaus.sourceforge.net/ISC.txt</url>
+      <url>http://www.jdtaus.org/ISC.txt</url>
       <distribution>repo</distribution>
     </license>
   </licenses>

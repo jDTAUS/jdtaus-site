@@ -14,7 +14,7 @@
     o Apache Maven 3.x
 
       The following link redirects to the official Apache Maven website.
-      http://jdtaus.sourceforge.net/redirect/mng
+      http://www.jdtaus.org/redirect/mng
 
   In order to build jDTAUS release artifacts, the following software needs to be
   installed in addition.
@@ -22,7 +22,7 @@
     o GnuPG
 
       The following link redirects to the official GnuPG website.
-      http://jdtaus.sourceforge.net/redirect/gpg
+      http://www.jdtaus.org/redirect/gpg
 
 
   Building Snapshot Artifacts
@@ -52,7 +52,7 @@
     done by using the '-D' command line option. To minimize the number of '-D'
     options, a profile can be added to the local Maven settings.xml file. The
     following link redirects to the official Maven settings reference.
-    http://jdtaus.sourceforge.net/redirect/msettings
+    http://www.jdtaus.org/redirect/msettings
 
     <profile>
       <id>jdtaus.org</id>
@@ -66,14 +66,14 @@
         <!-- the user used for authentication with the project source code   -->
         <!-- management system.                                              -->
         <!--                                                                 -->
-        <jdtaus.scm.username>Sourceforge Username</jdtaus.scm.username>
+        <jdtaus.scm.username>Username</jdtaus.scm.username>
         <!--                                                                 -->
         <!-- The 'jdtaus.scm.password' property must be set to the password  -->
         <!-- used for authentication with the project source code management -->
         <!-- system. To avoid storing cleartext passwords, this property     -->
         <!-- should be set using the '-D' command line option.               -->
         <!--                                                                 -->
-        <jdtaus.scm.password>Sourceforge Password</jdtaus.scm.password>
+        <jdtaus.scm.password>Password</jdtaus.scm.password>
         <!--                                                                 -->
         <!--                                                                 -->
         <!-- Code Signing Properties                                         -->
@@ -81,7 +81,7 @@
         <!--                                                                 -->
         <!-- Code signing is backed by the 'maven-jarsigner-plugin'.         -->
         <!-- The following link redirects to the official documentation of   -->
-        <!-- that plugin. http://jdtaus.sourceforge.net/redirect/mjarsigner  -->
+        <!-- that plugin. http://www.jdtaus.org/redirect/mjarsigner  -->
         <!--                                                                 -->
         <!--                                                                 -->
         <!-- The 'jarsigner.keystore' property may be set to the location of -->
@@ -122,7 +122,7 @@
         <!--                                                                 -->
         <!-- Artifact signing is backed by the 'maven-gpg-plugin'.           -->
         <!-- The following link redirects to the official documentation of   -->
-        <!-- that plugin. http://jdtaus.sourceforge.net/redirect/mgpg        -->
+        <!-- that plugin. http://www.jdtaus.org/redirect/mgpg        -->
         <!--                                                                 -->
         <!--                                                                 -->
         <!-- The 'gpg.keyname' property may be set to the name of the GPG    -->
@@ -209,7 +209,7 @@
     cmd> mvn -Poss.sonatype.org site
 
     The following link redirects to the repository hosting service used by this
-    project. http://jdtaus.sourceforge.net/redirect/oss
+    project. http://www.jdtaus.org/redirect/oss
 
   Deploying Release Artifacts
   ---------------------------
@@ -235,9 +235,9 @@
     the project web server.
 
     <server>
-      <id>jdtaus.sourceforge.net</id>
-      <username>Sourceforge Username,jdtaus</username>
-      <password>Sourceforge Password</password>
+      <id>jdtaus.org</id>
+      <username>Username</username>
+      <password>Password</password>
     </server>
 
     The project web site is deployed by executing:
@@ -248,10 +248,10 @@
 
     The release process is backed by the 'maven-release-plugin'. The following
     link redirects to the official documentation of that plugin.
-    http://jdtaus.sourceforge.net/redirect/mrelease
+    http://www.jdtaus.org/redirect/mrelease
 
     Releases are prepared by executing:
     cmd> mvn release:prepare -Pjdtaus-release,jdtaus.org
 
     Releases are performed by executing:
-    cmd> mvn release:perform -Darguments="-Pjdtaus-release,jdtaus-sourceforge-release,jdtaus.org"
+    cmd> mvn release:perform -Darguments="-Pjdtaus-release,jdtaus.org"

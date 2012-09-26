@@ -30,7 +30,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.jdtaus</groupId>
   <artifactId>jdtaus-build-resources</artifactId>
-  <name>jDTAUS Build Resources</name>
+  <name>jDTAUS ⁑ Build Resources</name>
   <description>Resources needed to build jDTAUS.</description>
   <build>
     <resources>

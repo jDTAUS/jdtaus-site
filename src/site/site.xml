@@ -26,16 +26,11 @@
          xsi:schemaLocation="http://maven.apache.org/DECORATION/1.3.0 http://maven.apache.org/xsd/decoration-1.3.0.xsd">
   <bannerLeft>
     <name>jDTAUS</name>
-    <src>http://jdtaus.sourceforge.net/1.0.x/images/jdtaus.jpg</src>
-    <href>http://jdtaus.sourceforge.net</href>
+    <src>http://www.jdtaus.org/1.0.x/images/jdtaus.jpg</src>
+    <href>http://www.jdtaus.org</href>
   </bannerLeft>
-  <bannerRight>
-    <name>SourceForge.net Logo</name>
-    <src>http://sourceforge.net/sflogo.php?group_id=144535&amp;type=2</src>
-    <href>http://sourceforge.net</href>
-  </bannerRight>
   <poweredBy>
-    <logo img="http://www.schulte.it/resources/schulte.it.png" href="#" name=""/>
+    <logo img="http://www.schulte.it/resources/schulte.it.png" href="http://www.schulte.it" name="SCHULTE.IT"/>
   </poweredBy>
   <skin>
     <groupId>org.apache.maven.skins</groupId>
@@ -69,24 +64,16 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
       <script type="text/javascript" src="http://www.java.com/js/deployJava.js"/>
     </head>
     <links>
-      <item name="Deutsche Version" href="http://jdtaus.sourceforge.net/1.0.x/de/index.html"/>
+      <item name="Deutsche Version" href="http://www.jdtaus.org/1.0.x/de/index.html"/>
     </links>
     <menu name="jDTAUS" inherit="top">
-      <item name="Start" href="http://jdtaus.sourceforge.net/1.0.x"/>
-      <item name="Downloads" href="http://jdtaus.sourceforge.net/project/files"/>
+      <item name="Start" href="http://www.jdtaus.org/1.0.x"/>
+      <item name="Downloads" href="http://frs.jdtaus.org/"/>
+      <item name="Issues" href="http://www.jdtaus.org/trac/query"/>
     </menu>
     <menu name="Developer Information">
-      <item name="Core" href="jdtaus-core/index.html"/>
-      <item name="Banking" href="jdtaus-banking/index.html"/>
-    </menu>
-    <menu name="Sourceforge" inherit="bottom">
-      <item name="Home" href="http://jdtaus.sourceforge.net/project/home"/>
-      <item name="Files" href="http://jdtaus.sourceforge.net/project/files"/>
-      <item name="Issues" href="http://jdtaus.sourceforge.net/project/issues"/>
-      <item name="Screenshots" href="http://jdtaus.sourceforge.net/project/screenshots"/>
-      <item name="Summary" href="http://jdtaus.sourceforge.net/project/summary"/>
-      <item name="Support" href="http://jdtaus.sourceforge.net/project/support"/>
-      <item name="Statistics" href="http://jdtaus.sourceforge.net/project/statistics"/>
+      <item name="Core" href="http://www.jdtaus.org/1.0.x/jdtaus-core/index.html"/>
+      <item name="Banking" href="http://www.jdtaus.org/1.0.x/jdtaus-banking/index.html"/>
     </menu>
     <menu ref="reports" inherit="bottom"/>
   </body>

@@ -28,13 +28,13 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.jdtaus</groupId>
   <artifactId>jdtaus-isc-resource-bundle</artifactId>
-  <name>jDTAUS ISC Resource Bundle</name>
+  <name>jDTAUS ⁑ ISC Resource Bundle</name>
   <description>jDTAUS resource bundle common to all jDTAUS artifacts licensed using the ISC license.</description>
 
   <licenses>
     <license>
       <name>ISC License</name>
-      <url>http://jdtaus.sourceforge.net/ISC.txt</url>
+      <url>http://www.jdtaus.org/ISC.txt</url>
       <distribution>repo</distribution>
     </license>
   </licenses>
