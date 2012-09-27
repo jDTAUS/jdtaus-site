@@ -61,7 +61,6 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 })();
 //-->]]>
       </script>
-      <script type="text/javascript" src="http://www.java.com/js/deployJava.js"/>
     </head>
     <links>
       <item name="Deutsche Version" href="http://www.jdtaus.org/1.0.x/de/index.html"/>
@@ -71,7 +70,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
       <item name="Downloads" href="http://frs.jdtaus.org/"/>
       <item name="Issues" href="http://www.jdtaus.org/trac/query"/>
     </menu>
-    <menu name="Developer Information">
+    <menu name="Developer Information" inherit="bottom">
       <item name="Core" href="http://www.jdtaus.org/1.0.x/jdtaus-core/index.html"/>
       <item name="Banking" href="http://www.jdtaus.org/1.0.x/jdtaus-banking/index.html"/>
     </menu>
