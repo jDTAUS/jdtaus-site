@@ -75,6 +75,6 @@
   </build>
   <properties>
     <jomc.templateProfile>jdtaus-java-lgpl</jomc.templateProfile>
-    <jomc.testModuleName>${project.name} :: Tests</jomc.testModuleName>
+    <jomc.testModuleName>${project.name} ⁑ Tests</jomc.testModuleName>
   </properties>
 </project>
