@@ -2,7 +2,7 @@
 <!--
 
   jDTAUS
-  Copyright (c) 2005 Christian Schulte
+  Copyright (C) 2005 Christian Schulte
 
   This library is free software; you can redistribute it and/or
   modify it under the terms of the GNU Lesser General Public
@@ -29,9 +29,6 @@
     <author email="cs@schulte.it">Christian Schulte</author>
   </properties>
   <body>
-    <p>
-      <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"/>
-    </p>
     <section name="Introduction">
       <p>
         jDTAUS provides an open-source implementation of the german DTAUS file format for the Java platform.

@@ -2,7 +2,7 @@
 <!--
 
   jDTAUS
-  Copyright (c) 2005 Christian Schulte
+  Copyright (C) 2005 Christian Schulte
 
   This library is free software; you can redistribute it and/or
   modify it under the terms of the GNU Lesser General Public
@@ -24,44 +24,18 @@
 <project xmlns="http://maven.apache.org/DECORATION/1.3.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/DECORATION/1.3.0 http://maven.apache.org/xsd/decoration-1.3.0.xsd">
-  <bannerLeft>
-    <name>jDTAUS</name>
-    <src>http://www.jdtaus.org/1.0.x/images/jdtaus.jpg</src>
-    <href>http://www.jdtaus.org</href>
-  </bannerLeft>
   <poweredBy>
     <logo img="http://www.schulte.it/resources/schulte.it.png" href="http://www.schulte.it" name="SCHULTE.IT"/>
   </poweredBy>
   <skin>
-    <groupId>org.apache.maven.skins</groupId>
-    <artifactId>maven-default-skin</artifactId>
-    <version>1.1</version>
+    <groupId>org.jdtaus.maven.skins</groupId>
+    <artifactId>jdtaus-default-skin</artifactId>
+    <version>1.0-SNAPSHOT</version>
   </skin>
   <googleAdSenseClient>ca-pub-2363332114228707</googleAdSenseClient>
   <googleAdSenseSlot>3341637212</googleAdSenseSlot>
   <googleAnalyticsAccountId>UA-416120-1</googleAnalyticsAccountId>
   <body>
-    <head>
-      <script type="text/javascript"><![CDATA[<!--
-google_ad_client = "ca-pub-2363332114228707";
-google_ad_slot = "3341637212";
-google_ad_width = 728;
-google_ad_height = 90;
-
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-416120-1']);
-_gaq.push(['_setDomainName', 'jdtaus.org']);
-_gaq.push(['_setAllowLinker', true]);
-_gaq.push(['_trackPageview']);
-
-(function() {
-var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
-//-->]]>
-      </script>
-    </head>
     <links>
       <item name="English version" href="http://www.jdtaus.org/1.0.x/index.html"/>
     </links>
