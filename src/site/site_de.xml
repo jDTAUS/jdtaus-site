@@ -30,7 +30,7 @@
   <skin>
     <groupId>org.jdtaus.maven.skins</groupId>
     <artifactId>jdtaus-default-skin</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
   </skin>
   <googleAdSenseClient>ca-pub-2363332114228707</googleAdSenseClient>
   <googleAdSenseSlot>3341637212</googleAdSenseSlot>
