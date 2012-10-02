@@ -30,11 +30,16 @@
   <skin>
     <groupId>org.jdtaus.maven.skins</groupId>
     <artifactId>jdtaus-default-skin</artifactId>
-    <version>1.0</version>
+    <version>1.1</version>
   </skin>
-  <googleAdSenseClient>ca-pub-2363332114228707</googleAdSenseClient>
-  <googleAdSenseSlot>3341637212</googleAdSenseSlot>
-  <googleAnalyticsAccountId>UA-416120-1</googleAnalyticsAccountId>
+  <custom>
+    <!-- Custom due to http://jira.codehaus.org/browse/DOXIASITETOOLS-76 -->
+    <googleAdSenseClient>ca-pub-2363332114228707</googleAdSenseClient>
+    <googleAdSenseSlot>3341637212</googleAdSenseSlot>
+    <googleAdSenseWidth>728</googleAdSenseWidth>
+    <googleAdSenseHeight>90</googleAdSenseHeight>
+    <googleAnalyticsAccountId>UA-416120-1</googleAnalyticsAccountId>
+  </custom>
   <body>
     <links>
       <item name="English version" href="http://www.jdtaus.org/1.0.x/index.html"/>
