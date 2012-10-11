@@ -77,6 +77,13 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-site-plugin</artifactId>
           <version>${maven-site-plugin.artifact.version}</version>
+          <dependencies>
+            <dependency>
+              <groupId>org.jdtaus.maven.skins</groupId>
+              <artifactId>jdtaus-skin-tools</artifactId>
+              <version>1.0</version>
+            </dependency>
+          </dependencies>
           <configuration>
             <locales>${maven.site.locales}</locales>
             <relativizeDecorationLinks>${maven.site.relativizeDecorationLinks}</relativizeDecorationLinks>
@@ -1507,6 +1514,7 @@
         <jomc.verbose>true</jomc.verbose>
         <jomc.sourceProcessing>false</jomc.sourceProcessing>
         <checkstyle.enable.rss>false</checkstyle.enable.rss>
+        <maven.site.relativizeDecorationLinks>false</maven.site.relativizeDecorationLinks>
       </properties>
     </profile>
   </profiles>
@@ -1527,7 +1535,7 @@
     <maven.compiler.target>1.6</maven.compiler.target>
     <maven.javadoc.additionalJOption>-J-client -J-Xms256m -J-Xmx256m -J-Dfile.encoding=${file.encoding}</maven.javadoc.additionalJOption>
     <maven.site.locales>en,de</maven.site.locales>
-    <maven.site.relativizeDecorationLinks>false</maven.site.relativizeDecorationLinks>
+    <maven.site.relativizeDecorationLinks>false</maven.site.relativizeDecorationLinks> <!-- See http://jira.codehaus.org/browse/MSITE-658 -->
     <maven.surefire.argLine>-client -Xms256m -Xmx256m -Dfile.encoding=${file.encoding}</maven.surefire.argLine>
     <maven.ejb.ejbVersion>3.0</maven.ejb.ejbVersion>
     <maven.ear.version>5</maven.ear.version>

@@ -25,12 +25,12 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/DECORATION/1.3.0 http://maven.apache.org/xsd/decoration-1.3.0.xsd">
   <poweredBy>
-    <logo img="http://www.schulte.it/resources/schulte.it.png" href="http://www.schulte.it" name="SCHULTE.IT"/>
+    <logo img="http://www.jdtaus.org/1.0.x/de/images/logos/schulte.it.png" href="http://www.schulte.it" name="SCHULTE.IT"/>
   </poweredBy>
   <skin>
     <groupId>org.jdtaus.maven.skins</groupId>
     <artifactId>jdtaus-default-skin</artifactId>
-    <version>1.1</version>
+    <version>1.2</version>
   </skin>
   <custom>
     <!-- Custom due to http://jira.codehaus.org/browse/DOXIASITETOOLS-76 -->
@@ -39,20 +39,24 @@
     <googleAdSenseWidth>728</googleAdSenseWidth>
     <googleAdSenseHeight>90</googleAdSenseHeight>
     <googleAnalyticsAccountId>UA-416120-1</googleAnalyticsAccountId>
+    <!-- See jdtaus-skin-tools -->
+    <languages-tool languages-navigation="true" default-language="en">
+      <language>en</language>
+      <language>de</language>
+      <language>fr</language>
+      <languages-navigation-exclude>faq.html</languages-navigation-exclude>
+    </languages-tool>
   </custom>
   <body>
-    <links>
-      <item name="English version" href="http://www.jdtaus.org/1.0.x/index.html"/>
-    </links>
     <menu name="jDTAUS" inherit="top">
       <item name="Start" href="http://www.jdtaus.org/1.0.x/de/index.html"/>
       <item name="FAQ" href="http://www.jdtaus.org/1.0.x/de/faq.html"/>
       <item name="Downloads" href="http://frs.jdtaus.org/"/>
       <item name="Fehlerberichte" href="http://www.jdtaus.org/trac/query"/>
     </menu>
-    <menu name="Entwickler Informationen" inherit="bottom">
-      <item name="Core" href="http://www.jdtaus.org/1.0.x/jdtaus-core/index.html"/>
-      <item name="Banking" href="http://www.jdtaus.org/1.0.x/jdtaus-banking/index.html"/>
+    <menu name="Entwickler" inherit="bottom">
+      <item name="Core" href="http://www.jdtaus.org/1.0.x/jdtaus-core/de/index.html"/>
+      <item name="Banking" href="http://www.jdtaus.org/1.0.x/jdtaus-banking/de/index.html"/>
     </menu>
     <menu ref="reports" inherit="bottom"/>
   </body>
