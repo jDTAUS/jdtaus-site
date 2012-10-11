@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+  jDTAUS
+  Copyright (C) 2012 Christian Schulte
+
+  This library is free software; you can redistribute it and/or
+  modify it under the terms of the GNU Lesser General Public
+  License as published by the Free Software Foundation; either
+  version 2.1 of the License, or any later version.
+
+  This library is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+  Lesser General Public License for more details.
+
+  You should have received a copy of the GNU Lesser General Public
+  License along with this library; if not, write to the Free Software
+  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+  $JDTAUS$
+
+-->
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+  <properties>
+    <title>Mise en œuvre open-source du format de fichier DTAUS pour la plate-forme Java</title>
+    <author email="cs@schulte.it">Christian Schulte</author>
+  </properties>
+  <body>
+    <section name="Introduction">
+      <p>
+        jDTAUS offre un mise en œuvre open-source du format de fichier DTAUS pour la plate-forme Java.
+      </p>
+    </section>
+    <section name="Téléchargement">
+      <table border="0">
+        <tr>
+          <td>
+            <a href="http://www.jdtaus.org/project/editor?exe">
+              <b>jDTAUS Editor (Windows .exe)</b>
+            </a>
+          </td>
+          <td>
+            <a href="http://fr.wikipedia.org/wiki/Fichier_ex%C3%A9cutable">Fichier exécutable Windows</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.jdtaus.org/project/editor?tar.bz2">
+              <b>jDTAUS Editor (Unix .tar.bz2)</b>
+            </a>
+          </td>
+          <td>
+            <a href="http://fr.wikipedia.org/wiki/Tar_%28informatique%29">Fichier d'archive Unix</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://oss.schulte.it/webstart/jdtaus-editor/launch.jnlp">
+              <b>jDTAUS Editor (JNLP)</b>
+            </a>
+          </td>
+          <td>
+            <a href="http://fr.wikipedia.org/wiki/Java_Web_Start">Java Webstart.</a>
+          </td>
+        </tr>
+      </table>
+      <p>
+        Visitez le répertoire tous des fichiers
+        <a href="http://frs.jdtaus.org/">ici</a>, s'il vous plaît.
+      </p>
+    </section>
+  </body>
+</document>

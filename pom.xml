@@ -27,7 +27,7 @@
   <artifactId>jdtaus-site</artifactId>
   <packaging>pom</packaging>
   <name>jDTAUS</name>
-  <version>1.13-SNAPSHOT</version>
+  <version>1.13</version>
   <description>jDTAUS provides an open-source implementation of german payment file formats.</description>
   <url>${jdtaus.artifacts.url}</url>
   <inceptionYear>2005</inceptionYear>
@@ -60,9 +60,9 @@
   </issueManagement>
 
   <scm>
-    <connection>scm:svn:http://svn.jdtaus.org/svnroot/jdtaus/jdtaus-site/trunk</connection>
-    <developerConnection>scm:svn:http://svn.jdtaus.org/svnroot/jdtaus/jdtaus-site/trunk</developerConnection>
-    <url>http://svn.jdtaus.org/jdtaus-site/trunk</url>
+    <connection>scm:svn:http://svn.jdtaus.org/svnroot/jdtaus/jdtaus-site/tags/jdtaus-site-1.13</connection>
+    <developerConnection>scm:svn:http://svn.jdtaus.org/svnroot/jdtaus/jdtaus-site/tags/jdtaus-site-1.13</developerConnection>
+    <url>http://svn.jdtaus.org/jdtaus-site/tags/jdtaus-site-1.13</url>
   </scm>
 
   <build>
@@ -77,6 +77,13 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-site-plugin</artifactId>
           <version>${maven-site-plugin.artifact.version}</version>
+          <dependencies>
+            <dependency>
+              <groupId>org.jdtaus.maven.skins</groupId>
+              <artifactId>jdtaus-skin-tools</artifactId>
+              <version>1.0</version>
+            </dependency>
+          </dependencies>
           <configuration>
             <locales>${maven.site.locales}</locales>
             <relativizeDecorationLinks>${maven.site.relativizeDecorationLinks}</relativizeDecorationLinks>
@@ -1507,6 +1514,7 @@
         <jomc.verbose>true</jomc.verbose>
         <jomc.sourceProcessing>false</jomc.sourceProcessing>
         <checkstyle.enable.rss>false</checkstyle.enable.rss>
+        <maven.site.relativizeDecorationLinks>false</maven.site.relativizeDecorationLinks>
       </properties>
     </profile>
   </profiles>
@@ -1526,8 +1534,8 @@
     <maven.compiler.source>1.6</maven.compiler.source>
     <maven.compiler.target>1.6</maven.compiler.target>
     <maven.javadoc.additionalJOption>-J-client -J-Xms256m -J-Xmx256m -J-Dfile.encoding=${file.encoding}</maven.javadoc.additionalJOption>
-    <maven.site.locales>en,de</maven.site.locales>
-    <maven.site.relativizeDecorationLinks>false</maven.site.relativizeDecorationLinks>
+    <maven.site.locales>en,de,fr</maven.site.locales>
+    <maven.site.relativizeDecorationLinks>false</maven.site.relativizeDecorationLinks> <!-- See http://jira.codehaus.org/browse/MSITE-658 -->
     <maven.surefire.argLine>-client -Xms256m -Xmx256m -Dfile.encoding=${file.encoding}</maven.surefire.argLine>
     <maven.ejb.ejbVersion>3.0</maven.ejb.ejbVersion>
     <maven.ear.version>5</maven.ear.version>
@@ -1576,7 +1584,7 @@
     <wagon.version>2.2</wagon.version>
     <slf4j.version>1.6.4</slf4j.version>
     <animal-sniffer.version>1.8</animal-sniffer.version>
-    <jdtaus-build.version>1.13-SNAPSHOT</jdtaus-build.version>
+    <jdtaus-build.version>1.13</jdtaus-build.version>
     <!--
     Plugin versions.
     -->
