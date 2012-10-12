@@ -25,13 +25,13 @@
           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
   <properties>
-    <title>Mise en œuvre open-source du format de fichier DTAUS pour la plate-forme Java</title>
+    <title>Implémentation open-source du format de fichier DTAUS pour la plateforme Java</title>
     <author email="cs@schulte.it">Christian Schulte</author>
   </properties>
   <body>
     <section name="Introduction">
       <p>
-        jDTAUS offre un mise en œuvre open-source du format de fichier DTAUS pour la plate-forme Java.
+        jDTAUS offre un implémentation open-source du format de fichier DTAUS pour la plateforme Java.
       </p>
     </section>
     <section name="Téléchargement">
