@@ -52,7 +52,7 @@
       <item name="Téléchargement" href="http://frs.jdtaus.org/"/>
       <item name="Issues" href="http://www.jdtaus.org/trac/query"/>
     </menu>
-    <menu name="Developpez" inherit="bottom">
+    <menu name="Developpez">
       <item name="Core" href="http://www.jdtaus.org/1.0.x/jdtaus-core/fr/index.html"/>
       <item name="Banking" href="http://www.jdtaus.org/1.0.x/jdtaus-banking/fr/index.html"/>
     </menu>

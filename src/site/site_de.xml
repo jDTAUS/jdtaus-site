@@ -54,7 +54,7 @@
       <item name="Downloads" href="http://frs.jdtaus.org/"/>
       <item name="Fehlerberichte" href="http://www.jdtaus.org/trac/query"/>
     </menu>
-    <menu name="Entwickler" inherit="bottom">
+    <menu name="Entwickler">
       <item name="Core" href="http://www.jdtaus.org/1.0.x/jdtaus-core/de/index.html"/>
       <item name="Banking" href="http://www.jdtaus.org/1.0.x/jdtaus-banking/de/index.html"/>
     </menu>
