@@ -1589,7 +1589,7 @@
     Plugin versions.
     -->
     <maven-compiler-plugin.artifact.version>2.5.1</maven-compiler-plugin.artifact.version>
-    <maven-site-plugin.artifact.version>3.1</maven-site-plugin.artifact.version>
+    <maven-site-plugin.artifact.version>3.2</maven-site-plugin.artifact.version>
     <maven-resources-plugin.artifact.version>2.6</maven-resources-plugin.artifact.version>
     <maven-release-plugin.artifact.version>2.3.2</maven-release-plugin.artifact.version>
     <maven-jar-plugin.artifact.version>2.4</maven-jar-plugin.artifact.version>
@@ -1604,7 +1604,7 @@
     <maven-jomc-plugin.artifact.version>1.3</maven-jomc-plugin.artifact.version>
     <maven-shade-plugin.artifact.version>2.0</maven-shade-plugin.artifact.version>
     <maven-install-plugin.artifact.version>2.4</maven-install-plugin.artifact.version>
-    <maven-source-plugin.artifact.version>2.1.2</maven-source-plugin.artifact.version> <!-- See http://jira.codehaus.org/browse/MSOURCES-62 -->
+    <maven-source-plugin.artifact.version>2.2.1</maven-source-plugin.artifact.version>
     <maven-scm-plugin.artifact.version>1.8</maven-scm-plugin.artifact.version>
     <maven-changes-plugin.artifact.version>2.8</maven-changes-plugin.artifact.version> <!-- See http://jira.codehaus.org/browse/MCHANGES-289 -->
     <maven-enforcer-plugin.artifact.version>1.1.1</maven-enforcer-plugin.artifact.version>
