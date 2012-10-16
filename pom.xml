@@ -27,7 +27,7 @@
   <artifactId>jdtaus-site</artifactId>
   <packaging>pom</packaging>
   <name>jDTAUS</name>
-  <version>1.14-SNAPSHOT</version>
+  <version>1.13</version>
   <description>jDTAUS provides an open-source implementation of german payment file formats.</description>
   <url>${jdtaus.artifacts.url}</url>
   <inceptionYear>2005</inceptionYear>
@@ -60,9 +60,9 @@
   </issueManagement>
 
   <scm>
-    <connection>scm:svn:http://svn.jdtaus.org/svnroot/jdtaus/jdtaus-site/trunk</connection>
-    <developerConnection>scm:svn:http://svn.jdtaus.org/svnroot/jdtaus/jdtaus-site/trunk</developerConnection>
-    <url>http://svn.jdtaus.org/jdtaus-site/trunk</url>
+    <connection>scm:svn:http://svn.jdtaus.org/svnroot/jdtaus/jdtaus-site/tags/jdtaus-site-1.13</connection>
+    <developerConnection>scm:svn:http://svn.jdtaus.org/svnroot/jdtaus/jdtaus-site/tags/jdtaus-site-1.13</developerConnection>
+    <url>http://svn.jdtaus.org/jdtaus-site/tags/jdtaus-site-1.13</url>
   </scm>
 
   <build>
@@ -1584,7 +1584,7 @@
     <wagon.version>2.2</wagon.version>
     <slf4j.version>1.6.4</slf4j.version>
     <animal-sniffer.version>1.8</animal-sniffer.version>
-    <jdtaus-build.version>1.14-SNAPSHOT</jdtaus-build.version>
+    <jdtaus-build.version>1.13</jdtaus-build.version>
     <!--
     Plugin versions.
     -->
