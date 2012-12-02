@@ -1536,7 +1536,7 @@
     <maven.compiler.target>1.6</maven.compiler.target>
     <maven.javadoc.memory>32m</maven.javadoc.memory>
     <maven.javadoc.additionalJOption>-J-client -J-Xms${maven.javadoc.memory} -J-Xmx${maven.javadoc.memory} -J-Dfile.encoding=${file.encoding}</maven.javadoc.additionalJOption>
-    <maven.site.locales>en,de,fr</maven.site.locales>
+    <maven.site.locales>en,de</maven.site.locales>
     <maven.site.relativizeDecorationLinks>false</maven.site.relativizeDecorationLinks> <!-- See http://jira.codehaus.org/browse/MSITE-658 -->
     <maven.surefire.memory>32m</maven.surefire.memory>
     <maven.surefire.argLine>-client -Xms${maven.surefire.memory} -Xmx${maven.surefire.memory} -Dfile.encoding=${file.encoding}</maven.surefire.argLine>
