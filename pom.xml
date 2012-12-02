@@ -495,6 +495,7 @@
             <arguments>
               <argument>-J-client</argument>
               <argument>-J-Dfile.encoding=${file.encoding}</argument>
+              <argument>-J-Djsse.enableSNIExtension=false</argument>
               <argument>-digestalg</argument>
               <argument>SHA-256</argument>
               <argument>-tsa</argument>
@@ -1527,22 +1528,25 @@
     -->
     <assembly.useJvmChmod>true</assembly.useJvmChmod>
     <dependency.useJvmChmod>true</dependency.useJvmChmod>
-    <jarsigner.maxMemory>256m</jarsigner.maxMemory>
+    <jarsigner.maxMemory>32m</jarsigner.maxMemory>
     <maven.compiler.optimize>true</maven.compiler.optimize>
     <maven.compiler.showDeprecation>true</maven.compiler.showDeprecation>
     <maven.compiler.showWarnings>true</maven.compiler.showWarnings>
     <maven.compiler.source>1.6</maven.compiler.source>
     <maven.compiler.target>1.6</maven.compiler.target>
-    <maven.javadoc.additionalJOption>-J-client -J-Xms256m -J-Xmx256m -J-Dfile.encoding=${file.encoding}</maven.javadoc.additionalJOption>
+    <maven.javadoc.memory>32m</maven.javadoc.memory>
+    <maven.javadoc.additionalJOption>-J-client -J-Xms${maven.javadoc.memory} -J-Xmx${maven.javadoc.memory} -J-Dfile.encoding=${file.encoding}</maven.javadoc.additionalJOption>
     <maven.site.locales>en,de,fr</maven.site.locales>
     <maven.site.relativizeDecorationLinks>false</maven.site.relativizeDecorationLinks> <!-- See http://jira.codehaus.org/browse/MSITE-658 -->
-    <maven.surefire.argLine>-client -Xms256m -Xmx256m -Dfile.encoding=${file.encoding}</maven.surefire.argLine>
+    <maven.surefire.memory>32m</maven.surefire.memory>
+    <maven.surefire.argLine>-client -Xms${maven.surefire.memory} -Xmx${maven.surefire.memory} -Dfile.encoding=${file.encoding}</maven.surefire.argLine>
     <maven.ejb.ejbVersion>3.0</maven.ejb.ejbVersion>
     <maven.ear.version>5</maven.ear.version>
     <maven.enforcer.java.version>1.6.0</maven.enforcer.java.version>
     <mojo.animal-sniffer.signature.artifactId>java16</mojo.animal-sniffer.signature.artifactId>
     <mojo.animal-sniffer.signature.artifactVersion>1.0</mojo.animal-sniffer.signature.artifactVersion>
-    <mojo.findbugs.jvmArgs>-client -Xms256m -Xmx256m -Dfile.encoding=${file.encoding}</mojo.findbugs.jvmArgs>
+    <mojo.findbugs.memory>32m</mojo.findbugs.memory>
+    <mojo.findbugs.jvmArgs>-client -Xms${mojo.findbugs.memory} -Xmx${mojo.findbugs.memory} -Dfile.encoding=${file.encoding}</mojo.findbugs.jvmArgs>
     <xjcOutputDirectory>${project.build.directory}/generated-sources/jaxb</xjcOutputDirectory>
     <xjcTestOutputDirectory>${project.build.directory}/generated-test-sources/jaxb</xjcTestOutputDirectory>
     <!--
