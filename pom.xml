@@ -457,7 +457,7 @@
             <username>${jdtaus.scm.username}</username>
             <password>${jdtaus.scm.password}</password>
             <remoteTagging>false</remoteTagging>
-            <suppressCommitBeforeTag>false</suppressCommitBeforeTag>
+            <suppressCommitBeforeTag>true</suppressCommitBeforeTag>
             <goals>deploy</goals>
             <useReleaseProfile>false</useReleaseProfile>
             <releaseProfiles>jdtaus-release</releaseProfiles>
