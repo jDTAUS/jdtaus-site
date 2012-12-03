@@ -1521,12 +1521,12 @@
     <jomc.with-vendor-copyright>false</jomc.with-vendor-copyright>
     <jdtaus.trac.query>order=id&amp;version=${project.version}&amp;component=jDTAUS|${project.name}</jdtaus.trac.query>
     <jdtaus.base.version>1.0.x</jdtaus.base.version>
-    <jdtaus.frs.distribution.id>jdtaus.org</jdtaus.frs.distribution.id>
+    <jdtaus.frs.distribution.id>frs.jdtaus.org</jdtaus.frs.distribution.id>
     <jdtaus.frs.distribution.url>dav:http://frs.jdtaus.org/</jdtaus.frs.distribution.url>
-    <jdtaus.xsd.distribution.id>jdtaus.org</jdtaus.xsd.distribution.id>
+    <jdtaus.xsd.distribution.id>xml.jdtaus.org</jdtaus.xsd.distribution.id>
     <jdtaus.xsd.distribution.url>dav:http://xml.jdtaus.org/</jdtaus.xsd.distribution.url>
     <jdtaus.artifacts.url>http://www.jdtaus.org/${jdtaus.base.version}</jdtaus.artifacts.url>
-    <jdtaus.artifacts.distribution.id>jdtaus.org</jdtaus.artifacts.distribution.id>
+    <jdtaus.artifacts.distribution.id>www.jdtaus.org</jdtaus.artifacts.distribution.id>
     <jdtaus.artifacts.distribution.name>jDTAUS Site</jdtaus.artifacts.distribution.name>
     <jdtaus.artifacts.distribution.base.url>dav:http://www.jdtaus.org/</jdtaus.artifacts.distribution.base.url>
     <jdtaus.artifacts.distribution.url>${jdtaus.artifacts.distribution.base.url}/${jdtaus.base.version}</jdtaus.artifacts.distribution.url>
