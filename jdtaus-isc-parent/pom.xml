@@ -28,7 +28,7 @@
   <artifactId>jdtaus-isc-parent</artifactId>
   <packaging>pom</packaging>
   <name>jDTAUS ⁑ ISC Parent</name>
-  <description>jDTAUS common parent project object model for ISC style licensed artifacts.</description>
+  <description>jDTAUS common parent project object model for ISC licensed artifacts.</description>
 
   <licenses>
     <license>
