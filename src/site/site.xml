@@ -54,6 +54,7 @@
     <menu name="Developers">
       <item name="Core" href="http://www.jdtaus.org/1.0.x/jdtaus-core/index.html"/>
       <item name="Banking" href="http://www.jdtaus.org/1.0.x/jdtaus-banking/index.html"/>
+      <item name="ISO-31616" href="http://www.jdtaus.org/ISO-31616/current/index.html"/>
     </menu>
     <menu ref="reports" inherit="bottom"/>
   </body>
