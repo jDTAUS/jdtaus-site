@@ -47,14 +47,14 @@
   </custom>
   <body>
     <menu name="jDTAUS" inherit="top">
-      <item name="Start" href="http://www.jdtaus.org/1.0.x"/>
+      <item name="Start" href="${jdtaus.artifacts.url}"/>
       <item name="Downloads" href="http://frs.jdtaus.org/"/>
       <item name="Issues" href="http://www.jdtaus.org/trac/query"/>
     </menu>
-    <menu name="Developers">
-      <item name="Core" href="http://www.jdtaus.org/1.0.x/jdtaus-core/index.html"/>
-      <item name="Banking" href="http://www.jdtaus.org/1.0.x/jdtaus-banking/index.html"/>
-      <item name="ISO-31616" href="http://www.jdtaus.org/ISO-31616/current/index.html"/>
+    <menu name="Developers" inherit="top">
+      <item name="Core" href="${jdtaus.artifacts.url}/jdtaus-core/index.html"/>
+      <item name="Banking" href="${jdtaus.artifacts.url}/jdtaus-banking/index.html"/>
+      <item name="ISO-13616" href="http://www.jdtaus.org/ISO-13616/current/index.html"/>
     </menu>
     <menu ref="reports" inherit="bottom"/>
   </body>
