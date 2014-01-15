@@ -38,22 +38,70 @@
       <table border="0">
         <tr>
           <td>
-            <a href="http://www.jdtaus.org/project/editor?exe">
-              <b>jDTAUS Editor (Windows .exe)</b>
+            <a href="http://www.jdtaus.org/project/editor-x86">
+              <b>jdtaus-editor-x86.exe</b>
             </a>
           </td>
           <td>
-            <a href="http://en.wikipedia.org/wiki/EXE">Windows installation executable.</a>
+            <small>
+              <a href="http://en.wikipedia.org/wiki/Windows">Windows</a>
+              <a href="http://en.wikipedia.org/wiki/32-bit">32&#x00a0;Bit</a>
+              <a href="http://en.wikipedia.org/wiki/.exe">.exe</a>
+            </small>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.jdtaus.org/project/editor-x64">
+              <b>jdtaus-editor-x64.exe</b>
+            </a>
+          </td>
+          <td>
+            <small>
+              <a href="http://en.wikipedia.org/wiki/Windows">Windows</a>
+              <a href="http://en.wikipedia.org/wiki/64-bit">64&#x00a0;Bit</a>
+              <a href="http://en.wikipedia.org/wiki/.exe">.exe</a>
+            </small>
           </td>
         </tr>
         <tr>
           <td>
             <a href="http://www.jdtaus.org/project/editor?tar.bz2">
-              <b>jDTAUS Editor (Unix .tar.bz2)</b>
+              <b>jdtaus-editor.tar.bz2</b>
             </a>
           </td>
           <td>
-            <a href="http://en.wikipedia.org/wiki/Tar_(file_format)">Unix tar archive.</a>
+            <small>
+              <a href="http://en.wikipedia.org/wiki/Unix">Unix</a>
+              <a href="http://en.wikipedia.org/wiki/Tar_%28file_format%29">.tar</a>
+              <a href="http://en.wikipedia.org/wiki/Bzip2">.bz2</a>
+            </small>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.jdtaus.org/project/editor?tar.gz">
+              <b>jdtaus-editor.tar.gz</b>
+            </a>
+          </td>
+          <td>
+            <small>
+              <a href="http://en.wikipedia.org/wiki/Unix">Unix</a>
+              <a href="http://en.wikipedia.org/wiki/Tar_%28file_format%29">.tar</a>
+              <a href="http://en.wikipedia.org/wiki/Gzip">.gz</a>
+            </small>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.jdtaus.org/project/editor?zip">
+              <b>jdtaus-editor.zip</b>
+            </a>
+          </td>
+          <td>
+            <small>
+              <a href="http://en.wikipedia.org/wiki/ZIP_%28file_format%29">.zip</a>
+            </small>
           </td>
         </tr>
       </table>
