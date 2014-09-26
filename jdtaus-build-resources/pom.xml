@@ -50,4 +50,7 @@
       </resource>
     </resources>
   </build>
+  <properties>
+    <parent.remote.resources.skip>true</parent.remote.resources.skip>
+  </properties>
 </project>

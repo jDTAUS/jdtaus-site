@@ -79,6 +79,12 @@
           <version>${maven-site-plugin.artifact.version}</version>
           <dependencies>
             <dependency>
+              <!-- See http://jira.codehaus.org/browse/MSITE-724 -->
+              <groupId>org.apache.maven</groupId>
+              <artifactId>maven-archiver</artifactId>
+              <version>2.5</version>
+            </dependency>
+            <dependency>
               <groupId>org.jdtaus.maven.skins</groupId>
               <artifactId>jdtaus-skin-tools</artifactId>
               <version>1.0</version>
@@ -146,7 +152,7 @@
                       <report>license</report>
                     </reports>
                   </reportSet>
-                  <!-- reportSet - Creates relative links. >
+                  <!-- reportSet> http://jira.codehaus.org/browse/MPIR-229
                     <id>default-modules</id>
                     <reports>
                       <report>modules</report>
@@ -256,7 +262,7 @@
                   </reportSet>
                 </reportSets>
               </reportPlugin>
-              <reportPlugin>
+              <!-- http://jira.codehaus.org/browse/MTAGLIST-59 reportPlugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>taglist-maven-plugin</artifactId>
                 <reportSets>
@@ -282,7 +288,7 @@
                     </tagClasses>
                   </tagListOptions>
                 </configuration>
-              </reportPlugin>
+              </reportPlugin -->
               <reportPlugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-pmd-plugin</artifactId>
@@ -498,8 +504,6 @@
               <argument>-J-Djsse.enableSNIExtension=false</argument>
               <argument>-digestalg</argument>
               <argument>SHA-256</argument>
-              <argument>-tsa</argument>
-              <argument>${jarsigner.tsa}</argument>
             </arguments>
           </configuration>
         </plugin>
@@ -702,6 +706,7 @@
               <requireMavenVersion>
                 <version>${maven.enforcer.maven.version}</version>
               </requireMavenVersion>
+              <requireUpperBoundDeps />
               <requireNoRepositories />
             </rules>
           </configuration>
@@ -709,7 +714,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-project-info-reports-plugin</artifactId>
-          <version>${maven-project-info-reports-plugin.artifact.version}</version>
+          <version>${maven-project-info-reports-plugin.artifact.version}</version> <!-- See http://jira.codehaus.org/browse/MPIR-238 -->
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -772,6 +777,17 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-war-plugin</artifactId>
           <version>${maven-war-plugin.artifact.version}</version>
+          <configuration>
+            <archive>
+              <index>true</index>
+              <addMavenDescriptor>false</addMavenDescriptor>
+              <compress>true</compress>
+              <manifestEntries>
+                <Build-Date>${build.date}</Build-Date>
+                <Maven-Version>${maven.version}</Maven-Version>
+              </manifestEntries>
+            </archive>
+          </configuration>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -812,7 +828,6 @@
           <executions>
             <execution>
               <id>default-timestamp-property</id>
-              <phase>initialize</phase>
               <goals>
                 <goal>timestamp-property</goal>
               </goals>
@@ -855,7 +870,6 @@
           <executions>
             <execution>
               <id>default-check</id>
-              <phase>prepare-package</phase>
               <goals>
                 <goal>check</goal>
               </goals>
@@ -863,9 +877,9 @@
           </executions>
           <configuration>
             <signature>
-              <groupId>org.codehaus.mojo.signature</groupId>
-              <artifactId>${mojo.animal-sniffer.signature.artifactId}</artifactId>
-              <version>${mojo.animal-sniffer.signature.artifactVersion}</version>
+              <groupId>${mojo.animalsniffer.signature.groupId}</groupId>
+              <artifactId>${mojo.animalsniffer.signature.artifactId}</artifactId>
+              <version>${mojo.animalsniffer.signature.artifactVersion}</version>
             </signature>
           </configuration>
         </plugin>
@@ -893,7 +907,7 @@
             </sourcePaths>
           </configuration>
         </plugin>
-        <plugin>
+        <!-- http://jira.codehaus.org/browse/MTAGLIST-59 plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>taglist-maven-plugin</artifactId>
           <version>${taglist-maven-plugin.artifact.version}</version>
@@ -912,7 +926,7 @@
               </tagClasses>
             </tagListOptions>
           </configuration>
-        </plugin>
+        </plugin -->
         <plugin>
           <groupId>org.codehaus.plexus</groupId>
           <artifactId>plexus-component-metadata</artifactId>
@@ -949,6 +963,7 @@
               <arg>-npa</arg>
               <arg>-copy-constructor</arg>
               <arg>-Xinject-code</arg>
+              <arg>-Xinheritance</arg>
               <arg>-mark-generated</arg>
             </args>
             <bindingDirectory>src/main/schemas</bindingDirectory>
@@ -957,6 +972,16 @@
             <readOnly>true</readOnly>
             <schemaDirectory>src/main/schemas</schemaDirectory>
             <plugins>
+              <plugin>
+                <groupId>org.jvnet.jaxb2_commons</groupId>
+                <artifactId>jaxb2-basics</artifactId>
+                <version>${jaxb2-basics.version}</version>
+              </plugin>
+              <plugin>
+                <groupId>org.jvnet.jaxb2_commons</groupId>
+                <artifactId>jaxb2-commons-lang</artifactId>
+                <version>${jaxb2-commons-lang.version}</version>
+              </plugin>
               <plugin>
                 <groupId>net.sourceforge.ccxjc</groupId>
                 <artifactId>cc-xjc-plugin</artifactId>
@@ -970,6 +995,13 @@
           <artifactId>maven-jomc-plugin</artifactId>
           <version>${maven-jomc-plugin.artifact.version}</version>
           <dependencies>
+            <dependency>
+              <groupId>org.jomc</groupId>
+              <artifactId>jomc-tools</artifactId>
+              <classifier>templates</classifier>
+              <type>jar</type>
+              <version>${maven-jomc-plugin.templates.version}</version>
+            </dependency>
             <dependency>
               <groupId>org.jdtaus</groupId>
               <artifactId>jdtaus-build-resources</artifactId>
@@ -1079,8 +1111,88 @@
         <artifactId>animal-sniffer-maven-plugin</artifactId>
       </plugin>
       <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-remote-resources-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-resources-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.jvnet.jaxb2.maven2</groupId>
+        <artifactId>maven-jaxb21-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>javacc-maven-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>xml-maven-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-ejb-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-ear-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-source-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-site-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-shade-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-antrun-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jarsigner-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>appassembler-maven-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-assembly-plugin</artifactId>
+      </plugin>
+      <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>build-helper-maven-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-gpg-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>wagon-maven-plugin</artifactId>
       </plugin>
     </plugins>
   </build>
@@ -1139,63 +1251,14 @@
             <plugin>
               <groupId>org.apache.maven.plugins</groupId>
               <artifactId>maven-site-plugin</artifactId>
-              <dependencies>
-                <dependency>
-                  <groupId>org.apache.maven.wagon</groupId>
-                  <artifactId>wagon-ssh</artifactId>
-                  <version>${wagon.version}</version>
-                </dependency>
-                <dependency>
-                  <groupId>org.apache.maven.wagon</groupId>
-                  <artifactId>wagon-webdav-jackrabbit</artifactId>
-                  <version>${wagon.version}</version>
-                </dependency>
-                <dependency>
-                  <groupId>org.slf4j</groupId>
-                  <artifactId>jcl-over-slf4j</artifactId>
-                  <version>${slf4j.version}</version>
-                </dependency>
-                <dependency>
-                  <groupId>org.slf4j</groupId>
-                  <artifactId>slf4j-simple</artifactId>
-                  <version>${slf4j.version}</version>
-                </dependency>
-              </dependencies>
               <executions>
                 <execution>
                   <id>default-attach-descriptor</id>
-                  <phase>prepare-package</phase>
                   <goals>
                     <goal>attach-descriptor</goal>
                   </goals>
                 </execution>
               </executions>
-            </plugin>
-            <plugin>
-              <groupId>org.codehaus.mojo</groupId>
-              <artifactId>wagon-maven-plugin</artifactId>
-              <dependencies>
-                <dependency>
-                  <groupId>org.apache.maven.wagon</groupId>
-                  <artifactId>wagon-ssh</artifactId>
-                  <version>${wagon.version}</version>
-                </dependency>
-                <dependency>
-                  <groupId>org.apache.maven.wagon</groupId>
-                  <artifactId>wagon-webdav-jackrabbit</artifactId>
-                  <version>${wagon.version}</version>
-                </dependency>
-                <dependency>
-                  <groupId>org.slf4j</groupId>
-                  <artifactId>jcl-over-slf4j</artifactId>
-                  <version>${slf4j.version}</version>
-                </dependency>
-                <dependency>
-                  <groupId>org.slf4j</groupId>
-                  <artifactId>slf4j-simple</artifactId>
-                  <version>${slf4j.version}</version>
-                </dependency>
-              </dependencies>
             </plugin>
           </plugins>
         </pluginManagement>
@@ -1225,7 +1288,6 @@
               <executions>
                 <execution>
                   <id>default-maven-version</id>
-                  <phase>initialize</phase>
                   <goals>
                     <goal>maven-version</goal>
                   </goals>
@@ -1248,14 +1310,14 @@
               <executions>
                 <execution>
                   <id>default-generate-resources</id>
-                  <phase>generate-resources</phase>
+                  <phase>validate</phase>
                   <goals>
                     <goal>update</goal>
                   </goals>
                 </execution>
                 <execution>
                   <id>default-process-resources</id>
-                  <phase>process-classes</phase>
+                  <phase>process-resources</phase>
                   <goals>
                     <goal>checkin</goal>
                   </goals>
@@ -1269,7 +1331,7 @@
                 </execution>
                 <execution>
                   <id>default-process-test-resources</id>
-                  <phase>process-test-classes</phase>
+                  <phase>process-test-resources</phase>
                   <goals>
                     <goal>checkin</goal>
                   </goals>
@@ -1305,14 +1367,12 @@
               <executions>
                 <execution>
                   <id>default-jar-no-fork</id>
-                  <phase>prepare-package</phase>
                   <goals>
                     <goal>jar-no-fork</goal>
                   </goals>
                 </execution>
                 <execution>
                   <id>default-test-jar-no-fork</id>
-                  <phase>prepare-package</phase>
                   <goals>
                     <goal>test-jar-no-fork</goal>
                   </goals>
@@ -1325,14 +1385,12 @@
               <executions>
                 <execution>
                   <id>default-jar</id>
-                  <phase>prepare-package</phase>
                   <goals>
                     <goal>jar</goal>
                   </goals>
                 </execution>
                 <execution>
                   <id>default-test-jar</id>
-                  <phase>prepare-package</phase>
                   <goals>
                     <goal>test-jar</goal>
                   </goals>
@@ -1345,7 +1403,6 @@
               <executions>
                 <execution>
                   <id>default-project-jar</id>
-                  <phase>prepare-package</phase>
                   <goals>
                     <goal>jar</goal>
                   </goals>
@@ -1372,7 +1429,6 @@
               <executions>
                 <execution>
                   <id>default-jar</id>
-                  <phase>prepare-package</phase>
                   <goals>
                     <goal>jar</goal>
                   </goals>
@@ -1388,14 +1444,12 @@
               <executions>
                 <execution>
                   <id>default-sign</id>
-                  <phase>package</phase>
                   <goals>
                     <goal>sign</goal>
                   </goals>
                 </execution>
                 <execution>
                   <id>default-verify</id>
-                  <phase>verify</phase>
                   <goals>
                     <goal>verify</goal>
                   </goals>
@@ -1408,7 +1462,6 @@
               <executions>
                 <execution>
                   <id>default-sign</id>
-                  <phase>verify</phase>
                   <goals>
                     <goal>sign</goal>
                   </goals>
@@ -1417,33 +1470,6 @@
             </plugin>
           </plugins>
         </pluginManagement>
-        <plugins>
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-jar-plugin</artifactId>
-            <inherited>false</inherited>
-          </plugin>
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-source-plugin</artifactId>
-          </plugin>
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-javadoc-plugin</artifactId>
-          </plugin>
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-site-plugin</artifactId>
-          </plugin>
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-jarsigner-plugin</artifactId>
-          </plugin>
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-gpg-plugin</artifactId>
-          </plugin>
-        </plugins>
       </build>
       <properties>
         <jomc.verbose>true</jomc.verbose>
@@ -1460,11 +1486,16 @@
     <!--
     Plugin parameters.
     -->
+    <xjcOutputDirectory>${project.build.directory}/generated-sources/jaxb</xjcOutputDirectory>
+    <xjcTestOutputDirectory>${project.build.directory}/generated-test-sources/jaxb</xjcTestOutputDirectory>
+    <javaccOutputDirectory>${project.build.directory}/generated-sources/javacc</javaccOutputDirectory>
+    <remoteResourcesOutputDirectory>${project.build.directory}/maven-shared-archive-resources</remoteResourcesOutputDirectory>
     <assembly.useJvmChmod>true</assembly.useJvmChmod>
     <dependency.useJvmChmod>true</dependency.useJvmChmod>
     <jarsigner.maxMemory>32m</jarsigner.maxMemory>
     <installAtEnd>true</installAtEnd>
     <deployAtEnd>true</deployAtEnd>
+    <enforcer.fail>false</enforcer.fail>
     <maven.compiler.optimize>true</maven.compiler.optimize>
     <maven.compiler.showDeprecation>true</maven.compiler.showDeprecation>
     <maven.compiler.showWarnings>true</maven.compiler.showWarnings>
@@ -1479,19 +1510,12 @@
     <maven.ejb.ejbVersion>3.0</maven.ejb.ejbVersion>
     <maven.ear.version>5</maven.ear.version>
     <maven.enforcer.java.version>[1.6.0,)</maven.enforcer.java.version>
-    <maven.enforcer.maven.version>[3.0.4],[3.0.5]</maven.enforcer.maven.version>
-    <mojo.animal-sniffer.signature.artifactId>java16</mojo.animal-sniffer.signature.artifactId>
-    <mojo.animal-sniffer.signature.artifactVersion>1.0</mojo.animal-sniffer.signature.artifactVersion>
+    <maven.enforcer.maven.version>[3.0.4],[3.0.5],[3.1.0-alpha-1],[3.1.0],[3.1.1],[3.2.1],[3.2.2],[3.2.3]</maven.enforcer.maven.version>
+    <mojo.animalsniffer.signature.groupId>org.codehaus.mojo.signature</mojo.animalsniffer.signature.groupId>
+    <mojo.animalsniffer.signature.artifactId>java16</mojo.animalsniffer.signature.artifactId>
+    <mojo.animalsniffer.signature.artifactVersion>1.1</mojo.animalsniffer.signature.artifactVersion>
     <mojo.findbugs.memory>32m</mojo.findbugs.memory>
     <mojo.findbugs.jvmArgs>-client -Xms${mojo.findbugs.memory} -Xmx${mojo.findbugs.memory} -Dfile.encoding=${file.encoding}</mojo.findbugs.jvmArgs>
-    <xjcOutputDirectory>${project.build.directory}/generated-sources/jaxb</xjcOutputDirectory>
-    <xjcTestOutputDirectory>${project.build.directory}/generated-test-sources/jaxb</xjcTestOutputDirectory>
-    <!--
-    Netbeans IDE earlier than 7.1: http://netbeans.org/bugzilla/show_bug.cgi?id=187595
-    <xjcTestOutputDirectory>${project.build.directory}/generated-sources/jaxb-test</xjcTestOutputDirectory>
-    -->
-    <javaccOutputDirectory>${project.build.directory}/generated-sources/javacc</javaccOutputDirectory>
-    <remoteResourcesOutputDirectory>${project.build.directory}/maven-shared-archive-resources</remoteResourcesOutputDirectory>
     <jomc.with-assertions>true</jomc.with-assertions>
     <jomc.with-author-copyright>true</jomc.with-author-copyright>
     <jomc.with-editor-fold>true</jomc.with-editor-fold>
@@ -1499,10 +1523,15 @@
     <jomc.with-javadoc-author>true</jomc.with-javadoc-author>
     <jomc.with-javadoc-version>true</jomc.with-javadoc-version>
     <jomc.with-jsr-250>true</jomc.with-jsr-250>
-    <jomc.with-project-name>jDTAUS</jomc.with-project-name>
+    <jomc.with-project-name>${project.name}</jomc.with-project-name>
     <jomc.with-revision-keyword>JDTAUS</jomc.with-revision-keyword>
-    <jomc.with-suppress-warnings>unused</jomc.with-suppress-warnings>
+    <jomc.with-suppress-warnings>{"unchecked", "unused", "PMD.UnnecessaryFullyQualifiedName"}</jomc.with-suppress-warnings>
     <jomc.with-vendor-copyright>false</jomc.with-vendor-copyright>
+    <!-- IDE specific. -->
+    <netbeans.compile.on.save>none</netbeans.compile.on.save>
+    <!-- Parent -->
+    <parent.remote.resources.skip>true</parent.remote.resources.skip>
+    <checkstyle.skip>true</checkstyle.skip>
     <jdtaus.trac.query>order=id&amp;version=${project.version}&amp;component=jDTAUS|${project.name}</jdtaus.trac.query>
     <jdtaus.base.version>1.0.x</jdtaus.base.version>
     <jdtaus.frs.distribution.id>frs.jdtaus.org</jdtaus.frs.distribution.id>
@@ -1515,61 +1544,61 @@
     <jdtaus.artifacts.distribution.base.url>dav:http://www.jdtaus.org/</jdtaus.artifacts.distribution.base.url>
     <jdtaus.artifacts.distribution.url>${jdtaus.artifacts.distribution.base.url}${jdtaus.base.version}</jdtaus.artifacts.distribution.url>
     <!--
-    IDE specific.
-    -->
-    <netbeans.compile.on.save>none</netbeans.compile.on.save>
-    <!--
     Artifact versions.
     -->
-    <surefire.version>2.16</surefire.version>
+    <surefire.version>2.17</surefire.version>
     <plugintools.version>2.9</plugintools.version> <!-- See http://jira.codehaus.org/browse/MNG-3762 -->
     <plexuscontainers.version>1.5.5</plexuscontainers.version>
     <umlgraph.version>5.6.6</umlgraph.version>
+    <jaxb2-basics.version>0.6.5</jaxb2-basics.version>
+    <jaxb2-commons-lang.version>2.4</jaxb2-commons-lang.version>
     <cc-xjc-plugin.version>2.0.1</cc-xjc-plugin.version>
-    <wagon.version>2.5</wagon.version>
-    <slf4j.version>1.7.5</slf4j.version>
-    <animal-sniffer.version>1.9</animal-sniffer.version>
+    <wagon.version>2.6</wagon.version>
+    <slf4j.version>1.7.7</slf4j.version>
+    <animal-sniffer.version>1.11</animal-sniffer.version>
     <jdtaus-build.version>1.18-SNAPSHOT</jdtaus-build.version>
     <!--
     Plugin versions.
     -->
-    <maven-compiler-plugin.artifact.version>2.5.1</maven-compiler-plugin.artifact.version> <!-- See http://jira.codehaus.org/browse/MCOMPILER-187 / https://jira.codehaus.org/browse/MCOMPILER-205 -->
-    <maven-site-plugin.artifact.version>3.1</maven-site-plugin.artifact.version> <!-- See http://jira.codehaus.org/browse/MSITE-665 -->
-    <maven-resources-plugin.artifact.version>2.6</maven-resources-plugin.artifact.version>
-    <maven-release-plugin.artifact.version>2.4.2</maven-release-plugin.artifact.version>
-    <maven-jar-plugin.artifact.version>2.4</maven-jar-plugin.artifact.version>
-    <maven-gpg-plugin.artifact.version>1.4</maven-gpg-plugin.artifact.version>
-    <maven-jarsigner-plugin.artifact.version>1.2</maven-jarsigner-plugin.artifact.version> <!-- See http://jira.codehaus.org/browse/MJARSIGNER-34 (The author of the plugin is not allowed to maintain it after contributing to Apache. Read that again.)  -->
-    <maven-remote-resources-plugin.artifact.version>1.5</maven-remote-resources-plugin.artifact.version>
-    <maven-javadoc-plugin.artifact.version>2.9.1</maven-javadoc-plugin.artifact.version> <!-- See http://jira.codehaus.org/browse/MJAVADOC-355 -->
-    <maven-clean-plugin.artifact.version>2.5</maven-clean-plugin.artifact.version>
-    <maven-deploy-plugin.artifact.version>2.8.1</maven-deploy-plugin.artifact.version>
-    <maven-dependency-plugin.artifact.version>2.8</maven-dependency-plugin.artifact.version>
-    <maven-assembly-plugin.artifact.version>2.4</maven-assembly-plugin.artifact.version>
-    <maven-jomc-plugin.artifact.version>1.5</maven-jomc-plugin.artifact.version>
-    <maven-shade-plugin.artifact.version>2.2</maven-shade-plugin.artifact.version>
-    <maven-install-plugin.artifact.version>2.5.1</maven-install-plugin.artifact.version>
-    <maven-source-plugin.artifact.version>2.2.1</maven-source-plugin.artifact.version>
-    <maven-scm-plugin.artifact.version>1.8.1</maven-scm-plugin.artifact.version>
-    <maven-changes-plugin.artifact.version>2.9</maven-changes-plugin.artifact.version>
-    <maven-enforcer-plugin.artifact.version>1.3.1</maven-enforcer-plugin.artifact.version>
-    <maven-project-info-reports-plugin.artifact.version>2.6</maven-project-info-reports-plugin.artifact.version> <!-- See http://jira.codehaus.org/browse/MPIR-238 / Needs a recent site plugin for the modules report. -->
-    <maven-jxr-plugin.artifact.version>2.3</maven-jxr-plugin.artifact.version> <!-- See http://jira.codehaus.org/browse/JXR-107 -->
-    <maven-pmd-plugin.artifact.version>3.0.1</maven-pmd-plugin.artifact.version>
-    <maven-checkstyle-plugin.artifact.version>2.11</maven-checkstyle-plugin.artifact.version>
-    <maven-ejb-plugin.artifact.version>2.3</maven-ejb-plugin.artifact.version>
-    <maven-ear-plugin.artifact.version>2.9</maven-ear-plugin.artifact.version>
     <maven-antrun-plugin.artifact.version>1.7</maven-antrun-plugin.artifact.version>
+    <maven-compiler-plugin.artifact.version>2.5.1</maven-compiler-plugin.artifact.version> <!-- See http://jira.codehaus.org/browse/MCOMPILER-187 / https://jira.codehaus.org/browse/MCOMPILER-205 -->
+    <maven-site-plugin.artifact.version>3.4</maven-site-plugin.artifact.version> <!-- See http://jira.codehaus.org/browse/MSITE-724 -->
+    <maven-resources-plugin.artifact.version>2.6</maven-resources-plugin.artifact.version>
+    <maven-release-plugin.artifact.version>2.5.1</maven-release-plugin.artifact.version>
+    <maven-jar-plugin.artifact.version>2.5</maven-jar-plugin.artifact.version>
+    <maven-gpg-plugin.artifact.version>1.5</maven-gpg-plugin.artifact.version>
+    <maven-jarsigner-plugin.artifact.version>1.3.2</maven-jarsigner-plugin.artifact.version>
+    <maven-remote-resources-plugin.artifact.version>1.5</maven-remote-resources-plugin.artifact.version>
+    <maven-javadoc-plugin.artifact.version>2.10</maven-javadoc-plugin.artifact.version>
+    <maven-clean-plugin.artifact.version>2.6</maven-clean-plugin.artifact.version>
+    <maven-deploy-plugin.artifact.version>2.8.2</maven-deploy-plugin.artifact.version>
+    <maven-dependency-plugin.artifact.version>2.9</maven-dependency-plugin.artifact.version>
+    <maven-assembly-plugin.artifact.version>2.4.1</maven-assembly-plugin.artifact.version>
+    <maven-jomc-plugin.artifact.version>1.7</maven-jomc-plugin.artifact.version>
+    <maven-jomc-plugin.templates.version>1.7</maven-jomc-plugin.templates.version>
+    <maven-shade-plugin.artifact.version>2.3</maven-shade-plugin.artifact.version>
+    <maven-install-plugin.artifact.version>2.5.2</maven-install-plugin.artifact.version>
+    <maven-source-plugin.artifact.version>2.3</maven-source-plugin.artifact.version>
+    <maven-scm-plugin.artifact.version>1.9.2</maven-scm-plugin.artifact.version>
+    <maven-changes-plugin.artifact.version>2.10</maven-changes-plugin.artifact.version>
+    <maven-enforcer-plugin.artifact.version>1.3.1</maven-enforcer-plugin.artifact.version>
+    <maven-project-info-reports-plugin.artifact.version>2.7</maven-project-info-reports-plugin.artifact.version>
+    <maven-jxr-plugin.artifact.version>2.4</maven-jxr-plugin.artifact.version>
+    <maven-pmd-plugin.artifact.version>3.2</maven-pmd-plugin.artifact.version>
+    <maven-checkstyle-plugin.artifact.version>2.13</maven-checkstyle-plugin.artifact.version>
+    <maven-ejb-plugin.artifact.version>2.4</maven-ejb-plugin.artifact.version>
+    <maven-ear-plugin.artifact.version>2.9.1</maven-ear-plugin.artifact.version>
     <maven-war-plugin.artifact.version>2.4</maven-war-plugin.artifact.version>
-    <wagon-maven-plugin.artifact.version>1.0-beta-4</wagon-maven-plugin.artifact.version>
+    <wagon-maven-plugin.artifact.version>1.0-beta-5</wagon-maven-plugin.artifact.version>
     <javacc-maven-plugin.artifact.version>2.6</javacc-maven-plugin.artifact.version>
-    <appassembler-maven-plugin.artifact.version>1.7</appassembler-maven-plugin.artifact.version>
-    <build-helper-maven-plugin.artifact.version>1.8</build-helper-maven-plugin.artifact.version>
+    <appassembler-maven-plugin.artifact.version>1.8.1</appassembler-maven-plugin.artifact.version>
+    <build-helper-maven-plugin.artifact.version>1.9.1</build-helper-maven-plugin.artifact.version>
     <xml-maven-plugin.artifact.version>1.0</xml-maven-plugin.artifact.version>
     <clirr-maven-plugin.artifact.version>2.6.1</clirr-maven-plugin.artifact.version>
-    <findbugs-maven-plugin.artifact.version>2.5.3</findbugs-maven-plugin.artifact.version>
-    <emma-maven-plugin.artifact.version>1.0-alpha-3</emma-maven-plugin.artifact.version>
-    <taglist-maven-plugin.artifact.version>2.4</taglist-maven-plugin.artifact.version>
-    <maven-jaxb21-plugin.artifact.version>0.8.3</maven-jaxb21-plugin.artifact.version>
+    <animal-sniffer-maven-plugin.artifact.version>1.7</animal-sniffer-maven-plugin.artifact.version>
+    <findbugs-maven-plugin.artifact.version>3.0.0</findbugs-maven-plugin.artifact.version>
+    <emma-maven-plugin.artifact.version>1.0-alpha-3</emma-maven-plugin.artifact.version> <!-- See http://jira.codehaus.org/browse/MEMMA-21 -->
+    <taglist-maven-plugin.artifact.version>2.4</taglist-maven-plugin.artifact.version> <!-- http://jira.codehaus.org/browse/MTAGLIST-59 -->
+    <maven-jaxb21-plugin.artifact.version>0.8.3</maven-jaxb21-plugin.artifact.version> <!-- https://java.net/jira/browse/MAVEN_JAXB2_PLUGIN-91 -->
   </properties>
 </project>

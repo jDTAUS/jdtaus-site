@@ -74,6 +74,7 @@
     </plugins>
   </build>
   <properties>
+    <parent.remote.resources.skip>false</parent.remote.resources.skip>
     <jomc.templateProfile>jdtaus-java-lgpl</jomc.templateProfile>
     <jomc.testModuleName>${project.name} ⁑ Tests</jomc.testModuleName>
   </properties>
