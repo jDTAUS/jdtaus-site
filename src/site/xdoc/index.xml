@@ -39,7 +39,7 @@
         <tr>
           <td>
             <a href="http://www.jdtaus.org/project/editor-x86">
-              <b>jdtaus-editor-x86.exe</b>
+              <b>jDTAUS&#x00a0;Editor&#x00a0;Windows</b>
             </a>
           </td>
           <td>
@@ -53,7 +53,7 @@
         <tr>
           <td>
             <a href="http://www.jdtaus.org/project/editor-x64">
-              <b>jdtaus-editor-x64.exe</b>
+              <b>jDTAUS&#x00a0;Editor&#x00a0;Windows&#x00a0;64&#x00a0;bit</b>
             </a>
           </td>
           <td>
@@ -66,41 +66,55 @@
         </tr>
         <tr>
           <td>
-            <a href="http://www.jdtaus.org/project/editor?tar.bz2">
-              <b>jdtaus-editor.tar.bz2</b>
+            <a href="http://www.jdtaus.org/project/editor?zip">
+              <b>jDTAUS&#x00a0;Editor&#x00a0;OS&#x00a0;X</b>
             </a>
           </td>
           <td>
             <small>
-              <a href="http://en.wikipedia.org/wiki/Unix">Unix</a>
-              <a href="http://en.wikipedia.org/wiki/Tar_%28file_format%29">.tar</a>
-              <a href="http://en.wikipedia.org/wiki/Bzip2">.bz2</a>
-            </small>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.jdtaus.org/project/editor?tar.gz">
-              <b>jdtaus-editor.tar.gz</b>
-            </a>
-          </td>
-          <td>
-            <small>
-              <a href="http://en.wikipedia.org/wiki/Unix">Unix</a>
-              <a href="http://en.wikipedia.org/wiki/Tar_%28file_format%29">.tar</a>
-              <a href="http://en.wikipedia.org/wiki/Gzip">.gz</a>
+              <a href="http://en.wikipedia.org/wiki/OS_X">OS&#x00a0;X</a>
+              <a href="http://en.wikipedia.org/wiki/ZIP_%28file_format%29">.zip</a>
             </small>
           </td>
         </tr>
         <tr>
           <td>
             <a href="http://www.jdtaus.org/project/editor?zip">
-              <b>jdtaus-editor.zip</b>
+              <b>jDTAUS&#x00a0;Editor&#x00a0;Unix</b>
             </a>
           </td>
           <td>
             <small>
+              <a href="http://en.wikipedia.org/wiki/Unix">Unix</a>
               <a href="http://en.wikipedia.org/wiki/ZIP_%28file_format%29">.zip</a>
+            </small>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.jdtaus.org/project/editor?zip">
+              <b>jDTAUS&#x00a0;Editor</b>
+            </a>
+          </td>
+          <td>
+            <small>
+              <a href="http://en.wikipedia.org/wiki/Cross-platform">cross-platform</a>
+              <a href="http://en.wikipedia.org/wiki/Java_%28programming_language%29">Java</a>
+              <a href="http://en.wikipedia.org/wiki/ZIP_%28file_format%29">.zip</a>
+            </small>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.csv2pain.de">
+              <b>CSV2PAIN</b>
+            </a>
+          </td>
+          <td>
+            <small>
+              Tool for converting <a href="http://en.wikipedia.org/wiki/Comma-separated_values">CSV</a> files to <a href="http://en.wikipedia.org/wiki/Single_Euro_Payments_Area">SEPA</a> 
+              <a href="http://en.wikipedia.org/wiki/ISO_20022">PAIN</a>
+              <a href="http://en.wikipedia.org/wiki/XML">XML</a> messages.
             </small>
           </td>
         </tr>
