@@ -79,7 +79,7 @@
           <version>${maven-site-plugin.artifact.version}</version>
           <dependencies>
             <dependency>
-              <!-- See http://jira.codehaus.org/browse/MSITE-724 -->
+              <!-- See http://issues.apache.org/jira/browse/MSITE-724 -->
               <groupId>org.apache.maven</groupId>
               <artifactId>maven-archiver</artifactId>
               <version>2.5</version>
@@ -157,7 +157,7 @@
                       <report>license</report>
                     </reports>
                   </reportSet>
-                  <!-- reportSet> http://jira.codehaus.org/browse/MPIR-229
+                  <!-- reportSet> http://issues.apache.org/jira/browse/MPIR-229
                     <id>default-modules</id>
                     <reports>
                       <report>modules</report>
@@ -227,6 +227,8 @@
                   <detectOfflineLinks>false</detectOfflineLinks>
                   <detectLinks>true</detectLinks>
                   <validateLinks>true</validateLinks>
+                  <minmemory>${maven.javadoc.minmemory}</minmemory>
+                  <maxmemory>${maven.javadoc.maxmemory}</maxmemory>
                   <doclet>org.umlgraph.doclet.UmlGraphDoc</doclet>
                   <docletArtifact>
                     <groupId>org.umlgraph</groupId>
@@ -245,7 +247,10 @@
                       <version>${plexuscontainers.version}</version>
                     </tagletArtifact>
                   </tagletArtifacts>
-                  <additionalJOption>${maven.javadoc.additionalJOption}</additionalJOption>
+                  <additionalJOptions>
+                    <additionalJOption>-J-client</additionalJOption>
+                    <additionalJOption>-J-Dfile.encoding=${file.encoding}</additionalJOption>
+                  </additionalJOptions>
                   <additionalparam>-inferrel -inferdep -hide java.* -collpackages java.util.* -qualify -postfixpackage -nodefontsize 10 -nodefontpackagesize 8 -outputencoding ${project.reporting.outputEncoding} -inferdepvis protected</additionalparam>
                 </configuration>
               </reportPlugin>
@@ -267,7 +272,7 @@
                   </reportSet>
                 </reportSets>
               </reportPlugin>
-              <!-- http://jira.codehaus.org/browse/MTAGLIST-59 reportPlugin>
+              <!-- http://issues.apache.org/jira/browse/MTAGLIST-59 reportPlugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>taglist-maven-plugin</artifactId>
                 <reportSets>
@@ -377,27 +382,16 @@
                 </configuration>
               </reportPlugin>
               <reportPlugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>emma-maven-plugin</artifactId>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
                 <reportSets>
                   <reportSet>
-                    <id>default-emma</id>
+                    <id>default-report</id>
                     <reports>
-                      <report>emma</report>
+                      <report>report</report>
                     </reports>
                   </reportSet>
                 </reportSets>
-                <configuration>
-                  <!-- xml>false</xml See http://jira.codehaus.org/browse/MEMMA-19 -->
-                  <dataFiles>
-                    <dataFile>${project.build.directory}/coverage.ec</dataFile>
-                  </dataFiles>
-                  <sourcePaths>
-                    <sourcePath>${project.build.sourceDirectory}</sourcePath>
-                    <sourcePath>${xjcOutputDirectory}</sourcePath>
-                    <sourcePath>${javaccOutputDirectory}</sourcePath>
-                  </sourcePaths>
-                </configuration>
               </reportPlugin>
               <reportPlugin>
                 <groupId>org.codehaus.mojo</groupId>
@@ -522,7 +516,11 @@
           <artifactId>maven-surefire-plugin</artifactId>
           <version>${surefire.version}</version>
           <configuration>
+            <!--
+            Cannot set the <argLine> parameter here due to the JaCoCo plugin updating the value of that property after
+            interpolation.
             <argLine>${maven.surefire.argLine}</argLine>
+            -->
             <forkMode>once</forkMode>
             <redirectTestOutputToFile>true</redirectTestOutputToFile>
             <runOrder>random</runOrder>
@@ -564,6 +562,8 @@
             <detectOfflineLinks>false</detectOfflineLinks>
             <detectLinks>true</detectLinks>
             <validateLinks>true</validateLinks>
+            <minmemory>${maven.javadoc.minmemory}</minmemory>
+            <maxmemory>${maven.javadoc.maxmemory}</maxmemory>
             <doclet>org.umlgraph.doclet.UmlGraphDoc</doclet>
             <docletArtifact>
               <groupId>org.umlgraph</groupId>
@@ -582,7 +582,10 @@
                 <version>${plexuscontainers.version}</version>
               </tagletArtifact>
             </tagletArtifacts>
-            <additionalJOption>${maven.javadoc.additionalJOption}</additionalJOption>
+            <additionalJOptions>
+              <additionalJOption>-J-client</additionalJOption>
+              <additionalJOption>-J-Dfile.encoding=${file.encoding}</additionalJOption>
+            </additionalJOptions>
             <additionalparam>-inferrel -inferdep -hide java.* -collpackages java.util.* -qualify -postfixpackage -nodefontsize 10 -nodefontpackagesize 8 -outputencoding ${project.reporting.outputEncoding} -inferdepvis protected</additionalparam>
             <archive>
               <index>true</index>
@@ -729,7 +732,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-project-info-reports-plugin</artifactId>
-          <version>${maven-project-info-reports-plugin.artifact.version}</version> <!-- See http://jira.codehaus.org/browse/MPIR-238 -->
+          <version>${maven-project-info-reports-plugin.artifact.version}</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -914,22 +917,19 @@
           </configuration>
         </plugin>
         <plugin>
-          <groupId>org.codehaus.mojo</groupId>
-          <artifactId>emma-maven-plugin</artifactId>
-          <version>${emma-maven-plugin.artifact.version}</version>
-          <configuration>
-            <!-- xml>false</xml See http://jira.codehaus.org/browse/MEMMA-19 -->
-            <dataFiles>
-              <dataFile>${project.build.directory}/coverage.ec</dataFile>
-            </dataFiles>
-            <sourcePaths>
-              <sourcePath>${project.build.sourceDirectory}</sourcePath>
-              <sourcePath>${xjcOutputDirectory}</sourcePath>
-              <sourcePath>${javaccOutputDirectory}</sourcePath>
-            </sourcePaths>
-          </configuration>
+          <groupId>org.jacoco</groupId>
+          <artifactId>jacoco-maven-plugin</artifactId>
+          <version>${jacoco-maven-plugin.artifact.version}</version>
+          <executions>
+            <execution>
+              <id>default-prepare-agent</id>
+              <goals>
+                <goal>prepare-agent</goal>
+              </goals>
+            </execution>
+          </executions>
         </plugin>
-        <!-- http://jira.codehaus.org/browse/MTAGLIST-59 plugin>
+        <!-- http://issues.apache.org/jira/browse/MTAGLIST-59 plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>taglist-maven-plugin</artifactId>
           <version>${taglist-maven-plugin.artifact.version}</version>
@@ -1125,6 +1125,10 @@
 
     <plugins>
       <plugin>
+        <groupId>org.jacoco</groupId>
+        <artifactId>jacoco-maven-plugin</artifactId>
+      </plugin>
+      <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-enforcer-plugin</artifactId>
       </plugin>
@@ -1225,7 +1229,10 @@
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>animal-sniffer-annotations</artifactId>
         <version>${animal-sniffer.version}</version>
-        <optional>true</optional> <!-- See http://jira.codehaus.org/browse/MNG-5227 -->
+        <!--
+        http://issues.apache.org/jira/browse/MNG-5227
+        -->
+        <optional>true</optional>
       </dependency>
     </dependencies>
   </dependencyManagement>
@@ -1294,7 +1301,9 @@
     </profile>
 
     <profile>
-      <!-- See http://jira.codehaus.org/browse/MNG-4112 -->
+      <!-- 
+      http://issues.apache.org/jira/browse/MNG-4112
+      -->
       <id>maven-version</id>
       <activation>
         <property>
@@ -1523,16 +1532,23 @@
     <maven.compiler.showWarnings>true</maven.compiler.showWarnings>
     <maven.compiler.source>1.6</maven.compiler.source>
     <maven.compiler.target>1.6</maven.compiler.target>
+    <maven.compiler.useIncrementalCompilation>false</maven.compiler.useIncrementalCompilation>
     <maven.javadoc.memory>32m</maven.javadoc.memory>
-    <maven.javadoc.additionalJOption>-J-client -J-Xms${maven.javadoc.memory} -J-Xmx${maven.javadoc.memory} -J-Dfile.encoding=${file.encoding}</maven.javadoc.additionalJOption>
+    <maven.javadoc.minmemory>${maven.javadoc.memory}</maven.javadoc.minmemory>
+    <maven.javadoc.maxmemory>${maven.javadoc.memory}</maven.javadoc.maxmemory>
     <maven.site.locales>en,de</maven.site.locales>
-    <maven.site.relativizeDecorationLinks>false</maven.site.relativizeDecorationLinks> <!-- See http://jira.codehaus.org/browse/MSITE-658 -->
+    <!--
+    http://issues.apache.org/jira/browse/MSITE-658
+    -->
+    <maven.site.relativizeDecorationLinks>false</maven.site.relativizeDecorationLinks>
     <maven.surefire.memory>32m</maven.surefire.memory>
     <maven.surefire.argLine>-client -Xms${maven.surefire.memory} -Xmx${maven.surefire.memory} -Dfile.encoding=${file.encoding}</maven.surefire.argLine>
+    <!-- Updated by JaCoCo plugin. Potentionally conflicts with other plugins using that same propery. -->
+    <argLine>${maven.surefire.argLine}</argLine>
     <maven.ejb.ejbVersion>3.0</maven.ejb.ejbVersion>
     <maven.ear.version>5</maven.ear.version>
     <maven.enforcer.java.version>[1.6.0,)</maven.enforcer.java.version>
-    <maven.enforcer.maven.version>[3.0.4],[3.0.5],[3.1.0-alpha-1],[3.1.0],[3.1.1],[3.2.1],[3.2.2],[3.2.3]</maven.enforcer.maven.version>
+    <maven.enforcer.maven.version>[3.0.4],[3.0.5],[3.1.0-alpha-1],[3.1.0],[3.1.1],[3.2.1],[3.2.2],[3.2.3],[3.2.5],[3.3.1],[3.3.3]</maven.enforcer.maven.version>
     <mojo.animalsniffer.signature.groupId>org.codehaus.mojo.signature</mojo.animalsniffer.signature.groupId>
     <mojo.animalsniffer.signature.artifactId>java16</mojo.animalsniffer.signature.artifactId>
     <mojo.animalsniffer.signature.artifactVersion>1.1</mojo.animalsniffer.signature.artifactVersion>
@@ -1568,61 +1584,76 @@
     <!--
     Artifact versions.
     -->
-    <surefire.version>2.18</surefire.version>
-    <plugintools.version>2.9</plugintools.version> <!-- See http://jira.codehaus.org/browse/MNG-3762 -->
+    <surefire.version>2.18.1</surefire.version>
+    <!--
+    http://issues.apache.org/jira/browse/MNG-3762
+    -->
+    <plugintools.version>2.9</plugintools.version>
     <plexuscontainers.version>1.6</plexuscontainers.version>
     <umlgraph.version>5.6.6</umlgraph.version>
-    <jaxb2-basics.version>0.6.5</jaxb2-basics.version>
+    <jaxb2-basics.version>0.9.2</jaxb2-basics.version>
     <jaxb2-commons-lang.version>2.4</jaxb2-commons-lang.version>
     <cc-xjc-plugin.version>2.0.1</cc-xjc-plugin.version>
-    <wagon.version>2.7</wagon.version>
-    <slf4j.version>1.7.7</slf4j.version>
-    <animal-sniffer.version>1.12</animal-sniffer.version>
+    <wagon.version>2.9</wagon.version>
+    <animal-sniffer.version>1.14</animal-sniffer.version>
     <jdtaus-build.version>1.20-SNAPSHOT</jdtaus-build.version>
     <!--
     Plugin versions.
     -->
-    <maven-antrun-plugin.artifact.version>1.7</maven-antrun-plugin.artifact.version>
-    <maven-compiler-plugin.artifact.version>2.5.1</maven-compiler-plugin.artifact.version> <!-- See http://jira.codehaus.org/browse/MCOMPILER-187 / https://jira.codehaus.org/browse/MCOMPILER-205 -->
-    <maven-site-plugin.artifact.version>3.4</maven-site-plugin.artifact.version> <!-- See http://jira.codehaus.org/browse/MSITE-724 -->
+    <maven-antrun-plugin.artifact.version>1.8</maven-antrun-plugin.artifact.version>
+    <!--
+    https://issues.apache.org/jira/browse/MCOMPILER-187
+    https://issues.apache.org/jira/browse/MCOMPILER-205
+    -->
+    <maven-compiler-plugin.artifact.version>3.3</maven-compiler-plugin.artifact.version>
+    <!--
+    https://issues.apache.org/jira/browse/MSITE-724
+    -->
+    <maven-site-plugin.artifact.version>3.4</maven-site-plugin.artifact.version>
     <maven-resources-plugin.artifact.version>2.7</maven-resources-plugin.artifact.version>
-    <maven-release-plugin.artifact.version>2.5.1</maven-release-plugin.artifact.version>
-    <maven-jar-plugin.artifact.version>2.5</maven-jar-plugin.artifact.version>
-    <maven-gpg-plugin.artifact.version>1.5</maven-gpg-plugin.artifact.version>
-    <maven-jarsigner-plugin.artifact.version>1.3.2</maven-jarsigner-plugin.artifact.version>
+    <maven-release-plugin.artifact.version>2.5.2</maven-release-plugin.artifact.version>
+    <maven-jar-plugin.artifact.version>2.6</maven-jar-plugin.artifact.version>
+    <maven-gpg-plugin.artifact.version>1.6</maven-gpg-plugin.artifact.version>
+    <maven-jarsigner-plugin.artifact.version>1.4</maven-jarsigner-plugin.artifact.version>
     <maven-remote-resources-plugin.artifact.version>1.5</maven-remote-resources-plugin.artifact.version>
     <!--
-    https://jira.codehaus.org/browse/MJAVADOC-414
+    https://issues.apache.org/jira/browse/MJAVADOC-429
     -->
-    <maven-javadoc-plugin.artifact.version>2.9.1</maven-javadoc-plugin.artifact.version>
+    <maven-javadoc-plugin.artifact.version>2.10.3</maven-javadoc-plugin.artifact.version>
     <maven-clean-plugin.artifact.version>2.6.1</maven-clean-plugin.artifact.version>
     <maven-deploy-plugin.artifact.version>2.8.2</maven-deploy-plugin.artifact.version>
-    <maven-dependency-plugin.artifact.version>2.9</maven-dependency-plugin.artifact.version>
-    <maven-assembly-plugin.artifact.version>2.5.2</maven-assembly-plugin.artifact.version>
-    <maven-jomc-plugin.artifact.version>1.8</maven-jomc-plugin.artifact.version>
-    <maven-jomc-plugin.templates.version>1.8</maven-jomc-plugin.templates.version>
-    <maven-shade-plugin.artifact.version>2.3</maven-shade-plugin.artifact.version>
+    <maven-dependency-plugin.artifact.version>2.10</maven-dependency-plugin.artifact.version>
+    <maven-assembly-plugin.artifact.version>2.5.5</maven-assembly-plugin.artifact.version>
+    <maven-jomc-plugin.artifact.version>1.9</maven-jomc-plugin.artifact.version>
+    <maven-jomc-plugin.templates.version>1.9</maven-jomc-plugin.templates.version>
+    <maven-shade-plugin.artifact.version>2.4</maven-shade-plugin.artifact.version>
     <maven-install-plugin.artifact.version>2.5.2</maven-install-plugin.artifact.version>
     <maven-source-plugin.artifact.version>2.4</maven-source-plugin.artifact.version>
-    <maven-scm-plugin.artifact.version>1.9.2</maven-scm-plugin.artifact.version>
+    <maven-scm-plugin.artifact.version>1.9.4</maven-scm-plugin.artifact.version>
     <maven-changes-plugin.artifact.version>2.11</maven-changes-plugin.artifact.version>
-    <maven-enforcer-plugin.artifact.version>1.3.1</maven-enforcer-plugin.artifact.version>
+    <maven-enforcer-plugin.artifact.version>1.4</maven-enforcer-plugin.artifact.version>
+    <!--
+    https://issues.apache.org/jira/browse/MPIR-238
+    -->
     <maven-project-info-reports-plugin.artifact.version>2.7</maven-project-info-reports-plugin.artifact.version>
     <maven-jxr-plugin.artifact.version>2.5</maven-jxr-plugin.artifact.version>
-    <maven-pmd-plugin.artifact.version>3.3</maven-pmd-plugin.artifact.version>
-    <maven-checkstyle-plugin.artifact.version>2.13</maven-checkstyle-plugin.artifact.version>
-    <maven-ejb-plugin.artifact.version>2.4</maven-ejb-plugin.artifact.version>
-    <maven-ear-plugin.artifact.version>2.9.1</maven-ear-plugin.artifact.version>
-    <maven-war-plugin.artifact.version>2.5</maven-war-plugin.artifact.version>
-    <wagon-maven-plugin.artifact.version>1.0-beta-5</wagon-maven-plugin.artifact.version>
+    <maven-pmd-plugin.artifact.version>3.4</maven-pmd-plugin.artifact.version>
+    <maven-checkstyle-plugin.artifact.version>2.15</maven-checkstyle-plugin.artifact.version>
+    <maven-ejb-plugin.artifact.version>2.5.1</maven-ejb-plugin.artifact.version>
+    <maven-ear-plugin.artifact.version>2.10</maven-ear-plugin.artifact.version>
+    <maven-war-plugin.artifact.version>2.6</maven-war-plugin.artifact.version>
+    <wagon-maven-plugin.artifact.version>1.0</wagon-maven-plugin.artifact.version>
     <javacc-maven-plugin.artifact.version>2.6</javacc-maven-plugin.artifact.version>
-    <appassembler-maven-plugin.artifact.version>1.9</appassembler-maven-plugin.artifact.version>
+    <appassembler-maven-plugin.artifact.version>1.10</appassembler-maven-plugin.artifact.version>
     <build-helper-maven-plugin.artifact.version>1.9.1</build-helper-maven-plugin.artifact.version>
     <xml-maven-plugin.artifact.version>1.0</xml-maven-plugin.artifact.version>
     <clirr-maven-plugin.artifact.version>2.6.1</clirr-maven-plugin.artifact.version>
-    <findbugs-maven-plugin.artifact.version>3.0.0</findbugs-maven-plugin.artifact.version>
-    <emma-maven-plugin.artifact.version>1.0-alpha-3</emma-maven-plugin.artifact.version> <!-- See http://jira.codehaus.org/browse/MEMMA-21 -->
-    <taglist-maven-plugin.artifact.version>2.4</taglist-maven-plugin.artifact.version> <!-- http://jira.codehaus.org/browse/MTAGLIST-59 -->
-    <maven-jaxb21-plugin.artifact.version>0.11.0</maven-jaxb21-plugin.artifact.version>
+    <findbugs-maven-plugin.artifact.version>3.0.1</findbugs-maven-plugin.artifact.version>
+    <jacoco-maven-plugin.artifact.version>0.7.5.201505241946</jacoco-maven-plugin.artifact.version>
+    <!--
+    https://issues.apache.org/jira/browse/MTAGLIST-59
+    -->
+    <taglist-maven-plugin.artifact.version>2.4</taglist-maven-plugin.artifact.version>
+    <maven-jaxb21-plugin.artifact.version>0.12.3</maven-jaxb21-plugin.artifact.version>
   </properties>
 </project>
