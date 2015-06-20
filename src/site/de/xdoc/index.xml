@@ -31,77 +31,20 @@
   <body>
     <section name="Einleitung">
       <p>
-        jDTAUS stellt eine Java-Implementierung des DTAUS Datenformats als Open-Source Lösung zur Verfügung.
+        jDTAUS stellt eine Java-Implementierung des DTAUS Datenformats als Open-Source Lösung zur Verfügung. Für eine
+        Übersicht aller erhältlichen Dateien klicken Sie bitte <a href="http://frs.jdtaus.org/">hier</a>.
       </p>
     </section>
-    <section name="Download">
+    <section name="Anwendungen">
       <table border="0">
         <tr>
           <td>
-            <a href="http://www.jdtaus.org/project/editor-x86">
-              <b>jDTAUS&#x00a0;Editor&#x00a0;Windows</b>
-            </a>
-          </td>
-          <td>
-            <small>
-              <a href="http://de.wikipedia.org/wiki/Windows">Windows</a>
-              <a href="http://de.wikipedia.org/wiki/32-Bit">32&#x00a0;Bit</a>
-              <a href="http://de.wikipedia.org/wiki/EXE">.exe</a>
-            </small>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.jdtaus.org/project/editor-x64">
-              <b>jDTAUS&#x00a0;Editor&#x00a0;Windows&#x00a0;64&#x00a0;Bit</b>
-            </a>
-          </td>
-          <td>
-            <small>
-              <a href="http://de.wikipedia.org/wiki/Windows">Windows</a>
-              <a href="http://de.wikipedia.org/wiki/64-Bit">64&#x00a0;Bit</a>
-              <a href="http://de.wikipedia.org/wiki/EXE">.exe</a>
-            </small>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.jdtaus.org/project/editor?zip">
-              <b>jDTAUS&#x00a0;Editor&#x00a0;OS&#x00a0;X</b>
-            </a>
-          </td>
-          <td>
-            <small>
-              <a href="http://de.wikipedia.org/wiki/Mac_OS_X">OS&#x00a0;X</a>
-              <a href="http://de.wikipedia.org/wiki/ZIP-Dateiformat">.zip</a>
-            </small>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.jdtaus.org/project/editor?zip">
-              <b>jDTAUS&#x00a0;Editor&#x00a0;Unix</b>
-            </a>
-          </td>
-          <td>
-            <small>
-              <a href="http://de.wikipedia.org/wiki/Unix">Unix</a>
-              <a href="http://de.wikipedia.org/wiki/ZIP-Dateiformat">.zip</a>
-            </small>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.jdtaus.org/project/editor?zip">
+            <a href="http://www.jdtaus.de">
               <b>jDTAUS&#x00a0;Editor</b>
             </a>
           </td>
           <td>
-            <small>
-              <a href="http://de.wikipedia.org/wiki/Plattformunabh%C3%A4ngigkeit">plattform&#x00a0;unabhängig</a>
-              <a href="http://de.wikipedia.org/wiki/Java_%28Programmiersprache%29">Java</a>
-              <a href="http://de.wikipedia.org/wiki/ZIP-Dateiformat">.zip</a>
-            </small>
+            <small>jDTAUS Editor ist eine PC-Anwendung zur Anzeige, Bearbeitung und Umwandlung von Dateien im Datenträgeraustauschverfahren (DTAUS) für den bargeldlosen Zahlungsverkehr.</small>
           </td>
         </tr>
         <tr>
@@ -112,17 +55,13 @@
           </td>
           <td>
             <small>
-              Werkzeug zur Konvertierung von <a href="http://de.wikipedia.org/wiki/CSV_%28Dateiformat%29">CSV</a> Dateien nach <a href="http://de.wikipedia.org/wiki/SEPA">SEPA</a> 
+              Werkzeug zur Konvertierung von <a href="http://de.wikipedia.org/wiki/CSV_%28Dateiformat%29">CSV</a> Dateien nach <a href="http://de.wikipedia.org/wiki/SEPA">SEPA</a>
               <a href="http://de.wikipedia.org/wiki/UNIFI_%28ISO_20022%29">PAIN</a>
               <a href="http://de.wikipedia.org/wiki/Extensible_Markup_Language">XML</a> Sammelauftragsdateien.
             </small>
           </td>
         </tr>
       </table>
-      <p>
-        Für eine Übersicht aller erhältlichen Dateien klicken Sie bitte
-        <a href="http://frs.jdtaus.org/">hier</a>.
-      </p>
     </section>
   </body>
 </document>
