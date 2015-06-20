@@ -27,7 +27,7 @@
   <artifactId>jdtaus-site</artifactId>
   <packaging>pom</packaging>
   <name>jDTAUS</name>
-  <version>1.20-SNAPSHOT</version>
+  <version>1.21-SNAPSHOT</version>
   <description>jDTAUS provides an open-source implementation of german payment file formats.</description>
   <url>${jdtaus.artifacts.url}</url>
   <inceptionYear>2005</inceptionYear>
@@ -1596,7 +1596,7 @@
     <cc-xjc-plugin.version>2.0.1</cc-xjc-plugin.version>
     <wagon.version>2.9</wagon.version>
     <animal-sniffer.version>1.14</animal-sniffer.version>
-    <jdtaus-build.version>1.20-SNAPSHOT</jdtaus-build.version>
+    <jdtaus-build.version>1.21-SNAPSHOT</jdtaus-build.version>
     <!--
     Plugin versions.
     -->
