@@ -1591,7 +1591,7 @@
     <plugintools.version>2.9</plugintools.version>
     <plexuscontainers.version>1.6</plexuscontainers.version>
     <umlgraph.version>5.6.6</umlgraph.version>
-    <jaxb2-basics.version>0.9.2</jaxb2-basics.version>
+    <jaxb2-basics.version>0.9.4</jaxb2-basics.version>
     <jaxb2-commons-lang.version>2.4</jaxb2-commons-lang.version>
     <cc-xjc-plugin.version>2.0.1</cc-xjc-plugin.version>
     <wagon.version>2.9</wagon.version>
@@ -1626,21 +1626,21 @@
     <maven-assembly-plugin.artifact.version>2.5.5</maven-assembly-plugin.artifact.version>
     <maven-jomc-plugin.artifact.version>1.9</maven-jomc-plugin.artifact.version>
     <maven-jomc-plugin.templates.version>1.9</maven-jomc-plugin.templates.version>
-    <maven-shade-plugin.artifact.version>2.4</maven-shade-plugin.artifact.version>
+    <maven-shade-plugin.artifact.version>2.4.1</maven-shade-plugin.artifact.version>
     <maven-install-plugin.artifact.version>2.5.2</maven-install-plugin.artifact.version>
     <maven-source-plugin.artifact.version>2.4</maven-source-plugin.artifact.version>
     <maven-scm-plugin.artifact.version>1.9.4</maven-scm-plugin.artifact.version>
     <maven-changes-plugin.artifact.version>2.11</maven-changes-plugin.artifact.version>
-    <maven-enforcer-plugin.artifact.version>1.4</maven-enforcer-plugin.artifact.version>
+    <maven-enforcer-plugin.artifact.version>1.4.1</maven-enforcer-plugin.artifact.version>
     <!--
     https://issues.apache.org/jira/browse/MPIR-238
     -->
     <maven-project-info-reports-plugin.artifact.version>2.7</maven-project-info-reports-plugin.artifact.version>
     <maven-jxr-plugin.artifact.version>2.5</maven-jxr-plugin.artifact.version>
-    <maven-pmd-plugin.artifact.version>3.4</maven-pmd-plugin.artifact.version>
-    <maven-checkstyle-plugin.artifact.version>2.15</maven-checkstyle-plugin.artifact.version>
+    <maven-pmd-plugin.artifact.version>3.5</maven-pmd-plugin.artifact.version>
+    <maven-checkstyle-plugin.artifact.version>2.16</maven-checkstyle-plugin.artifact.version>
     <maven-ejb-plugin.artifact.version>2.5.1</maven-ejb-plugin.artifact.version>
-    <maven-ear-plugin.artifact.version>2.10</maven-ear-plugin.artifact.version>
+    <maven-ear-plugin.artifact.version>2.10.1</maven-ear-plugin.artifact.version>
     <maven-war-plugin.artifact.version>2.6</maven-war-plugin.artifact.version>
     <wagon-maven-plugin.artifact.version>1.0</wagon-maven-plugin.artifact.version>
     <javacc-maven-plugin.artifact.version>2.6</javacc-maven-plugin.artifact.version>
@@ -1648,12 +1648,12 @@
     <build-helper-maven-plugin.artifact.version>1.9.1</build-helper-maven-plugin.artifact.version>
     <xml-maven-plugin.artifact.version>1.0</xml-maven-plugin.artifact.version>
     <clirr-maven-plugin.artifact.version>2.6.1</clirr-maven-plugin.artifact.version>
-    <findbugs-maven-plugin.artifact.version>3.0.1</findbugs-maven-plugin.artifact.version>
+    <findbugs-maven-plugin.artifact.version>3.0.2</findbugs-maven-plugin.artifact.version>
     <jacoco-maven-plugin.artifact.version>0.7.5.201505241946</jacoco-maven-plugin.artifact.version>
     <!--
     https://issues.apache.org/jira/browse/MTAGLIST-59
     -->
     <taglist-maven-plugin.artifact.version>2.4</taglist-maven-plugin.artifact.version>
-    <maven-jaxb21-plugin.artifact.version>0.12.3</maven-jaxb21-plugin.artifact.version>
+    <maven-jaxb21-plugin.artifact.version>0.13.0</maven-jaxb21-plugin.artifact.version>
   </properties>
 </project>
